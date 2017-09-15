@@ -1338,6 +1338,9 @@
             <property role="TrG5h" value="outputConcept" />
             <node concept="3THzug" id="7vufT$lslu8" role="1tU5fm" />
             <node concept="1PxgMI" id="7vufT$lukfa" role="33vP2m">
+              <node concept="chp4Y" id="1k1VwvtQfnH" role="3oSUPX">
+                <ref role="cht4Q" to="tpce:h0PkWnZ" resolve="AbstractConceptDeclaration" />
+              </node>
               <node concept="2OqwBi" id="7vufT$lukfb" role="1m5AlR">
                 <node concept="37vLTw" id="7vufT$lukfc" role="2Oq$k0">
                   <ref role="3cqZAo" node="1HYYbxG86AY" resolve="action" />
@@ -1345,9 +1348,6 @@
                 <node concept="liA8E" id="7vufT$lukfd" role="2OqNvi">
                   <ref role="37wK5l" to="f4zo:~SubstituteAction.getOutputConcept():org.jetbrains.mps.openapi.model.SNode" resolve="getOutputConcept" />
                 </node>
-              </node>
-              <node concept="chp4Y" id="1k1VwvtQfnH" role="3oSUPX">
-                <ref role="cht4Q" to="tpce:h0PkWnZ" resolve="AbstractConceptDeclaration" />
               </node>
             </node>
           </node>
