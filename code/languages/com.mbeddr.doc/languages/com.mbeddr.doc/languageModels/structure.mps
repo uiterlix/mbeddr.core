@@ -1713,5 +1713,20 @@
     <property role="TrG5h" value="DefaultImagePath" />
     <ref role="1TJDcQ" node="5yxqZJwzC3r" resolve="PathDefinition" />
   </node>
+  <node concept="1TIwiD" id="2T4ELtZGU8">
+    <property role="EcuMT" value="52093402212126344" />
+    <property role="3GE5qa" value="words" />
+    <property role="TrG5h" value="DocRefWord" />
+    <property role="34LRSv" value="@doc" />
+    <property role="R4oN_" value="references a document" />
+    <ref role="1TJDcQ" node="3mn43GPgUJP" resolve="AbstractRefWord" />
+    <node concept="1TJgyj" id="2T4ELtZGU9" role="1TKVEi">
+      <property role="IQ2ns" value="52093402212126345" />
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="target" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="2TZO3DbuxwK" resolve="Document" />
+    </node>
+  </node>
 </model>
 
