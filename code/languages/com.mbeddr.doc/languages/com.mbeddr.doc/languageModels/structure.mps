@@ -1728,5 +1728,13 @@
       <ref role="20lvS9" node="2TZO3DbuxwK" resolve="Document" />
     </node>
   </node>
+  <node concept="1TIwiD" id="t5DIOhO6JH">
+    <property role="EcuMT" value="524008468794862573" />
+    <property role="3GE5qa" value="paragraphs" />
+    <property role="TrG5h" value="BreadCumb" />
+    <property role="34LRSv" value="breadcumb" />
+    <property role="R4oN_" value="list with breadcrumb style" />
+    <ref role="1TJDcQ" node="4E$PniRJLTL" resolve="ItemList" />
+  </node>
 </model>
 

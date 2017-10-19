@@ -23,9 +23,11 @@
     </language>
     <language id="2374bc90-7e37-41f1-a9c4-c2e35194c36a" name="com.mbeddr.doc">
       <concept id="4317007310193476045" name="com.mbeddr.doc.structure.ScaleDownNotUp100" flags="ng" index="2bctqb" />
+      <concept id="524008468794862573" name="com.mbeddr.doc.structure.BreadCumb" flags="ng" index="m_sO0" />
       <concept id="6617418817008633079" name="com.mbeddr.doc.structure.DefaultImagePath" flags="ng" index="A7cYH" />
       <concept id="6657644269295214799" name="com.mbeddr.doc.structure.IDocumentLike" flags="ng" index="G9hjZ">
         <reference id="6657644269295214800" name="config" index="G9hjw" />
+        <child id="8730648445433290694" name="dependsOn" index="1DXQ57" />
       </concept>
       <concept id="2286331641395252232" name="com.mbeddr.doc.structure.NamedNodeModelContentPointerElement" flags="ng" index="2NCMab">
         <reference id="2286331641395252233" name="node" index="2NCMaa" />
@@ -49,6 +51,9 @@
         <child id="6068976060904007487" name="renderer" index="30GjaH" />
         <child id="6068976060904007490" name="mappings" index="30Gjbg" />
         <child id="6068976060904007489" name="root" index="30Gjbj" />
+      </concept>
+      <concept id="52093402212126344" name="com.mbeddr.doc.structure.DocRefWord" flags="ng" index="1thXK$">
+        <reference id="52093402212126345" name="target" index="1thXK_" />
       </concept>
       <concept id="6955693250238922827" name="com.mbeddr.doc.structure.ModelContentAsImageParagraph" flags="ng" index="3z_lpz">
         <child id="6955693250238922832" name="description" index="3z_lpS" />
@@ -76,6 +81,12 @@
       <concept id="3350625596579911728" name="com.mbeddr.doc.structure.Document" flags="ng" index="1_1swa">
         <property id="5572730672710143343" name="chapterStartIndex" index="yApLE" />
       </concept>
+      <concept id="5378658552262903588" name="com.mbeddr.doc.structure.Item" flags="ng" index="3X6T9g">
+        <child id="5378658552262903589" name="text" index="3X6T9h" />
+      </concept>
+      <concept id="5378658552262893169" name="com.mbeddr.doc.structure.ItemList" flags="ng" index="3X6WG5">
+        <child id="5378658552262986137" name="items" index="3Xp5NH" />
+      </concept>
     </language>
     <language id="d4280a54-f6df-4383-aa41-d1b2bffa7eb1" name="com.mbeddr.core.base">
       <concept id="8375407818529178006" name="com.mbeddr.core.base.structure.TextBlock" flags="ng" index="OjmMv">
@@ -98,7 +109,7 @@
   <node concept="1_1swa" id="4pIcGABsAb1">
     <property role="yApLE" value="1" />
     <property role="TrG5h" value="myDocument" />
-    <ref role="G9hjw" node="4pIcGABsMlJ" resolve="IneedThisShitToo" />
+    <ref role="G9hjw" node="4pIcGABsMlJ" resolve="DocumentConfig" />
     <node concept="1_0VNX" id="4pIcGABsAb2" role="1_0VJ0">
       <property role="TrG5h" value="firstsection" />
       <property role="1_0VJr" value="This the first section" />
@@ -115,7 +126,7 @@
       <node concept="OjmMv" id="4pIcGABsAbj" role="3z_lpS">
         <node concept="19SGf9" id="4pIcGABsAbk" role="OjmMu">
           <node concept="19SUe$" id="4pIcGABsAbl" role="19SJt6">
-            <property role="19SUeA" value="fuck this shitty generator" />
+            <property role="19SUeA" value="imgCaption" />
           </node>
         </node>
       </node>
@@ -128,7 +139,7 @@
     </node>
   </node>
   <node concept="1_08Dk" id="4pIcGABsMkZ">
-    <property role="TrG5h" value="AndIAlsoNeedThis" />
+    <property role="TrG5h" value="DocumentExport" />
     <property role="WqcPg" value="My strange export config" />
     <node concept="1_0j5j" id="4pIcGABsMl2" role="30Gjbj">
       <ref role="1_0j5g" node="4pIcGABsAb1" resolve="myDocument" />
@@ -140,7 +151,7 @@
     <node concept="1TaS0h" id="1xGVIWdAy29" role="30GjaH" />
   </node>
   <node concept="2SbYGP" id="4pIcGABsMlJ">
-    <property role="TrG5h" value="IneedThisShitToo" />
+    <property role="TrG5h" value="DocumentConfig" />
     <node concept="1_07dB" id="4pIcGABsMl5" role="2wNnkt" />
     <node concept="2SbYGw" id="4pIcGABsMlK" role="Cbewh">
       <property role="TrG5h" value="main" />
@@ -154,6 +165,47 @@
         <property role="1RwFax" value="true" />
         <property role="3kgbRO" value="false" />
       </node>
+    </node>
+  </node>
+  <node concept="1_1swa" id="t5DIOhSh61">
+    <property role="yApLE" value="1" />
+    <property role="TrG5h" value="myDocument2" />
+    <ref role="G9hjw" node="4pIcGABsMlJ" resolve="DocumentConfig" />
+    <node concept="m_sO0" id="t5DIOhSZvK" role="1_0VJ0">
+      <node concept="3X6T9g" id="t5DIOhSZvL" role="3Xp5NH">
+        <node concept="OjmMv" id="t5DIOhSZvM" role="3X6T9h">
+          <node concept="19SGf9" id="t5DIOhSZvN" role="OjmMu">
+            <node concept="19SUe$" id="t5DIOhSZw0" role="19SJt6" />
+            <node concept="1thXK$" id="t5DIOhSZvZ" role="19SJt6">
+              <ref role="1thXK_" node="4pIcGABsAb1" resolve="myDocument" />
+            </node>
+            <node concept="19SUe$" id="t5DIOhSZw1" role="19SJt6" />
+          </node>
+        </node>
+      </node>
+      <node concept="3X6T9g" id="t5DIOhSZw5" role="3Xp5NH">
+        <node concept="OjmMv" id="t5DIOhSZw6" role="3X6T9h">
+          <node concept="19SGf9" id="t5DIOhSZw7" role="OjmMu">
+            <node concept="19SUe$" id="t5DIOhSZw8" role="19SJt6">
+              <property role="19SUeA" value="myDocument2" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1_0VNX" id="t5DIOhSh62" role="1_0VJ0">
+      <property role="TrG5h" value="MainSec" />
+      <property role="1_0VJr" value="Chapter1" />
+      <node concept="1_0LV8" id="t5DIOhSh64" role="1_0VJ0">
+        <node concept="19SGf9" id="t5DIOhSh65" role="1_0LWR">
+          <node concept="19SUe$" id="t5DIOhSh66" role="19SJt6">
+            <property role="19SUeA" value="This is the first chapter" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1_0j5j" id="t5DIOhSh6Q" role="1DXQ57">
+      <ref role="1_0j5g" node="4pIcGABsAb1" resolve="myDocument" />
     </node>
   </node>
 </model>
