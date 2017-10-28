@@ -8525,6 +8525,12 @@
             <ref role="3bR37D" to="ffeo:2eDSGe9d1qi" resolve="jetbrains.mps.ide" />
           </node>
         </node>
+        <node concept="1SiIV0" id="6NmtaR26ot7" role="3bR37C">
+          <node concept="3bR9La" id="6NmtaR26ot8" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" to="al5i:yLGIkBgjYQ" resolve="com.mbeddr.mpsutil.toolrunner" />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2G$12M" id="7eF9rfAuFwq" role="3989C9">
