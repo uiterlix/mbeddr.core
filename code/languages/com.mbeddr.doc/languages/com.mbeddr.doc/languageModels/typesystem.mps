@@ -1246,8 +1246,8 @@
         <node concept="Xl_RD" id="t5DIOhGZmJ" role="2MkJ7o">
           <property role="Xl_RC" value="Currently only references to nodes in the same model are supported" />
         </node>
-        <node concept="1YBJjd" id="t5DIOhGZmK" role="2OEOjV">
-          <ref role="1YBMHb" node="10MSw5ZQLuR" resolve="sectRefWord" />
+        <node concept="1YBJjd" id="5J0kEUnY5sd" role="2OEOjV">
+          <ref role="1YBMHb" node="t5DIOhGZfy" resolve="docRefWord" />
         </node>
       </node>
     </node>
