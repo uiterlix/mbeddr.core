@@ -865,6 +865,20 @@
         </node>
       </node>
     </node>
+    <node concept="13i0hz" id="3ni3WiduMNJ" role="13h7CS">
+      <property role="13i0iv" value="false" />
+      <property role="13i0it" value="true" />
+      <property role="TrG5h" value="isDocumentationAllowed" />
+      <node concept="3Tm1VV" id="3ni3WiduMNK" role="1B3o_S" />
+      <node concept="10P_77" id="3ni3Widvc0o" role="3clF45" />
+      <node concept="3clFbS" id="3ni3WiduMNM" role="3clF47">
+        <node concept="3clFbF" id="3ni3Widvc1c" role="3cqZAp">
+          <node concept="3clFbT" id="3ni3Widvc1b" role="3clFbG">
+            <property role="3clFbU" value="true" />
+          </node>
+        </node>
+      </node>
+    </node>
     <node concept="13hLZK" id="3m8H$lmFM6n" role="13h7CW">
       <node concept="3clFbS" id="3m8H$lmFM6o" role="2VODD2" />
     </node>
@@ -23065,6 +23079,21 @@
     </node>
     <node concept="13hLZK" id="1S6A2cmQVtO" role="13h7CW">
       <node concept="3clFbS" id="1S6A2cmQVtP" role="2VODD2" />
+    </node>
+  </node>
+  <node concept="13h7C7" id="hoMN8EUw04">
+    <property role="3GE5qa" value="documentation" />
+    <ref role="13h7C2" to="vs0r:hoMN8ESh5l" resolve="ICannotLiveInDocModel" />
+    <node concept="13i0hz" id="hoMN8EUxzt" role="13h7CS">
+      <property role="13i0iv" value="true" />
+      <property role="13i0it" value="true" />
+      <property role="TrG5h" value="getReadableDescription" />
+      <node concept="3Tm1VV" id="hoMN8EUxzu" role="1B3o_S" />
+      <node concept="17QB3L" id="hoMN8EUz$A" role="3clF45" />
+      <node concept="3clFbS" id="hoMN8EUxzw" role="3clF47" />
+    </node>
+    <node concept="13hLZK" id="hoMN8EUw05" role="13h7CW">
+      <node concept="3clFbS" id="hoMN8EUw06" role="2VODD2" />
     </node>
   </node>
 </model>

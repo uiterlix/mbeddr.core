@@ -2,6 +2,7 @@
 <model ref="r:5f7188a9-e7b4-4a2e-bef9-38d2cf379fdc(com.mbeddr.doc.structure)">
   <persistence version="9" />
   <languages>
+    <use id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources" version="-1" />
     <devkit ref="78434eb8-b0e5-444b-850d-e7c4ad2da9ab(jetbrains.mps.devkit.aspect.structure)" />
   </languages>
   <imports>
@@ -1713,6 +1714,14 @@
     <property role="TrG5h" value="DefaultImagePath" />
     <ref role="1TJDcQ" node="5yxqZJwzC3r" resolve="PathDefinition" />
   </node>
+  <node concept="1TIwiD" id="t5DIOhO6JH">
+    <property role="EcuMT" value="524008468794862573" />
+    <property role="3GE5qa" value="paragraphs" />
+    <property role="TrG5h" value="BreadCumb" />
+    <property role="34LRSv" value="breadcumb" />
+    <property role="R4oN_" value="list with breadcrumb style" />
+    <ref role="1TJDcQ" node="4E$PniRJLTL" resolve="ItemList" />
+  </node>
   <node concept="1TIwiD" id="2T4ELtZGU8">
     <property role="EcuMT" value="52093402212126344" />
     <property role="3GE5qa" value="words" />
@@ -1727,14 +1736,6 @@
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="2TZO3DbuxwK" resolve="Document" />
     </node>
-  </node>
-  <node concept="1TIwiD" id="t5DIOhO6JH">
-    <property role="EcuMT" value="524008468794862573" />
-    <property role="3GE5qa" value="paragraphs" />
-    <property role="TrG5h" value="BreadCumb" />
-    <property role="34LRSv" value="breadcumb" />
-    <property role="R4oN_" value="list with breadcrumb style" />
-    <ref role="1TJDcQ" node="4E$PniRJLTL" resolve="ItemList" />
   </node>
 </model>
 
