@@ -29,11 +29,11 @@ task resolveMpsArtifacts() {
 
 def script_build_mbeddrAllInOne = new File(scriptsBasePath + "/com.mbeddr.allInOne/" + "build.xml")
 
-task build_all_in_one(type: BuildLanguages, dependsOn: [':build:com.mbeddr:platform:copy_allScripts', resolveMpsArtifacts]) {
+task build_all_in_one(type: de.itemis.mps.gradle.BuildLanguages, dependsOn: [':build:com.mbeddr:platform:copy_allScripts', resolveMpsArtifacts]) {
     script script_build_mbeddrAllInOne
 }
 
-task build_platform_distribution(type: BuildLanguages, dependsOn: [':build:com.mbeddr:platform:copy_allScripts', resolveMpsArtifacts]) {
+task build_platform_distribution(type: de.itemis.mps.gradle.BuildLanguages, dependsOn: [':build:com.mbeddr:platform:copy_allScripts', resolveMpsArtifacts]) {
     script scriptFile('com.mbeddr.platform/build-distribution.xml')
     // Support incremental build
     inputs.file(script)
@@ -51,11 +51,11 @@ task prepare_distribution(dependsOn: [build_all_in_one, build_platform_distribut
 def script_build_mbeddr_branding = new File(scriptsBasePath + "/com.mbeddr.rcp/" + "mps.xml")
 def script_build_mbeddrRCP = new File(scriptsBasePath + "/com.mbeddr.rcp/" + "mpsDistribution.xml")
 
-task build_mbeddr_branding(type: BuildLanguages, dependsOn: prepare_distribution) {
+task build_mbeddr_branding(type: de.itemis.mps.gradle.BuildLanguages, dependsOn: prepare_distribution) {
     script script_build_mbeddr_branding
 }
 
-task build_mbeddrRCP(type: RunMbeddrAntScript, dependsOn: build_mbeddr_branding) {
+task build_mbeddrRCP(type: de.itemis.mps.gradle.RunAntScript, dependsOn: build_mbeddr_branding) {
     script script_build_mbeddrRCP
     targets 'clean', 'assemble'
 }

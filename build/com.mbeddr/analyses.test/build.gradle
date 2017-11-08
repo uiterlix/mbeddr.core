@@ -43,14 +43,14 @@ task resolveMpsArtifacts() {
 }
 
 
-task test_mbeddr_analysis_ts(type: TestLanguages, dependsOn: [resolveMpsArtifacts, ':build:com.mbeddr:platform:copy_allScripts']) {
+task test_mbeddr_analysis_ts(type: de.itemis.mps.gradle.TestLanguages, dependsOn: [resolveMpsArtifacts, ':build:com.mbeddr:platform:copy_allScripts']) {
     script script_test_mbeddrAnalysisTs
 }
 task test_mbeddr_analysis_ex << {
     ant.makeTests(workingDirectory: rootProject.projectDir.absolutePath + "/code/languages/com.mbeddr.analyses")
 }
 
-task build_mbeddr_analysis_ex(type: BuildLanguages, dependsOn: resolveMpsArtifacts) {
+task build_mbeddr_analysis_ex(type: de.itemis.mps.gradle.BuildLanguages, dependsOn: resolveMpsArtifacts) {
     script script_test_mbeddrAnalysisEx
 }
 

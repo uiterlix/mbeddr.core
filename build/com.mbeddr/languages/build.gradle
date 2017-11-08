@@ -45,7 +45,7 @@ task resolveMpsArtifacts() {
 
 
 //move spawner into mbeddr script
-task build_spawner(type: BuildLanguages, dependsOn: ':build:com.mbeddr:platform:copy_allScripts') {
+task build_spawner(type: de.itemis.mps.gradle.BuildLanguages, dependsOn: ':build:com.mbeddr:platform:copy_allScripts') {
     script scriptFile('com.mbeddr.build/spawner.xml')
 }
 
@@ -90,7 +90,7 @@ if (ciBuild) {
     mbeddrDependencies = [copy_spawner, ':build:com.mbeddr:platform:build_platform']
 }
 
-task build_mbeddr(type: BuildLanguages, dependsOn: mbeddrDependencies) {
+task build_mbeddr(type: de.itemis.mps.gradle.BuildLanguages, dependsOn: mbeddrDependencies) {
     script script_build_mbeddr
 }
 
@@ -111,40 +111,40 @@ def script_test_mbeddrXmodelEx = new File(scriptsBasePath + "/com.mbeddr.xmodel/
 def script_build_tutorialLanguages = new File(scriptsBasePath + "/com.mbeddr.tutorial/" + "build-languages.xml")
 def script_build_tutorialSolutions = new File(scriptsBasePath + "/com.mbeddr.tutorial/" + "build-solutions.xml")
 
-task build_tutorial_languages(type: BuildLanguages, dependsOn: build_mbeddr) {
+task build_tutorial_languages(type: de.itemis.mps.gradle.BuildLanguages, dependsOn: build_mbeddr) {
     script script_build_tutorialLanguages
 }
 
-task build_tutorial_solutions(type: BuildLanguages, dependsOn: build_tutorial_languages) {
+task build_tutorial_solutions(type: de.itemis.mps.gradle.BuildLanguages, dependsOn: build_tutorial_languages) {
     script script_build_tutorialSolutions
 }
 
 task build_tutorial(dependsOn: build_tutorial_solutions) { }
 
 
-task test_mbeddr_tutorial(type: TestLanguages, dependsOn: build_tutorial) {
+task test_mbeddr_tutorial(type: de.itemis.mps.gradle.TestLanguages, dependsOn: build_tutorial) {
     script script_test_mbeddrTutorial
 }
-task test_mbeddr_ext_ts(type: TestLanguages, dependsOn: build_mbeddr) {
+task test_mbeddr_ext_ts(type: de.itemis.mps.gradle.TestLanguages, dependsOn: build_mbeddr) {
     script script_test_mbeddrExtTs
 }
-task test_mbeddr_performance(type: TestLanguages, dependsOn: build_mbeddr) {
+task test_mbeddr_performance(type: de.itemis.mps.gradle.TestLanguages, dependsOn: build_mbeddr) {
     script script_test_mbeddrPerformance
 }
 
-task test_mbeddr_debugger(type: TestLanguages, dependsOn: build_mbeddr) {
+task test_mbeddr_debugger(type: de.itemis.mps.gradle.TestLanguages, dependsOn: build_mbeddr) {
     script script_test_mbeddrDebugger
 }
 
-task build_mbeddr_core_ex(type: BuildLanguages, dependsOn: [build_mbeddr, copy_logConfig]) {
+task build_mbeddr_core_ex(type: de.itemis.mps.gradle.BuildLanguages, dependsOn: [build_mbeddr, copy_logConfig]) {
     script script_test_mbeddrCoreEx
 }
 
-task build_mbeddr_core_ex_library(type: BuildLanguages, dependsOn: build_mbeddr) {
+task build_mbeddr_core_ex_library(type: de.itemis.mps.gradle.BuildLanguages, dependsOn: build_mbeddr) {
     script script_test_mbeddrCoreExLibrary
 }
 
-task test_mbeddr_core_ts(type: TestLanguages, dependsOn: build_mbeddr) {
+task test_mbeddr_core_ts(type: de.itemis.mps.gradle.TestLanguages, dependsOn: build_mbeddr) {
     script script_test_mbeddrCoreTs
 }
 
@@ -167,21 +167,21 @@ task test_mbeddr_cc_ex << {
     ant.makeTests(workingDirectory: rootProject.projectDir.absolutePath + "/code/languages/com.mbeddr.cc")
 }
 
-task build_mbeddr_cc_ex(type: RunMbeddrAntScript, dependsOn: build_mbeddr) {
+task build_mbeddr_cc_ex(type: de.itemis.mps.gradle.RunAntScript, dependsOn: build_mbeddr) {
     script script_test_mbeddrCcEx
     targets 'clean', 'generate'
 }
 
-task test_mbeddr_cc_ts(type: TestLanguages, dependsOn: build_mbeddr) {
+task test_mbeddr_cc_ts(type: de.itemis.mps.gradle.TestLanguages, dependsOn: build_mbeddr) {
     script script_test_mbeddrCcTs
 }
 
 task test_mbeddr_cc(dependsOn: [build_mbeddr_cc_ex, test_mbeddr_cc_ex, test_mbeddr_cc_ts]) {}
 
-task build_mbeddr_ext_ex(type: BuildLanguages, dependsOn: build_mbeddr) {
+task build_mbeddr_ext_ex(type: de.itemis.mps.gradle.BuildLanguages, dependsOn: build_mbeddr) {
     script script_test_mbeddrExtEx
 }
-task build_mbeddr_xmodel_ex(type: BuildLanguages, dependsOn: build_mbeddr) {
+task build_mbeddr_xmodel_ex(type: de.itemis.mps.gradle.BuildLanguages, dependsOn: build_mbeddr) {
     script script_test_mbeddrXmodelEx
 }
 
