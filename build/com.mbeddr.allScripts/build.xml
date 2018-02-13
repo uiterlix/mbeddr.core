@@ -799,7 +799,7 @@
         <fileset file="${artifacts.mps}/lib/log4j.jar" />
         <fileset file="${artifacts.mps}/lib/jdom.jar" />
         <fileset file="${artifacts.mps}/lib/trove4j.jar" />
-        <fileset file="${artifacts.mps}/lib/ecj-4.6.2.jar" />
+        <fileset file="${artifacts.mps}/lib/ecj-4.7.2.jar" />
       </classpath>
     </javac>
     <copy todir="${build.tmp}/java/out/com.mbeddr.allScripts">
