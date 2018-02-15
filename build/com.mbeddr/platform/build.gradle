@@ -60,7 +60,10 @@ task install_sl_all_nativelibs(type: Copy, dependsOn: build_sl_all) {
 }
 */
 
-task build_platform(type: BuildLanguages, dependsOn: copy_allScripts) {
+task build_platform_slim(type: BuildLanguages, dependsOn: copy_allScripts) {
+    script scriptFile('com.mbeddr.platform-slim/build.xml')
+}
+task build_platform(type: BuildLanguages, dependsOn: build_platform_slim) {
     script scriptFile('com.mbeddr.platform/build.xml')
 }
 

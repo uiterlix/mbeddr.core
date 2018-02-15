@@ -153,7 +153,7 @@
     <node concept="m$_wf" id="1YLj_r8S1Mc" role="3989C9">
       <property role="m$_wk" value="yourplugin" />
       <node concept="m$_yC" id="1YLj_r8S1OV" role="m$_yJ">
-        <ref role="m$_y1" to="al5i:7uZw0yZ2_Jq" resolve="com.mbeddr.mpsutil" />
+        <ref role="m$_y1" to="al5i:qoOXmGrmz9" resolve="com.mbeddr.mpsutil" />
       </node>
       <node concept="m$f5U" id="1YLj_r8S5eN" role="m$_yh">
         <ref role="m$f5T" node="1YLj_r8S5ep" resolve="&lt;your solutions/languages group&gt;" />

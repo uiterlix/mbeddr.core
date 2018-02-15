@@ -443,7 +443,7 @@
         <ref role="m$_y1" to="ffeo:5CFKsRWRuFN" resolve="jetbrains.mps.debugger.api" />
       </node>
       <node concept="m$_yC" id="1yZWpD4c5BQ" role="m$_yJ">
-        <ref role="m$_y1" to="al5i:7uZw0yZ2_Jq" resolve="com.mbeddr.mpsutil" />
+        <ref role="m$_y1" to="al5i:qoOXmGrmz9" resolve="com.mbeddr.mpsutil" />
       </node>
       <node concept="m$_yC" id="2qF3eUpZqeb" role="m$_yJ">
         <ref role="m$_y1" to="90a9:2Xjt3l57cLw" resolve="de.itemis.mps.editor.math" />
@@ -531,13 +531,13 @@
         <node concept="1SiIV0" id="6RmoJr9tepZ" role="3bR37C">
           <node concept="3bR9La" id="6RmoJr9teq0" role="1SiIV1">
             <property role="3bR36h" value="false" />
-            <ref role="3bR37D" to="al5i:2bBLuwR9$cn" resolve="com.mbeddr.mpsutil.interpreter.rt" />
+            <ref role="3bR37D" to="al5i:qoOXmGrn5j" resolve="com.mbeddr.mpsutil.interpreter.rt" />
           </node>
         </node>
         <node concept="1SiIV0" id="6RmoJr9teq1" role="3bR37C">
           <node concept="3bR9La" id="6RmoJr9teq2" role="1SiIV1">
             <property role="3bR36h" value="false" />
-            <ref role="3bR37D" to="al5i:5GUwywcVavP" resolve="com.mbeddr.mpsutil.interpreter" />
+            <ref role="3bR37D" to="al5i:qoOXmGrn6y" resolve="com.mbeddr.mpsutil.interpreter" />
           </node>
         </node>
         <node concept="1SiIV0" id="7ya9dteenss" role="3bR37C">
@@ -555,19 +555,19 @@
         <node concept="1SiIV0" id="1wkAd7zLz1l" role="3bR37C">
           <node concept="3bR9La" id="1wkAd7zLz1m" role="1SiIV1">
             <property role="3bR36h" value="false" />
-            <ref role="3bR37D" to="al5i:4oNjwzxq9X5" resolve="com.mbeddr.mpsutil.compare.pattern.runtime" />
+            <ref role="3bR37D" to="al5i:qoOXmGrn1q" resolve="com.mbeddr.mpsutil.compare.pattern.runtime" />
           </node>
         </node>
         <node concept="1SiIV0" id="7tfd0TDd0e_" role="3bR37C">
           <node concept="3bR9La" id="7tfd0TDd0eA" role="1SiIV1">
             <property role="3bR36h" value="false" />
-            <ref role="3bR37D" to="al5i:4oNjwzxq1FR" resolve="com.mbeddr.mpsutil.compare.pattern" />
+            <ref role="3bR37D" to="al5i:qoOXmGrn0S" resolve="com.mbeddr.mpsutil.compare.pattern" />
           </node>
         </node>
         <node concept="1SiIV0" id="3n5vksRWbFW" role="3bR37C">
           <node concept="3bR9La" id="3n5vksRWbFX" role="1SiIV1">
             <property role="3bR36h" value="false" />
-            <ref role="3bR37D" to="al5i:2bBLuwR9LnB" resolve="com.mbeddr.mpsutil.interpreter.test" />
+            <ref role="3bR37D" to="al5i:qoOXmGrn7e" resolve="com.mbeddr.mpsutil.interpreter.test" />
           </node>
         </node>
         <node concept="1SiIV0" id="3n5vksRWbFY" role="3bR37C">
@@ -743,7 +743,7 @@
         <node concept="1SiIV0" id="420g0gVZb4f" role="3bR37C">
           <node concept="3bR9La" id="420g0gVZb4g" role="1SiIV1">
             <property role="3bR36h" value="false" />
-            <ref role="3bR37D" to="al5i:7rbvAnyGPae" resolve="com.mbeddr.mpsutil.grammarcells.runtime" />
+            <ref role="3bR37D" to="al5i:qoOXmGrnze" resolve="com.mbeddr.mpsutil.grammarcells.runtime" />
           </node>
         </node>
         <node concept="1SiIV0" id="3O7ZvCZJw_v" role="3bR37C">
@@ -753,7 +753,7 @@
           </node>
         </node>
         <node concept="3bR9La" id="4O5goBat6Av" role="3bR37C">
-          <ref role="3bR37D" to="al5i:5NpY9mnqtrM" resolve="com.mbeddr.doc.aspect.runtime" />
+          <ref role="3bR37D" to="al5i:qoOXmGrnPJ" resolve="com.mbeddr.doc.aspect.runtime" />
         </node>
         <node concept="3rtmxn" id="3xFG3bj5c3x" role="3bR31x">
           <node concept="3LXTmp" id="3xFG3bj5c3y" role="3rtmxm">
@@ -809,7 +809,7 @@
           </node>
         </node>
         <node concept="3bR9La" id="4O5goBat6zS" role="3bR37C">
-          <ref role="3bR37D" to="al5i:5NpY9mnqtrM" resolve="com.mbeddr.doc.aspect.runtime" />
+          <ref role="3bR37D" to="al5i:qoOXmGrnPJ" resolve="com.mbeddr.doc.aspect.runtime" />
         </node>
         <node concept="3rtmxn" id="3xFG3bj5c4p" role="3bR31x">
           <node concept="3LXTmp" id="3xFG3bj5c4q" role="3rtmxm">
