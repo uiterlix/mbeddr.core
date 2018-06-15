@@ -2335,7 +2335,7 @@
                 <ref role="3cqZAo" node="7lmBuXs2t87" resolve="results" />
               </node>
               <node concept="Xl_RD" id="2UdC0h0Pf3O" role="37wK5m">
-                <property role="Xl_RC" value="free argument is dynamic object" />
+                <property role="Xl_RC" value="free argument must be dynamic object" />
               </node>
             </node>
           </node>
@@ -2702,7 +2702,7 @@
             <property role="TrG5h" value="cygwinMsg" />
             <node concept="17QB3L" id="43x69gbETfe" role="1tU5fm" />
             <node concept="Xl_RD" id="43x69gbETfh" role="33vP2m">
-              <property role="Xl_RC" value="arithmetic overflow on signed type conversion in (char)return_value_getc$2" />
+              <property role="Xl_RC" value="arithmetic overflow on signed type conversion in (char)return_value_getc" />
             </node>
           </node>
         </node>
@@ -2711,7 +2711,7 @@
             <property role="TrG5h" value="linuxMsg" />
             <node concept="17QB3L" id="43x69gbETyP" role="1tU5fm" />
             <node concept="Xl_RD" id="43x69gbETyQ" role="33vP2m">
-              <property role="Xl_RC" value="arithmetic overflow on signed type conversion in (char)return_value_getchar$1" />
+              <property role="Xl_RC" value="arithmetic overflow on signed type conversion in (char)return_value_getchar" />
             </node>
           </node>
         </node>
@@ -2938,7 +2938,7 @@
             <property role="TrG5h" value="cygwinMsg0" />
             <node concept="17QB3L" id="43x69gbF6b3" role="1tU5fm" />
             <node concept="Xl_RD" id="43x69gbF6b4" role="33vP2m">
-              <property role="Xl_RC" value="arithmetic overflow on signed + in return_value_getc$2 + 1" />
+              <property role="Xl_RC" value="arithmetic overflow on signed + in return_value_getc + 1" />
             </node>
           </node>
         </node>
@@ -2947,7 +2947,7 @@
             <property role="TrG5h" value="linuxMsg0" />
             <node concept="17QB3L" id="43x69gbF6b7" role="1tU5fm" />
             <node concept="Xl_RD" id="43x69gbF6b8" role="33vP2m">
-              <property role="Xl_RC" value="arithmetic overflow on signed + in return_value_getchar$1 + 1" />
+              <property role="Xl_RC" value="arithmetic overflow on signed + in return_value_getchar + 1" />
             </node>
           </node>
         </node>
@@ -3067,7 +3067,7 @@
             <property role="TrG5h" value="cygwinMsg1" />
             <node concept="17QB3L" id="43x69gbF8$c" role="1tU5fm" />
             <node concept="Xl_RD" id="43x69gbF8$d" role="33vP2m">
-              <property role="Xl_RC" value="arithmetic overflow on signed type conversion in (char)(return_value_getc$2 + 1)" />
+              <property role="Xl_RC" value="arithmetic overflow on signed type conversion in (char)(return_value_getc + 1)" />
             </node>
           </node>
         </node>
@@ -3076,7 +3076,7 @@
             <property role="TrG5h" value="linuxMsg1" />
             <node concept="17QB3L" id="43x69gbF8$g" role="1tU5fm" />
             <node concept="Xl_RD" id="43x69gbF8$h" role="33vP2m">
-              <property role="Xl_RC" value="arithmetic overflow on signed type conversion in (char)(return_value_getchar$1 + 1)" />
+              <property role="Xl_RC" value="arithmetic overflow on signed type conversion in (char)(return_value_getchar + 1)" />
             </node>
           </node>
         </node>

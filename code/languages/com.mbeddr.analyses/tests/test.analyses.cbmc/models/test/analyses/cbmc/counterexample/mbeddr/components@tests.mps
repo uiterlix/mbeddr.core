@@ -197,6 +197,14 @@
               <ref role="ehGHo" to="v7ag:wOd6nl4Yxh" resolve="InitializeConfiguration" />
             </node>
           </node>
+          <node concept="38rIoz" id="1CYgCBvkmZ" role="38rM$J">
+            <property role="38rIoG" value="call" />
+            <property role="38rMdH" value="Comp1_comp_sp__wire" />
+          </node>
+          <node concept="38rIoz" id="1CYgCBvkr4" role="38rM$J">
+            <property role="38rIoG" value="return" />
+            <property role="38rMdH" value="Comp1_comp_sp__wire" />
+          </node>
           <node concept="38rIoz" id="8FyjeteYen" role="38rM$J">
             <property role="38rIoG" value="leave instance config" />
             <property role="38rMdH" value="comp" />
@@ -306,6 +314,14 @@
             <node concept="3Tqbb2" id="4Y$LvVOro1C" role="38rYrG">
               <ref role="ehGHo" to="v7ag:wOd6nl4Yxh" resolve="InitializeConfiguration" />
             </node>
+          </node>
+          <node concept="38rIoz" id="3JbGRaBoCwF" role="38rM$J">
+            <property role="38rIoG" value="call" />
+            <property role="38rMdH" value="*" />
+          </node>
+          <node concept="38rIoz" id="3JbGRaBoCzO" role="38rM$J">
+            <property role="38rIoG" value="return" />
+            <property role="38rMdH" value="*" />
           </node>
           <node concept="38rIoz" id="4Y$LvVOrnY7" role="38rM$J">
             <property role="38rIoG" value="leave instance config" />
@@ -482,6 +498,14 @@
               <ref role="ehGHo" to="v7ag:wOd6nl4Yxh" resolve="InitializeConfiguration" />
             </node>
           </node>
+          <node concept="38rIoz" id="3JbGRaBoXN9" role="38rM$J">
+            <property role="38rIoG" value="call" />
+            <property role="38rMdH" value="*" />
+          </node>
+          <node concept="38rIoz" id="3JbGRaBoXQa" role="38rM$J">
+            <property role="38rIoG" value="return" />
+            <property role="38rMdH" value="*" />
+          </node>
           <node concept="38rIoz" id="8FyjeteZdB" role="38rM$J">
             <property role="38rIoG" value="leave instance config" />
             <property role="38rMdH" value="comp" />
@@ -615,6 +639,22 @@
             <node concept="3Tqbb2" id="57Wj6IPetoP" role="38rYrG">
               <ref role="ehGHo" to="v7ag:wOd6nl4Yxh" resolve="InitializeConfiguration" />
             </node>
+          </node>
+          <node concept="38rIoz" id="3JbGRaBkQma" role="38rM$J">
+            <property role="38rIoG" value="call" />
+            <property role="38rMdH" value="*" />
+          </node>
+          <node concept="38rIoz" id="3JbGRaBkQpr" role="38rM$J">
+            <property role="38rIoG" value="return" />
+            <property role="38rMdH" value="*" />
+          </node>
+          <node concept="38rIoz" id="3JbGRaBkQse" role="38rM$J">
+            <property role="38rIoG" value="call" />
+            <property role="38rMdH" value="*" />
+          </node>
+          <node concept="38rIoz" id="3JbGRaBkQv3" role="38rM$J">
+            <property role="38rIoG" value="return" />
+            <property role="38rMdH" value="*" />
           </node>
           <node concept="38rIoz" id="57Wj6IPetoQ" role="38rM$J">
             <property role="38rIoG" value="leave instance config" />
@@ -757,6 +797,13 @@
               <ref role="ehGHo" to="v7ag:wOd6nl4Yxh" resolve="InitializeConfiguration" />
             </node>
           </node>
+          <node concept="38rIoz" id="3JbGRaBlfwc" role="38rM$J">
+            <property role="38rIoG" value="call" />
+            <property role="38rMdH" value="*" />
+            <node concept="3Tqbb2" id="3JbGRaBlfHL" role="38rYrG">
+              <ref role="ehGHo" to="v7ag:3TmmsQkDdU0" resolve="InstanceConfiguration" />
+            </node>
+          </node>
           <node concept="38rIoz" id="6T3uXzTfipU" role="38rM$J">
             <property role="38rIoG" value="anInternalField" />
             <property role="38rMdH" value="0" />
@@ -764,11 +811,46 @@
               <ref role="ehGHo" to="v7ag:4AGl5dzwHVj" resolve="Field" />
             </node>
           </node>
+          <node concept="38rIoz" id="3JbGRaBlfzd" role="38rM$J">
+            <property role="38rIoG" value="return" />
+            <property role="38rMdH" value="*" />
+            <node concept="3Tqbb2" id="3JbGRaBlfHA" role="38rYrG">
+              <ref role="ehGHo" to="v7ag:3TmmsQkDdU0" resolve="InstanceConfiguration" />
+            </node>
+          </node>
+          <node concept="38rIoz" id="3JbGRaBlfAg" role="38rM$J">
+            <property role="38rIoG" value="call" />
+            <property role="38rMdH" value="*" />
+            <node concept="3Tqbb2" id="3JbGRaBlfHr" role="38rYrG">
+              <ref role="ehGHo" to="v7ag:3TmmsQkDdU0" resolve="InstanceConfiguration" />
+            </node>
+          </node>
           <node concept="38rIoz" id="6T3uXzTfil7" role="38rM$J">
             <property role="38rIoG" value="anInternalField" />
             <property role="38rMdH" value="0" />
             <node concept="3Tqbb2" id="6T3uXzTfinF" role="38rYrG">
               <ref role="ehGHo" to="v7ag:4AGl5dzwHVj" resolve="Field" />
+            </node>
+          </node>
+          <node concept="38rIoz" id="3JbGRaBlfDl" role="38rM$J">
+            <property role="38rIoG" value="return" />
+            <property role="38rMdH" value="*" />
+            <node concept="3Tqbb2" id="3JbGRaBlfH8" role="38rYrG">
+              <ref role="ehGHo" to="v7ag:3TmmsQkDdU0" resolve="InstanceConfiguration" />
+            </node>
+          </node>
+          <node concept="38rIoz" id="3JbGRaBlfKX" role="38rM$J">
+            <property role="38rIoG" value="call" />
+            <property role="38rMdH" value="*" />
+            <node concept="3Tqbb2" id="3JbGRaBlfKY" role="38rYrG">
+              <ref role="ehGHo" to="v7ag:3TmmsQkDdU0" resolve="InstanceConfiguration" />
+            </node>
+          </node>
+          <node concept="38rIoz" id="3JbGRaBlfR6" role="38rM$J">
+            <property role="38rIoG" value="return" />
+            <property role="38rMdH" value="*" />
+            <node concept="3Tqbb2" id="3JbGRaBlfR7" role="38rYrG">
+              <ref role="ehGHo" to="v7ag:3TmmsQkDdU0" resolve="InstanceConfiguration" />
             </node>
           </node>
           <node concept="38rIoz" id="13FtHz69kz7" role="38rM$J">
@@ -888,6 +970,20 @@
             <property role="38rMdH" value="file_stream" />
             <node concept="3Tqbb2" id="7UyXkgB5zD7" role="38rYrG">
               <ref role="ehGHo" to="v7ag:wOd6nl4Yxh" resolve="InitializeConfiguration" />
+            </node>
+          </node>
+          <node concept="38rIoz" id="3JbGRaBl$wj" role="38rM$J">
+            <property role="38rIoG" value="call" />
+            <property role="38rMdH" value="*" />
+            <node concept="3Tqbb2" id="3JbGRaBl$zK" role="38rYrG">
+              <ref role="ehGHo" to="v7ag:3TmmsQkDdU0" resolve="InstanceConfiguration" />
+            </node>
+          </node>
+          <node concept="38rIoz" id="3JbGRaBl$$3" role="38rM$J">
+            <property role="38rIoG" value="return" />
+            <property role="38rMdH" value="*" />
+            <node concept="3Tqbb2" id="3JbGRaBl$$4" role="38rYrG">
+              <ref role="ehGHo" to="v7ag:3TmmsQkDdU0" resolve="InstanceConfiguration" />
             </node>
           </node>
           <node concept="38rIoz" id="7lmBuXrV$P8" role="38rM$J">
@@ -1063,6 +1159,20 @@
             <property role="38rMdH" value="instances" />
             <node concept="3Tqbb2" id="7lmBuXrWBeY" role="38rYrG">
               <ref role="ehGHo" to="v7ag:wOd6nl4Yxh" resolve="InitializeConfiguration" />
+            </node>
+          </node>
+          <node concept="38rIoz" id="3JbGRaBlTxM" role="38rM$J">
+            <property role="38rIoG" value="call" />
+            <property role="38rMdH" value="*" />
+            <node concept="3Tqbb2" id="3JbGRaBlTxN" role="38rYrG">
+              <ref role="ehGHo" to="v7ag:3TmmsQkDdU0" resolve="InstanceConfiguration" />
+            </node>
+          </node>
+          <node concept="38rIoz" id="3JbGRaBlT_e" role="38rM$J">
+            <property role="38rIoG" value="return" />
+            <property role="38rMdH" value="*" />
+            <node concept="3Tqbb2" id="3JbGRaBlT_f" role="38rYrG">
+              <ref role="ehGHo" to="v7ag:3TmmsQkDdU0" resolve="InstanceConfiguration" />
             </node>
           </node>
           <node concept="38rIoz" id="7lmBuXrWBf5" role="38rM$J">
