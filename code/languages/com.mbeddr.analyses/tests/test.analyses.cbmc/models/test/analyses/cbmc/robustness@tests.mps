@@ -1623,16 +1623,6 @@
           </node>
         </node>
         <node concept="3clFbH" id="1iGXuG00rwG" role="3cqZAp" />
-        <node concept="3clFbF" id="77XjP8HUuS6" role="3cqZAp">
-          <node concept="2YIFZM" id="77XjP8HUuZu" role="3clFbG">
-            <ref role="37wK5l" to="fxhk:17FqOSBEPPO" resolve="prettyPrintResults" />
-            <ref role="1Pybhc" to="fxhk:5E1$geGhDJg" resolve="TestingUtils" />
-            <node concept="37vLTw" id="77XjP8HUv0W" role="37wK5m">
-              <ref role="3cqZAo" node="1iGXuG00n7H" resolve="results" />
-            </node>
-          </node>
-        </node>
-        <node concept="3clFbH" id="77XjP8HUv2q" role="3cqZAp" />
         <node concept="3vlDli" id="1iGXuG00BQ6" role="3cqZAp">
           <node concept="2OqwBi" id="1iGXuG00CRS" role="3tpDZA">
             <node concept="37vLTw" id="1iGXuG00Cfw" role="2Oq$k0">
@@ -1658,7 +1648,7 @@
                 <ref role="3cqZAo" node="1iGXuG00n7H" resolve="results" />
               </node>
               <node concept="Xl_RD" id="5EwdfGVhEuw" role="37wK5m">
-                <property role="Xl_RC" value="division by zero in (double)1 / (0.1 - (double)x)" />
+                <property role="Xl_RC" value="division by zero in (double)1 / (0.1l - (double)x)" />
               </node>
             </node>
           </node>
@@ -1692,7 +1682,7 @@
                 <ref role="3cqZAo" node="1iGXuG00n7H" resolve="results" />
               </node>
               <node concept="Xl_RD" id="5EwdfGVhF1I" role="37wK5m">
-                <property role="Xl_RC" value="NaN on / in (double)1 / (0.1 - (double)x)" />
+                <property role="Xl_RC" value="NaN on / in (double)1 / (0.1l - (double)x)" />
               </node>
             </node>
           </node>
