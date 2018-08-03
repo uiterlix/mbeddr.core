@@ -572,6 +572,7 @@
       </concept>
       <concept id="3830958861296781575" name="com.mbeddr.core.expressions.structure.NotExpression" flags="ng" index="19$8ne" />
       <concept id="7892328519581699353" name="com.mbeddr.core.expressions.structure.VoidType" flags="ng" index="19Rifw" />
+      <concept id="3390250080473522603" name="com.mbeddr.core.expressions.structure.SignedCharType" flags="ng" index="1dkrvn" />
       <concept id="7193082937527768531" name="com.mbeddr.core.expressions.structure.DirectModuloAssignmentExpression" flags="ng" index="1g_Ic1" />
       <concept id="7193082937527768535" name="com.mbeddr.core.expressions.structure.DirectBitwiseRightShiftExpression" flags="ng" index="1g_Ic5" />
       <concept id="7193082937527768533" name="com.mbeddr.core.expressions.structure.DirectBitwiseLeftShiftAssignmentExpression" flags="ng" index="1g_Ic7" />
@@ -21379,6 +21380,16 @@
                 </node>
               </node>
             </node>
+            <node concept="1_9egQ" id="5uc9xrY2lFI" role="3XIRFZ">
+              <node concept="3pqW6w" id="5uc9xrY2mmn" role="1_9egR">
+                <node concept="3TlMh9" id="5uc9xrY2mmt" role="3TlMhJ">
+                  <property role="2hmy$m" value="128" />
+                </node>
+                <node concept="1S7827" id="5uc9xrY2lFG" role="3TlMhI">
+                  <ref role="1S7826" node="aFniQEDGoZ" resolve="aChar" />
+                </node>
+              </node>
+            </node>
             <node concept="1_9egQ" id="aFniQEDQ2s" role="3XIRFZ">
               <node concept="3pqW6w" id="aFniQEE4h4" role="1_9egR">
                 <node concept="3TlMh9" id="aFniQEE4h7" role="3TlMhJ">
@@ -21389,6 +21400,39 @@
                 </node>
                 <node concept="1S7827" id="aFniQEDQ2v" role="3TlMhI">
                   <ref role="1S7826" node="aFniQEDGoZ" resolve="aChar" />
+                </node>
+              </node>
+            </node>
+            <node concept="1_9egQ" id="5uc9xrY1$V6" role="3XIRFZ">
+              <node concept="3pqW6w" id="5uc9xrY1$V7" role="1_9egR">
+                <node concept="3TlMh9" id="5uc9xrY1$V8" role="3TlMhJ">
+                  <property role="2hmy$m" value="127" />
+                </node>
+                <node concept="1S7827" id="5uc9xrY1_JI" role="3TlMhI">
+                  <ref role="1S7826" node="5uc9xrY1uWC" resolve="anSChar" />
+                </node>
+              </node>
+            </node>
+            <node concept="1_9egQ" id="5uc9xrY2n4p" role="3XIRFZ">
+              <node concept="3pqW6w" id="5uc9xrY2nJ6" role="1_9egR">
+                <node concept="3TlMh9" id="5uc9xrY2nJc" role="3TlMhJ">
+                  <property role="2hmy$m" value="128" />
+                </node>
+                <node concept="1S7827" id="5uc9xrY2n4n" role="3TlMhI">
+                  <ref role="1S7826" node="5uc9xrY1uWC" resolve="anSChar" />
+                </node>
+              </node>
+            </node>
+            <node concept="1_9egQ" id="5uc9xrY1$V0" role="3XIRFZ">
+              <node concept="3pqW6w" id="5uc9xrY1$V1" role="1_9egR">
+                <node concept="3TlMh9" id="5uc9xrY1$V2" role="3TlMhJ">
+                  <property role="2hmy$m" value="128" />
+                  <node concept="7CXmI" id="5uc9xrY1$V3" role="lGtFl">
+                    <node concept="2DdRWr" id="5uc9xrY1$V4" role="7EUXB" />
+                  </node>
+                </node>
+                <node concept="1S7827" id="5uc9xrY1_XC" role="3TlMhI">
+                  <ref role="1S7826" node="5uc9xrY1uWC" resolve="anSChar" />
                 </node>
               </node>
             </node>
@@ -25174,6 +25218,13 @@
     <node concept="1S7NMz" id="aFniQEDGoZ" role="N3F5h">
       <property role="TrG5h" value="aChar" />
       <node concept="biTqx" id="aFniQEDXEg" role="2C2TGm">
+        <property role="2caQfQ" value="false" />
+        <property role="2c7vTL" value="false" />
+      </node>
+    </node>
+    <node concept="1S7NMz" id="5uc9xrY1uWC" role="N3F5h">
+      <property role="TrG5h" value="anSChar" />
+      <node concept="1dkrvn" id="5uc9xrY1uWA" role="2C2TGm">
         <property role="2caQfQ" value="false" />
         <property role="2c7vTL" value="false" />
       </node>
