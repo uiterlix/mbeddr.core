@@ -58,7 +58,8 @@ ext.artifacts_root = '-Dartifacts.root=' + file(rootProject.projectDir.absoluteP
 String buildVersion = '-Dbuild=' + ext.mbeddrBuildNumber
 String majorVersion = '-Dmajor.version=' + ext.mbeddrMajor
 String minorVersion = '-Dminor.version=' + ext.mbeddrMinor
-ext.mbeddr_home = ['-Dmbeddr.github.core.home=' + file(rootProject.projectDir.absolutePath).getAbsolutePath(), minorVersion, majorVersion, buildVersion]
+ext.skipUnmodifiedModels = "-Dmps.generator.skipUnmodifiedModels=true" //incremental build support
+ext.mbeddr_home = ['-Dmbeddr.github.core.home=' + file(rootProject.projectDir.absolutePath).getAbsolutePath(), minorVersion, majorVersion, buildVersion, ext.skipUnmodifiedModels]
 ext.slall_home = ['-Dsl-all.home=' + file(artifactsDir.absolutePath + '/de.itemis.mps.extensions').getAbsolutePath(), minorVersion, majorVersion, buildVersion]
 ext.dependsOnMPS_scriptArgs = [mps_home, build_dir, artifacts_root]
 ext.dependsOnMbeddr_scriptArgs = [*dependsOnMPS_scriptArgs, *mbeddr_home, *slall_home]
@@ -133,6 +134,11 @@ private static void configureRepositories(Project project) {
     }
 }
 
+task cleanMps(type: Delete) {
+    delete fileTree(dir: rootDir, include: ["**/classes_gen/**", "**/source_gen/**", "**/source_gen.caches/**", "tmp/**", "artifacts/**"])
+}
+
+clean.dependsOn cleanMps
 
 task printVersion {
     doLast {
