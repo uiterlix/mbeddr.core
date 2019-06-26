@@ -5966,10 +5966,10 @@
             </node>
           </node>
         </node>
-        <node concept="2EVzJI" id="73O5juxU7Af" role="2EVzJD">
+        <node concept="2EVzJI" id="peGedYurmx" role="2EVzJD">
           <ref role="2EVzJJ" to="ffeo:1TaHNgiIbIQ" resolve="MPS.Core" />
         </node>
-        <node concept="2EVzJI" id="73O5juxU7Ag" role="2EVzJD">
+        <node concept="2EVzJI" id="peGedYurmy" role="2EVzJD">
           <ref role="2EVzJJ" to="ffeo:2eDSGe9d1q1" resolve="MPS.Workbench" />
         </node>
       </node>
