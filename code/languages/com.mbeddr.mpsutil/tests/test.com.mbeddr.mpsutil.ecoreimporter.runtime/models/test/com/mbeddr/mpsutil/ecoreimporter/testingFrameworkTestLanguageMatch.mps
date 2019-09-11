@@ -2,7 +2,7 @@
 <model ref="r:679ddd2a-675f-4aaf-8311-c8eecf410a8f(test.com.mbeddr.mpsutil.ecoreimporter.testingFrameworkTestLanguageMatch)">
   <persistence version="9" />
   <languages>
-    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="7" />
+    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="9" />
     <use id="77948de3-6ef9-452d-b392-d01403e4086f" name="com.mbeddr.mpsutil.ecore" version="0" />
   </languages>
   <imports>
@@ -17,11 +17,14 @@
       <concept id="2995083582054930520" name="com.mbeddr.mpsutil.ecore.structure.EFloat" flags="ng" index="trrjY" />
     </language>
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
-      <concept id="1082978164219" name="jetbrains.mps.lang.structure.structure.EnumerationDataTypeDeclaration" flags="ng" index="AxPO7">
+      <concept id="6491077959632463275" name="jetbrains.mps.lang.structure.structure.EnumPropertyMigrationInfo" flags="ng" index="3l_iC">
+        <child id="6491077959632463286" name="oldProperty" index="3l_iP" />
+      </concept>
+      <concept id="1082978164219" name="jetbrains.mps.lang.structure.structure.EnumerationDataTypeDeclaration_Old" flags="ng" index="AxPO7">
         <reference id="1083171729157" name="memberDataType" index="M4eZT" />
         <child id="1083172003582" name="member" index="M5hS2" />
       </concept>
-      <concept id="1083171877298" name="jetbrains.mps.lang.structure.structure.EnumerationMemberDeclaration" flags="ig" index="M4N5e">
+      <concept id="1083171877298" name="jetbrains.mps.lang.structure.structure.EnumerationMemberDeclaration_Old" flags="ig" index="M4N5e">
         <property id="1083923523172" name="externalValue" index="1uS6qo" />
         <property id="1083923523171" name="internalValue" index="1uS6qv" />
       </concept>
@@ -131,7 +134,6 @@
     <node concept="1TJgyj" id="7CVN7FEkFWy" role="1TKVEi">
       <property role="IQ2ns" value="8807858324542504738" />
       <property role="20kJfa" value="sp2ref2" />
-      <property role="20lbJX" value="0..1" />
       <ref role="20lvS9" node="7CVN7FEkFW9" resolve="testClass1" />
     </node>
   </node>
@@ -160,7 +162,6 @@
     <node concept="1TJgyj" id="7CVN7FEkFWz" role="1TKVEi">
       <property role="IQ2ns" value="8807858324542504739" />
       <property role="20kJfa" value="newReference" />
-      <property role="20lbJX" value="0..1" />
       <ref role="20lvS9" node="7CVN7FEkFW9" resolve="testClass1" />
     </node>
   </node>
@@ -186,21 +187,33 @@
     <property role="R5$K7" value="true" />
     <property role="EcuMT" value="8807858324542504719" />
     <property role="TrG5h" value="testClass3" />
-    <node concept="1TJgyi" id="7CVN7FEkFWg" role="1TKVEl">
-      <property role="IQ2nx" value="8807858324542504720" />
+    <node concept="1TJgyi" id="4C5PONWCfCq" role="1TKVEl">
       <property role="TrG5h" value="prop1" />
-      <ref role="AX2Wp" node="7CVN7FEkFWt" resolve="enumTest" />
+      <property role="IQ2nx" value="8807858324542504720" />
+      <node concept="3l_iC" id="4C5PONWCfCr" role="lGtFl">
+        <node concept="1TJgyi" id="7CVN7FEkFWg" role="3l_iP">
+          <property role="IQ2nx" value="8807858324542504720" />
+          <property role="TrG5h" value="prop1" />
+          <ref role="AX2Wp" node="7CVN7FEkFWt" resolve="enumTest" />
+        </node>
+      </node>
     </node>
-    <node concept="1TJgyi" id="7CVN7FEkFWh" role="1TKVEl">
-      <property role="IQ2nx" value="8807858324542504721" />
+    <node concept="1TJgyi" id="4C5PONWCfCs" role="1TKVEl">
       <property role="TrG5h" value="prop2" />
-      <ref role="AX2Wp" node="7CVN7FEkFWi" resolve="enumTest2" />
+      <property role="IQ2nx" value="8807858324542504721" />
+      <node concept="3l_iC" id="4C5PONWCfCt" role="lGtFl">
+        <node concept="1TJgyi" id="7CVN7FEkFWh" role="3l_iP">
+          <property role="IQ2nx" value="8807858324542504721" />
+          <property role="TrG5h" value="prop2" />
+          <ref role="AX2Wp" node="7CVN7FEkFWi" resolve="enumTest2" />
+        </node>
+      </node>
     </node>
     <node concept="1TJgyj" id="7CVN7FEkFWx" role="1TKVEi">
       <property role="IQ2ns" value="8807858324542504737" />
       <property role="20kJfa" value="testreference3" />
-      <property role="20lbJX" value="0..n" />
-      <property role="20lmBu" value="aggregation" />
+      <property role="20lbJX" value="fLJekj5/_0__n" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
       <ref role="20lvS9" node="7CVN7FEkFWd" resolve="testClass2" />
     </node>
   </node>

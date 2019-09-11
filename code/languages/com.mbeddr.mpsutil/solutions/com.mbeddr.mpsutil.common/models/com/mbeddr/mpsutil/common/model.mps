@@ -2,6 +2,7 @@
 <model ref="r:72bc3a97-6a66-47f6-8cf2-f88ab2ada651(com.mbeddr.mpsutil.common.model)">
   <persistence version="9" />
   <languages>
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="9" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -107,11 +108,8 @@
       <concept id="1144230876926" name="jetbrains.mps.baseLanguage.structure.AbstractForStatement" flags="nn" index="1DupvO">
         <child id="1144230900587" name="variable" index="1Duv9x" />
       </concept>
-      <concept id="6329021646629104957" name="jetbrains.mps.baseLanguage.structure.TextCommentPart" flags="nn" index="3SKdUq">
-        <property id="6329021646629104958" name="text" index="3SKdUp" />
-      </concept>
       <concept id="6329021646629104954" name="jetbrains.mps.baseLanguage.structure.SingleLineComment" flags="nn" index="3SKdUt">
-        <child id="6329021646629175155" name="commentPart" index="3SKWNk" />
+        <child id="1350122676458893092" name="text" index="3ndbpf" />
       </concept>
       <concept id="1146644602865" name="jetbrains.mps.baseLanguage.structure.PublicVisibility" flags="nn" index="3Tm1VV" />
     </language>
@@ -145,6 +143,14 @@
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
+      </concept>
+    </language>
+    <language id="c7fb639f-be78-4307-89b0-b5959c3fa8c8" name="jetbrains.mps.lang.text">
+      <concept id="155656958578482948" name="jetbrains.mps.lang.text.structure.Word" flags="ng" index="3oM_SD">
+        <property id="155656958578482949" name="value" index="3oM_SC" />
+      </concept>
+      <concept id="2535923850359271782" name="jetbrains.mps.lang.text.structure.Line" flags="ng" index="1PaTwC">
+        <child id="2535923850359271783" name="elements" index="1PaTwD" />
       </concept>
     </language>
     <language id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections">
@@ -222,18 +228,177 @@
         </node>
         <node concept="3clFbH" id="sufbFKPRez" role="3cqZAp" />
         <node concept="3SKdUt" id="556AefeElA0" role="3cqZAp">
-          <node concept="3SKdUq" id="556AefeElA2" role="3SKWNk">
-            <property role="3SKdUp" value="FIXME this is qiute odd code, with not clear assumptions about module names. " />
+          <node concept="1PaTwC" id="4C5PONWAIYp" role="3ndbpf">
+            <node concept="3oM_SD" id="4C5PONWAIYq" role="1PaTwD">
+              <property role="3oM_SC" value="FIXME" />
+            </node>
+            <node concept="3oM_SD" id="4C5PONWAIYr" role="1PaTwD">
+              <property role="3oM_SC" value="this" />
+            </node>
+            <node concept="3oM_SD" id="4C5PONWAIYs" role="1PaTwD">
+              <property role="3oM_SC" value="is" />
+            </node>
+            <node concept="3oM_SD" id="4C5PONWAIYt" role="1PaTwD">
+              <property role="3oM_SC" value="qiute" />
+            </node>
+            <node concept="3oM_SD" id="4C5PONWAIYu" role="1PaTwD">
+              <property role="3oM_SC" value="odd" />
+            </node>
+            <node concept="3oM_SD" id="4C5PONWAIYv" role="1PaTwD">
+              <property role="3oM_SC" value="code," />
+            </node>
+            <node concept="3oM_SD" id="4C5PONWAIYw" role="1PaTwD">
+              <property role="3oM_SC" value="with" />
+            </node>
+            <node concept="3oM_SD" id="4C5PONWAIYx" role="1PaTwD">
+              <property role="3oM_SC" value="not" />
+            </node>
+            <node concept="3oM_SD" id="4C5PONWAIYy" role="1PaTwD">
+              <property role="3oM_SC" value="clear" />
+            </node>
+            <node concept="3oM_SD" id="4C5PONWAIYz" role="1PaTwD">
+              <property role="3oM_SC" value="assumptions" />
+            </node>
+            <node concept="3oM_SD" id="4C5PONWAIY$" role="1PaTwD">
+              <property role="3oM_SC" value="about" />
+            </node>
+            <node concept="3oM_SD" id="4C5PONWAIY_" role="1PaTwD">
+              <property role="3oM_SC" value="module" />
+            </node>
+            <node concept="3oM_SD" id="4C5PONWAIYA" role="1PaTwD">
+              <property role="3oM_SC" value="names." />
+            </node>
           </node>
         </node>
         <node concept="3SKdUt" id="556AefeEWWp" role="3cqZAp">
-          <node concept="3SKdUq" id="556AefeEWWq" role="3SKWNk">
-            <property role="3SKdUp" value="The idea seems to be to find instances declared in used languages, though it's not clear why used languages? The model is written in these languages, why" />
+          <node concept="1PaTwC" id="4C5PONWAIYB" role="3ndbpf">
+            <node concept="3oM_SD" id="4C5PONWAIYC" role="1PaTwD">
+              <property role="3oM_SC" value="The" />
+            </node>
+            <node concept="3oM_SD" id="4C5PONWAIYD" role="1PaTwD">
+              <property role="3oM_SC" value="idea" />
+            </node>
+            <node concept="3oM_SD" id="4C5PONWAIYE" role="1PaTwD">
+              <property role="3oM_SC" value="seems" />
+            </node>
+            <node concept="3oM_SD" id="4C5PONWAIYF" role="1PaTwD">
+              <property role="3oM_SC" value="to" />
+            </node>
+            <node concept="3oM_SD" id="4C5PONWAIYG" role="1PaTwD">
+              <property role="3oM_SC" value="be" />
+            </node>
+            <node concept="3oM_SD" id="4C5PONWAIYH" role="1PaTwD">
+              <property role="3oM_SC" value="to" />
+            </node>
+            <node concept="3oM_SD" id="4C5PONWAIYI" role="1PaTwD">
+              <property role="3oM_SC" value="find" />
+            </node>
+            <node concept="3oM_SD" id="4C5PONWAIYJ" role="1PaTwD">
+              <property role="3oM_SC" value="instances" />
+            </node>
+            <node concept="3oM_SD" id="4C5PONWAIYK" role="1PaTwD">
+              <property role="3oM_SC" value="declared" />
+            </node>
+            <node concept="3oM_SD" id="4C5PONWAIYL" role="1PaTwD">
+              <property role="3oM_SC" value="in" />
+            </node>
+            <node concept="3oM_SD" id="4C5PONWAIYM" role="1PaTwD">
+              <property role="3oM_SC" value="used" />
+            </node>
+            <node concept="3oM_SD" id="4C5PONWAIYN" role="1PaTwD">
+              <property role="3oM_SC" value="languages," />
+            </node>
+            <node concept="3oM_SD" id="4C5PONWAIYO" role="1PaTwD">
+              <property role="3oM_SC" value="though" />
+            </node>
+            <node concept="3oM_SD" id="4C5PONWAIYP" role="1PaTwD">
+              <property role="3oM_SC" value="it's" />
+            </node>
+            <node concept="3oM_SD" id="4C5PONWAIYQ" role="1PaTwD">
+              <property role="3oM_SC" value="not" />
+            </node>
+            <node concept="3oM_SD" id="4C5PONWAIYR" role="1PaTwD">
+              <property role="3oM_SC" value="clear" />
+            </node>
+            <node concept="3oM_SD" id="4C5PONWAIYS" role="1PaTwD">
+              <property role="3oM_SC" value="why" />
+            </node>
+            <node concept="3oM_SD" id="4C5PONWAIYT" role="1PaTwD">
+              <property role="3oM_SC" value="used" />
+            </node>
+            <node concept="3oM_SD" id="4C5PONWAIYU" role="1PaTwD">
+              <property role="3oM_SC" value="languages?" />
+            </node>
+            <node concept="3oM_SD" id="4C5PONWAIYV" role="1PaTwD">
+              <property role="3oM_SC" value="The" />
+            </node>
+            <node concept="3oM_SD" id="4C5PONWAIYW" role="1PaTwD">
+              <property role="3oM_SC" value="model" />
+            </node>
+            <node concept="3oM_SD" id="4C5PONWAIYX" role="1PaTwD">
+              <property role="3oM_SC" value="is" />
+            </node>
+            <node concept="3oM_SD" id="4C5PONWAIYY" role="1PaTwD">
+              <property role="3oM_SC" value="written" />
+            </node>
+            <node concept="3oM_SD" id="4C5PONWAIYZ" role="1PaTwD">
+              <property role="3oM_SC" value="in" />
+            </node>
+            <node concept="3oM_SD" id="4C5PONWAIZ0" role="1PaTwD">
+              <property role="3oM_SC" value="these" />
+            </node>
+            <node concept="3oM_SD" id="4C5PONWAIZ1" role="1PaTwD">
+              <property role="3oM_SC" value="languages," />
+            </node>
+            <node concept="3oM_SD" id="4C5PONWAIZ2" role="1PaTwD">
+              <property role="3oM_SC" value="why" />
+            </node>
           </node>
         </node>
         <node concept="3SKdUt" id="556AefeF0k$" role="3cqZAp">
-          <node concept="3SKdUq" id="556AefeF0kA" role="3SKWNk">
-            <property role="3SKdUp" value="do we care to find nodes declared in the source modules of these languages???" />
+          <node concept="1PaTwC" id="4C5PONWAIZ3" role="3ndbpf">
+            <node concept="3oM_SD" id="4C5PONWAIZ4" role="1PaTwD">
+              <property role="3oM_SC" value="do" />
+            </node>
+            <node concept="3oM_SD" id="4C5PONWAIZ5" role="1PaTwD">
+              <property role="3oM_SC" value="we" />
+            </node>
+            <node concept="3oM_SD" id="4C5PONWAIZ6" role="1PaTwD">
+              <property role="3oM_SC" value="care" />
+            </node>
+            <node concept="3oM_SD" id="4C5PONWAIZ7" role="1PaTwD">
+              <property role="3oM_SC" value="to" />
+            </node>
+            <node concept="3oM_SD" id="4C5PONWAIZ8" role="1PaTwD">
+              <property role="3oM_SC" value="find" />
+            </node>
+            <node concept="3oM_SD" id="4C5PONWAIZ9" role="1PaTwD">
+              <property role="3oM_SC" value="nodes" />
+            </node>
+            <node concept="3oM_SD" id="4C5PONWAIZa" role="1PaTwD">
+              <property role="3oM_SC" value="declared" />
+            </node>
+            <node concept="3oM_SD" id="4C5PONWAIZb" role="1PaTwD">
+              <property role="3oM_SC" value="in" />
+            </node>
+            <node concept="3oM_SD" id="4C5PONWAIZc" role="1PaTwD">
+              <property role="3oM_SC" value="the" />
+            </node>
+            <node concept="3oM_SD" id="4C5PONWAIZd" role="1PaTwD">
+              <property role="3oM_SC" value="source" />
+            </node>
+            <node concept="3oM_SD" id="4C5PONWAIZe" role="1PaTwD">
+              <property role="3oM_SC" value="modules" />
+            </node>
+            <node concept="3oM_SD" id="4C5PONWAIZf" role="1PaTwD">
+              <property role="3oM_SC" value="of" />
+            </node>
+            <node concept="3oM_SD" id="4C5PONWAIZg" role="1PaTwD">
+              <property role="3oM_SC" value="these" />
+            </node>
+            <node concept="3oM_SD" id="4C5PONWAIZh" role="1PaTwD">
+              <property role="3oM_SC" value="languages???" />
+            </node>
           </node>
         </node>
         <node concept="3cpWs8" id="556AefeDW8a" role="3cqZAp">
@@ -519,8 +684,49 @@
         </node>
         <node concept="3clFbH" id="5GUwywcuxLY" role="3cqZAp" />
         <node concept="3SKdUt" id="556AefeDoSo" role="3cqZAp">
-          <node concept="3SKdUq" id="556AefeDoSq" role="3SKWNk">
-            <property role="3SKdUp" value="FIXME the code below doesn't make any sense, allInstances already holds instances of conceptToFind!" />
+          <node concept="1PaTwC" id="4C5PONWAIZi" role="3ndbpf">
+            <node concept="3oM_SD" id="4C5PONWAIZj" role="1PaTwD">
+              <property role="3oM_SC" value="FIXME" />
+            </node>
+            <node concept="3oM_SD" id="4C5PONWAIZk" role="1PaTwD">
+              <property role="3oM_SC" value="the" />
+            </node>
+            <node concept="3oM_SD" id="4C5PONWAIZl" role="1PaTwD">
+              <property role="3oM_SC" value="code" />
+            </node>
+            <node concept="3oM_SD" id="4C5PONWAIZm" role="1PaTwD">
+              <property role="3oM_SC" value="below" />
+            </node>
+            <node concept="3oM_SD" id="4C5PONWAIZn" role="1PaTwD">
+              <property role="3oM_SC" value="doesn't" />
+            </node>
+            <node concept="3oM_SD" id="4C5PONWAIZo" role="1PaTwD">
+              <property role="3oM_SC" value="make" />
+            </node>
+            <node concept="3oM_SD" id="4C5PONWAIZp" role="1PaTwD">
+              <property role="3oM_SC" value="any" />
+            </node>
+            <node concept="3oM_SD" id="4C5PONWAIZq" role="1PaTwD">
+              <property role="3oM_SC" value="sense," />
+            </node>
+            <node concept="3oM_SD" id="4C5PONWAIZr" role="1PaTwD">
+              <property role="3oM_SC" value="allInstances" />
+            </node>
+            <node concept="3oM_SD" id="4C5PONWAIZs" role="1PaTwD">
+              <property role="3oM_SC" value="already" />
+            </node>
+            <node concept="3oM_SD" id="4C5PONWAIZt" role="1PaTwD">
+              <property role="3oM_SC" value="holds" />
+            </node>
+            <node concept="3oM_SD" id="4C5PONWAIZu" role="1PaTwD">
+              <property role="3oM_SC" value="instances" />
+            </node>
+            <node concept="3oM_SD" id="4C5PONWAIZv" role="1PaTwD">
+              <property role="3oM_SC" value="of" />
+            </node>
+            <node concept="3oM_SD" id="4C5PONWAIZw" role="1PaTwD">
+              <property role="3oM_SC" value="conceptToFind!" />
+            </node>
           </node>
         </node>
         <node concept="2Gpval" id="7jJIR9dW2gY" role="3cqZAp">

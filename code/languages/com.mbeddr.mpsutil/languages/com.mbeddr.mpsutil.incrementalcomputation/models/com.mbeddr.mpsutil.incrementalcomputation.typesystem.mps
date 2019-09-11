@@ -2,6 +2,7 @@
 <model ref="r:b06ab24e-f77a-45c1-9fed-8a804a08a889(com.mbeddr.mpsutil.incrementalcomputation.typesystem)">
   <persistence version="9" />
   <languages>
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="9" />
     <devkit ref="00000000-0000-4000-0000-1de82b3a4936(jetbrains.mps.devkit.aspect.typesystem)" />
   </languages>
   <imports>
@@ -52,11 +53,8 @@
         <child id="1081773367579" name="rightExpression" index="3uHU7w" />
         <child id="1081773367580" name="leftExpression" index="3uHU7B" />
       </concept>
-      <concept id="6329021646629104957" name="jetbrains.mps.baseLanguage.structure.TextCommentPart" flags="nn" index="3SKdUq">
-        <property id="6329021646629104958" name="text" index="3SKdUp" />
-      </concept>
       <concept id="6329021646629104954" name="jetbrains.mps.baseLanguage.structure.SingleLineComment" flags="nn" index="3SKdUt">
-        <child id="6329021646629175155" name="commentPart" index="3SKWNk" />
+        <child id="1350122676458893092" name="text" index="3ndbpf" />
       </concept>
     </language>
     <language id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures">
@@ -94,6 +92,14 @@
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
     </language>
+    <language id="c7fb639f-be78-4307-89b0-b5959c3fa8c8" name="jetbrains.mps.lang.text">
+      <concept id="155656958578482948" name="jetbrains.mps.lang.text.structure.Word" flags="ng" index="3oM_SD">
+        <property id="155656958578482949" name="value" index="3oM_SC" />
+      </concept>
+      <concept id="2535923850359271782" name="jetbrains.mps.lang.text.structure.Line" flags="ng" index="1PaTwC">
+        <child id="2535923850359271783" name="elements" index="1PaTwD" />
+      </concept>
+    </language>
     <language id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections">
       <concept id="1204796164442" name="jetbrains.mps.baseLanguage.collections.structure.InternalSequenceOperation" flags="nn" index="23sCx2">
         <child id="1204796294226" name="closure" index="23t8la" />
@@ -106,8 +112,70 @@
     <property role="TrG5h" value="check_IncrementallyComputed" />
     <node concept="3clFbS" id="5YITc37Q9oM" role="18ibNy">
       <node concept="3SKdUt" id="6QoXIYUbSUF" role="3cqZAp">
-        <node concept="3SKdUq" id="6QoXIYUbSUH" role="3SKWNk">
-          <property role="3SKdUp" value="TODO: this check is not triggered reliably... it works in the SecurityAnalyst project, but not in the example for this framework..." />
+        <node concept="1PaTwC" id="4C5PONWAICE" role="3ndbpf">
+          <node concept="3oM_SD" id="4C5PONWAICF" role="1PaTwD">
+            <property role="3oM_SC" value="TODO:" />
+          </node>
+          <node concept="3oM_SD" id="4C5PONWAICG" role="1PaTwD">
+            <property role="3oM_SC" value="this" />
+          </node>
+          <node concept="3oM_SD" id="4C5PONWAICH" role="1PaTwD">
+            <property role="3oM_SC" value="check" />
+          </node>
+          <node concept="3oM_SD" id="4C5PONWAICI" role="1PaTwD">
+            <property role="3oM_SC" value="is" />
+          </node>
+          <node concept="3oM_SD" id="4C5PONWAICJ" role="1PaTwD">
+            <property role="3oM_SC" value="not" />
+          </node>
+          <node concept="3oM_SD" id="4C5PONWAICK" role="1PaTwD">
+            <property role="3oM_SC" value="triggered" />
+          </node>
+          <node concept="3oM_SD" id="4C5PONWAICL" role="1PaTwD">
+            <property role="3oM_SC" value="reliably..." />
+          </node>
+          <node concept="3oM_SD" id="4C5PONWAICM" role="1PaTwD">
+            <property role="3oM_SC" value="it" />
+          </node>
+          <node concept="3oM_SD" id="4C5PONWAICN" role="1PaTwD">
+            <property role="3oM_SC" value="works" />
+          </node>
+          <node concept="3oM_SD" id="4C5PONWAICO" role="1PaTwD">
+            <property role="3oM_SC" value="in" />
+          </node>
+          <node concept="3oM_SD" id="4C5PONWAICP" role="1PaTwD">
+            <property role="3oM_SC" value="the" />
+          </node>
+          <node concept="3oM_SD" id="4C5PONWAICQ" role="1PaTwD">
+            <property role="3oM_SC" value="SecurityAnalyst" />
+          </node>
+          <node concept="3oM_SD" id="4C5PONWAICR" role="1PaTwD">
+            <property role="3oM_SC" value="project," />
+          </node>
+          <node concept="3oM_SD" id="4C5PONWAICS" role="1PaTwD">
+            <property role="3oM_SC" value="but" />
+          </node>
+          <node concept="3oM_SD" id="4C5PONWAICT" role="1PaTwD">
+            <property role="3oM_SC" value="not" />
+          </node>
+          <node concept="3oM_SD" id="4C5PONWAICU" role="1PaTwD">
+            <property role="3oM_SC" value="in" />
+          </node>
+          <node concept="3oM_SD" id="4C5PONWAICV" role="1PaTwD">
+            <property role="3oM_SC" value="the" />
+          </node>
+          <node concept="3oM_SD" id="4C5PONWAICW" role="1PaTwD">
+            <property role="3oM_SC" value="example" />
+          </node>
+          <node concept="3oM_SD" id="4C5PONWAICX" role="1PaTwD">
+            <property role="3oM_SC" value="for" />
+          </node>
+          <node concept="3oM_SD" id="4C5PONWAICY" role="1PaTwD">
+            <property role="3oM_SC" value="this" />
+          </node>
+          <node concept="3oM_SD" id="4C5PONWAICZ" role="1PaTwD">
+            <property role="3oM_SC" value="framework..." />
+          </node>
         </node>
       </node>
       <node concept="3clFbF" id="6QoXIYUbHy0" role="3cqZAp">

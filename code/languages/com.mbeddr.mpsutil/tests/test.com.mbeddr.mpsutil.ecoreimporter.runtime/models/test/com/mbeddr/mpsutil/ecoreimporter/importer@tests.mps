@@ -2,10 +2,11 @@
 <model ref="r:351de29e-9de8-474a-88fe-d4df89596905(test.com.mbeddr.mpsutil.ecoreimporter.importer@tests)">
   <persistence version="9" />
   <languages>
-    <use id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test" version="2" />
+    <use id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test" version="5" />
     <use id="f61473f9-130f-42f6-b98d-6c438812c2f6" name="jetbrains.mps.baseLanguage.unitTest" version="1" />
     <use id="d08b2078-ada5-40fa-a3c5-d721088dc626" name="com.mbeddr.mpsutil.ecore.testing" version="0" />
     <use id="d3a0fd26-445a-466c-900e-10444ddfed52" name="com.mbeddr.mpsutil.filepicker" version="0" />
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="9" />
   </languages>
   <imports />
   <registry>
@@ -27,11 +28,8 @@
         <child id="1068581517665" name="statement" index="3cqZAp" />
       </concept>
       <concept id="1068581517677" name="jetbrains.mps.baseLanguage.structure.VoidType" flags="in" index="3cqZAl" />
-      <concept id="6329021646629104957" name="jetbrains.mps.baseLanguage.structure.TextCommentPart" flags="nn" index="3SKdUq">
-        <property id="6329021646629104958" name="text" index="3SKdUp" />
-      </concept>
       <concept id="6329021646629104954" name="jetbrains.mps.baseLanguage.structure.SingleLineComment" flags="nn" index="3SKdUt">
-        <child id="6329021646629175155" name="commentPart" index="3SKWNk" />
+        <child id="1350122676458893092" name="text" index="3ndbpf" />
       </concept>
     </language>
     <language id="d3a0fd26-445a-466c-900e-10444ddfed52" name="com.mbeddr.mpsutil.filepicker">
@@ -59,6 +57,14 @@
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
     </language>
+    <language id="c7fb639f-be78-4307-89b0-b5959c3fa8c8" name="jetbrains.mps.lang.text">
+      <concept id="155656958578482948" name="jetbrains.mps.lang.text.structure.Word" flags="ng" index="3oM_SD">
+        <property id="155656958578482949" name="value" index="3oM_SC" />
+      </concept>
+      <concept id="2535923850359271782" name="jetbrains.mps.lang.text.structure.Line" flags="ng" index="1PaTwC">
+        <child id="2535923850359271783" name="elements" index="1PaTwD" />
+      </concept>
+    </language>
   </registry>
   <node concept="1lH9Xt" id="7FLq2$J$EAD">
     <property role="TrG5h" value="AllInOneTest" />
@@ -67,8 +73,64 @@
       <node concept="3cqZAl" id="7FLq2$J$EAF" role="3clF45" />
       <node concept="3clFbS" id="7FLq2$J$EAG" role="3clF47">
         <node concept="3SKdUt" id="7FLq2$J$GtH" role="3cqZAp">
-          <node concept="3SKdUq" id="7FLq2$J$GtJ" role="3SKWNk">
-            <property role="3SKdUp" value="Class with multiple varying properties, which inherits multiple classes , implements multiple interfaces and refers to multiple other classes" />
+          <node concept="1PaTwC" id="4C5PONWAJDS" role="3ndbpf">
+            <node concept="3oM_SD" id="4C5PONWAJDT" role="1PaTwD">
+              <property role="3oM_SC" value="Class" />
+            </node>
+            <node concept="3oM_SD" id="4C5PONWAJDU" role="1PaTwD">
+              <property role="3oM_SC" value="with" />
+            </node>
+            <node concept="3oM_SD" id="4C5PONWAJDV" role="1PaTwD">
+              <property role="3oM_SC" value="multiple" />
+            </node>
+            <node concept="3oM_SD" id="4C5PONWAJDW" role="1PaTwD">
+              <property role="3oM_SC" value="varying" />
+            </node>
+            <node concept="3oM_SD" id="4C5PONWAJDX" role="1PaTwD">
+              <property role="3oM_SC" value="properties," />
+            </node>
+            <node concept="3oM_SD" id="4C5PONWAJDY" role="1PaTwD">
+              <property role="3oM_SC" value="which" />
+            </node>
+            <node concept="3oM_SD" id="4C5PONWAJDZ" role="1PaTwD">
+              <property role="3oM_SC" value="inherits" />
+            </node>
+            <node concept="3oM_SD" id="4C5PONWAJE0" role="1PaTwD">
+              <property role="3oM_SC" value="multiple" />
+            </node>
+            <node concept="3oM_SD" id="4C5PONWAJE1" role="1PaTwD">
+              <property role="3oM_SC" value="classes" />
+            </node>
+            <node concept="3oM_SD" id="4C5PONWAJE2" role="1PaTwD">
+              <property role="3oM_SC" value="," />
+            </node>
+            <node concept="3oM_SD" id="4C5PONWAJE3" role="1PaTwD">
+              <property role="3oM_SC" value="implements" />
+            </node>
+            <node concept="3oM_SD" id="4C5PONWAJE4" role="1PaTwD">
+              <property role="3oM_SC" value="multiple" />
+            </node>
+            <node concept="3oM_SD" id="4C5PONWAJE5" role="1PaTwD">
+              <property role="3oM_SC" value="interfaces" />
+            </node>
+            <node concept="3oM_SD" id="4C5PONWAJE6" role="1PaTwD">
+              <property role="3oM_SC" value="and" />
+            </node>
+            <node concept="3oM_SD" id="4C5PONWAJE7" role="1PaTwD">
+              <property role="3oM_SC" value="refers" />
+            </node>
+            <node concept="3oM_SD" id="4C5PONWAJE8" role="1PaTwD">
+              <property role="3oM_SC" value="to" />
+            </node>
+            <node concept="3oM_SD" id="4C5PONWAJE9" role="1PaTwD">
+              <property role="3oM_SC" value="multiple" />
+            </node>
+            <node concept="3oM_SD" id="4C5PONWAJEa" role="1PaTwD">
+              <property role="3oM_SC" value="other" />
+            </node>
+            <node concept="3oM_SD" id="4C5PONWAJEb" role="1PaTwD">
+              <property role="3oM_SC" value="classes" />
+            </node>
           </node>
         </node>
         <node concept="1uQa1g" id="7FLq2$J$EAH" role="3cqZAp">
@@ -92,8 +154,55 @@
       <node concept="3cqZAl" id="7FLq2$J$_PR" role="3clF45" />
       <node concept="3clFbS" id="7FLq2$J$_PS" role="3clF47">
         <node concept="3SKdUt" id="7FLq2$J$Gvf" role="3cqZAp">
-          <node concept="3SKdUq" id="7FLq2$J$Gvh" role="3SKWNk">
-            <property role="3SKdUp" value="Simple class implementing an interface , having a property of a type of an existing enum" />
+          <node concept="1PaTwC" id="4C5PONWAJEc" role="3ndbpf">
+            <node concept="3oM_SD" id="4C5PONWAJEd" role="1PaTwD">
+              <property role="3oM_SC" value="Simple" />
+            </node>
+            <node concept="3oM_SD" id="4C5PONWAJEe" role="1PaTwD">
+              <property role="3oM_SC" value="class" />
+            </node>
+            <node concept="3oM_SD" id="4C5PONWAJEf" role="1PaTwD">
+              <property role="3oM_SC" value="implementing" />
+            </node>
+            <node concept="3oM_SD" id="4C5PONWAJEg" role="1PaTwD">
+              <property role="3oM_SC" value="an" />
+            </node>
+            <node concept="3oM_SD" id="4C5PONWAJEh" role="1PaTwD">
+              <property role="3oM_SC" value="interface" />
+            </node>
+            <node concept="3oM_SD" id="4C5PONWAJEi" role="1PaTwD">
+              <property role="3oM_SC" value="," />
+            </node>
+            <node concept="3oM_SD" id="4C5PONWAJEj" role="1PaTwD">
+              <property role="3oM_SC" value="having" />
+            </node>
+            <node concept="3oM_SD" id="4C5PONWAJEk" role="1PaTwD">
+              <property role="3oM_SC" value="a" />
+            </node>
+            <node concept="3oM_SD" id="4C5PONWAJEl" role="1PaTwD">
+              <property role="3oM_SC" value="property" />
+            </node>
+            <node concept="3oM_SD" id="4C5PONWAJEm" role="1PaTwD">
+              <property role="3oM_SC" value="of" />
+            </node>
+            <node concept="3oM_SD" id="4C5PONWAJEn" role="1PaTwD">
+              <property role="3oM_SC" value="a" />
+            </node>
+            <node concept="3oM_SD" id="4C5PONWAJEo" role="1PaTwD">
+              <property role="3oM_SC" value="type" />
+            </node>
+            <node concept="3oM_SD" id="4C5PONWAJEp" role="1PaTwD">
+              <property role="3oM_SC" value="of" />
+            </node>
+            <node concept="3oM_SD" id="4C5PONWAJEq" role="1PaTwD">
+              <property role="3oM_SC" value="an" />
+            </node>
+            <node concept="3oM_SD" id="4C5PONWAJEr" role="1PaTwD">
+              <property role="3oM_SC" value="existing" />
+            </node>
+            <node concept="3oM_SD" id="4C5PONWAJEs" role="1PaTwD">
+              <property role="3oM_SC" value="enum" />
+            </node>
           </node>
         </node>
         <node concept="1uQa1g" id="7FLq2$J$_PT" role="3cqZAp">
@@ -114,8 +223,34 @@
       <node concept="3cqZAl" id="7FLq2$J$A9A" role="3clF45" />
       <node concept="3clFbS" id="7FLq2$J$A9B" role="3clF47">
         <node concept="3SKdUt" id="7FLq2$J$Gx1" role="3cqZAp">
-          <node concept="3SKdUq" id="7FLq2$J$Gx3" role="3SKWNk">
-            <property role="3SKdUp" value="Populate enum without internal values for a simple enum" />
+          <node concept="1PaTwC" id="4C5PONWAJEt" role="3ndbpf">
+            <node concept="3oM_SD" id="4C5PONWAJEu" role="1PaTwD">
+              <property role="3oM_SC" value="Populate" />
+            </node>
+            <node concept="3oM_SD" id="4C5PONWAJEv" role="1PaTwD">
+              <property role="3oM_SC" value="enum" />
+            </node>
+            <node concept="3oM_SD" id="4C5PONWAJEw" role="1PaTwD">
+              <property role="3oM_SC" value="without" />
+            </node>
+            <node concept="3oM_SD" id="4C5PONWAJEx" role="1PaTwD">
+              <property role="3oM_SC" value="internal" />
+            </node>
+            <node concept="3oM_SD" id="4C5PONWAJEy" role="1PaTwD">
+              <property role="3oM_SC" value="values" />
+            </node>
+            <node concept="3oM_SD" id="4C5PONWAJEz" role="1PaTwD">
+              <property role="3oM_SC" value="for" />
+            </node>
+            <node concept="3oM_SD" id="4C5PONWAJE$" role="1PaTwD">
+              <property role="3oM_SC" value="a" />
+            </node>
+            <node concept="3oM_SD" id="4C5PONWAJE_" role="1PaTwD">
+              <property role="3oM_SC" value="simple" />
+            </node>
+            <node concept="3oM_SD" id="4C5PONWAJEA" role="1PaTwD">
+              <property role="3oM_SC" value="enum" />
+            </node>
           </node>
         </node>
         <node concept="1uQa1g" id="7FLq2$J$A9C" role="3cqZAp">
@@ -136,8 +271,58 @@
       <node concept="3cqZAl" id="7FLq2$J$AaE" role="3clF45" />
       <node concept="3clFbS" id="7FLq2$J$AaF" role="3clF47">
         <node concept="3SKdUt" id="7FLq2$J$GxF" role="3cqZAp">
-          <node concept="3SKdUq" id="7FLq2$J$GxH" role="3SKWNk">
-            <property role="3SKdUp" value="Simple class with a super class , having a property of a type of an existing enum" />
+          <node concept="1PaTwC" id="4C5PONWAJEB" role="3ndbpf">
+            <node concept="3oM_SD" id="4C5PONWAJEC" role="1PaTwD">
+              <property role="3oM_SC" value="Simple" />
+            </node>
+            <node concept="3oM_SD" id="4C5PONWAJED" role="1PaTwD">
+              <property role="3oM_SC" value="class" />
+            </node>
+            <node concept="3oM_SD" id="4C5PONWAJEE" role="1PaTwD">
+              <property role="3oM_SC" value="with" />
+            </node>
+            <node concept="3oM_SD" id="4C5PONWAJEF" role="1PaTwD">
+              <property role="3oM_SC" value="a" />
+            </node>
+            <node concept="3oM_SD" id="4C5PONWAJEG" role="1PaTwD">
+              <property role="3oM_SC" value="super" />
+            </node>
+            <node concept="3oM_SD" id="4C5PONWAJEH" role="1PaTwD">
+              <property role="3oM_SC" value="class" />
+            </node>
+            <node concept="3oM_SD" id="4C5PONWAJEI" role="1PaTwD">
+              <property role="3oM_SC" value="," />
+            </node>
+            <node concept="3oM_SD" id="4C5PONWAJEJ" role="1PaTwD">
+              <property role="3oM_SC" value="having" />
+            </node>
+            <node concept="3oM_SD" id="4C5PONWAJEK" role="1PaTwD">
+              <property role="3oM_SC" value="a" />
+            </node>
+            <node concept="3oM_SD" id="4C5PONWAJEL" role="1PaTwD">
+              <property role="3oM_SC" value="property" />
+            </node>
+            <node concept="3oM_SD" id="4C5PONWAJEM" role="1PaTwD">
+              <property role="3oM_SC" value="of" />
+            </node>
+            <node concept="3oM_SD" id="4C5PONWAJEN" role="1PaTwD">
+              <property role="3oM_SC" value="a" />
+            </node>
+            <node concept="3oM_SD" id="4C5PONWAJEO" role="1PaTwD">
+              <property role="3oM_SC" value="type" />
+            </node>
+            <node concept="3oM_SD" id="4C5PONWAJEP" role="1PaTwD">
+              <property role="3oM_SC" value="of" />
+            </node>
+            <node concept="3oM_SD" id="4C5PONWAJEQ" role="1PaTwD">
+              <property role="3oM_SC" value="an" />
+            </node>
+            <node concept="3oM_SD" id="4C5PONWAJER" role="1PaTwD">
+              <property role="3oM_SC" value="existing" />
+            </node>
+            <node concept="3oM_SD" id="4C5PONWAJES" role="1PaTwD">
+              <property role="3oM_SC" value="enum" />
+            </node>
           </node>
         </node>
         <node concept="1uQa1g" id="7FLq2$J$AaG" role="3cqZAp">
@@ -158,8 +343,37 @@
       <node concept="3cqZAl" id="7FLq2$J$AbI" role="3clF45" />
       <node concept="3clFbS" id="7FLq2$J$AbJ" role="3clF47">
         <node concept="3SKdUt" id="7FLq2$J$Gyl" role="3cqZAp">
-          <node concept="3SKdUq" id="7FLq2$J$Gyn" role="3SKWNk">
-            <property role="3SKdUp" value="Simple class with one property of an existing enum type" />
+          <node concept="1PaTwC" id="4C5PONWAJET" role="3ndbpf">
+            <node concept="3oM_SD" id="4C5PONWAJEU" role="1PaTwD">
+              <property role="3oM_SC" value="Simple" />
+            </node>
+            <node concept="3oM_SD" id="4C5PONWAJEV" role="1PaTwD">
+              <property role="3oM_SC" value="class" />
+            </node>
+            <node concept="3oM_SD" id="4C5PONWAJEW" role="1PaTwD">
+              <property role="3oM_SC" value="with" />
+            </node>
+            <node concept="3oM_SD" id="4C5PONWAJEX" role="1PaTwD">
+              <property role="3oM_SC" value="one" />
+            </node>
+            <node concept="3oM_SD" id="4C5PONWAJEY" role="1PaTwD">
+              <property role="3oM_SC" value="property" />
+            </node>
+            <node concept="3oM_SD" id="4C5PONWAJEZ" role="1PaTwD">
+              <property role="3oM_SC" value="of" />
+            </node>
+            <node concept="3oM_SD" id="4C5PONWAJF0" role="1PaTwD">
+              <property role="3oM_SC" value="an" />
+            </node>
+            <node concept="3oM_SD" id="4C5PONWAJF1" role="1PaTwD">
+              <property role="3oM_SC" value="existing" />
+            </node>
+            <node concept="3oM_SD" id="4C5PONWAJF2" role="1PaTwD">
+              <property role="3oM_SC" value="enum" />
+            </node>
+            <node concept="3oM_SD" id="4C5PONWAJF3" role="1PaTwD">
+              <property role="3oM_SC" value="type" />
+            </node>
           </node>
         </node>
         <node concept="1uQa1g" id="7FLq2$J$AbK" role="3cqZAp">
@@ -180,8 +394,40 @@
       <node concept="3cqZAl" id="7FLq2$J$ARm" role="3clF45" />
       <node concept="3clFbS" id="7FLq2$J$ARn" role="3clF47">
         <node concept="3SKdUt" id="7FLq2$J$Gzn" role="3cqZAp">
-          <node concept="3SKdUq" id="7FLq2$J$Gzp" role="3SKWNk">
-            <property role="3SKdUp" value="Simple class with 4 properties (2 primitive types, 2 enum types)" />
+          <node concept="1PaTwC" id="4C5PONWAJF4" role="3ndbpf">
+            <node concept="3oM_SD" id="4C5PONWAJF5" role="1PaTwD">
+              <property role="3oM_SC" value="Simple" />
+            </node>
+            <node concept="3oM_SD" id="4C5PONWAJF6" role="1PaTwD">
+              <property role="3oM_SC" value="class" />
+            </node>
+            <node concept="3oM_SD" id="4C5PONWAJF7" role="1PaTwD">
+              <property role="3oM_SC" value="with" />
+            </node>
+            <node concept="3oM_SD" id="4C5PONWAJF8" role="1PaTwD">
+              <property role="3oM_SC" value="4" />
+            </node>
+            <node concept="3oM_SD" id="4C5PONWAJF9" role="1PaTwD">
+              <property role="3oM_SC" value="properties" />
+            </node>
+            <node concept="3oM_SD" id="4C5PONWAJFa" role="1PaTwD">
+              <property role="3oM_SC" value="(2" />
+            </node>
+            <node concept="3oM_SD" id="4C5PONWAJFb" role="1PaTwD">
+              <property role="3oM_SC" value="primitive" />
+            </node>
+            <node concept="3oM_SD" id="4C5PONWAJFc" role="1PaTwD">
+              <property role="3oM_SC" value="types," />
+            </node>
+            <node concept="3oM_SD" id="4C5PONWAJFd" role="1PaTwD">
+              <property role="3oM_SC" value="2" />
+            </node>
+            <node concept="3oM_SD" id="4C5PONWAJFe" role="1PaTwD">
+              <property role="3oM_SC" value="enum" />
+            </node>
+            <node concept="3oM_SD" id="4C5PONWAJFf" role="1PaTwD">
+              <property role="3oM_SC" value="types)" />
+            </node>
           </node>
         </node>
         <node concept="1uQa1g" id="7FLq2$J$ARo" role="3cqZAp">
@@ -202,8 +448,22 @@
       <node concept="3cqZAl" id="7FLq2$J$ASM" role="3clF45" />
       <node concept="3clFbS" id="7FLq2$J$ASN" role="3clF47">
         <node concept="3SKdUt" id="7FLq2$J$G$1" role="3cqZAp">
-          <node concept="3SKdUq" id="7FLq2$J$G$3" role="3SKWNk">
-            <property role="3SKdUp" value="Simple Enum with 3 values" />
+          <node concept="1PaTwC" id="4C5PONWAJFg" role="3ndbpf">
+            <node concept="3oM_SD" id="4C5PONWAJFh" role="1PaTwD">
+              <property role="3oM_SC" value="Simple" />
+            </node>
+            <node concept="3oM_SD" id="4C5PONWAJFi" role="1PaTwD">
+              <property role="3oM_SC" value="Enum" />
+            </node>
+            <node concept="3oM_SD" id="4C5PONWAJFj" role="1PaTwD">
+              <property role="3oM_SC" value="with" />
+            </node>
+            <node concept="3oM_SD" id="4C5PONWAJFk" role="1PaTwD">
+              <property role="3oM_SC" value="3" />
+            </node>
+            <node concept="3oM_SD" id="4C5PONWAJFl" role="1PaTwD">
+              <property role="3oM_SC" value="values" />
+            </node>
           </node>
         </node>
         <node concept="1uQa1g" id="7FLq2$J$ASO" role="3cqZAp">
@@ -227,8 +487,28 @@
       <node concept="3cqZAl" id="7FLq2$J$Brs" role="3clF45" />
       <node concept="3clFbS" id="7FLq2$J$Brt" role="3clF47">
         <node concept="3SKdUt" id="7FLq2$J$G_N" role="3cqZAp">
-          <node concept="3SKdUq" id="7FLq2$J$G_P" role="3SKWNk">
-            <property role="3SKdUp" value="Simple class which implements a simple interface" />
+          <node concept="1PaTwC" id="4C5PONWAJFm" role="3ndbpf">
+            <node concept="3oM_SD" id="4C5PONWAJFn" role="1PaTwD">
+              <property role="3oM_SC" value="Simple" />
+            </node>
+            <node concept="3oM_SD" id="4C5PONWAJFo" role="1PaTwD">
+              <property role="3oM_SC" value="class" />
+            </node>
+            <node concept="3oM_SD" id="4C5PONWAJFp" role="1PaTwD">
+              <property role="3oM_SC" value="which" />
+            </node>
+            <node concept="3oM_SD" id="4C5PONWAJFq" role="1PaTwD">
+              <property role="3oM_SC" value="implements" />
+            </node>
+            <node concept="3oM_SD" id="4C5PONWAJFr" role="1PaTwD">
+              <property role="3oM_SC" value="a" />
+            </node>
+            <node concept="3oM_SD" id="4C5PONWAJFs" role="1PaTwD">
+              <property role="3oM_SC" value="simple" />
+            </node>
+            <node concept="3oM_SD" id="4C5PONWAJFt" role="1PaTwD">
+              <property role="3oM_SC" value="interface" />
+            </node>
           </node>
         </node>
         <node concept="1uQa1g" id="7FLq2$J$Bru" role="3cqZAp">
@@ -249,8 +529,25 @@
       <node concept="3cqZAl" id="7FLq2$J$Bry" role="3clF45" />
       <node concept="3clFbS" id="7FLq2$J$Brz" role="3clF47">
         <node concept="3SKdUt" id="7FLq2$J$GAt" role="3cqZAp">
-          <node concept="3SKdUq" id="7FLq2$J$GAv" role="3SKWNk">
-            <property role="3SKdUp" value="Simple class which implements 3 interfaces" />
+          <node concept="1PaTwC" id="4C5PONWAJFu" role="3ndbpf">
+            <node concept="3oM_SD" id="4C5PONWAJFv" role="1PaTwD">
+              <property role="3oM_SC" value="Simple" />
+            </node>
+            <node concept="3oM_SD" id="4C5PONWAJFw" role="1PaTwD">
+              <property role="3oM_SC" value="class" />
+            </node>
+            <node concept="3oM_SD" id="4C5PONWAJFx" role="1PaTwD">
+              <property role="3oM_SC" value="which" />
+            </node>
+            <node concept="3oM_SD" id="4C5PONWAJFy" role="1PaTwD">
+              <property role="3oM_SC" value="implements" />
+            </node>
+            <node concept="3oM_SD" id="4C5PONWAJFz" role="1PaTwD">
+              <property role="3oM_SC" value="3" />
+            </node>
+            <node concept="3oM_SD" id="4C5PONWAJF$" role="1PaTwD">
+              <property role="3oM_SC" value="interfaces" />
+            </node>
           </node>
         </node>
         <node concept="1uQa1g" id="7FLq2$J$Br$" role="3cqZAp">
@@ -271,8 +568,34 @@
       <node concept="3cqZAl" id="7FLq2$J$BrC" role="3clF45" />
       <node concept="3clFbS" id="7FLq2$J$BrD" role="3clF47">
         <node concept="3SKdUt" id="7FLq2$J$GB7" role="3cqZAp">
-          <node concept="3SKdUq" id="7FLq2$J$GB9" role="3SKWNk">
-            <property role="3SKdUp" value="Simple class which extends one superclass and 3 interfaces" />
+          <node concept="1PaTwC" id="4C5PONWAJF_" role="3ndbpf">
+            <node concept="3oM_SD" id="4C5PONWAJFA" role="1PaTwD">
+              <property role="3oM_SC" value="Simple" />
+            </node>
+            <node concept="3oM_SD" id="4C5PONWAJFB" role="1PaTwD">
+              <property role="3oM_SC" value="class" />
+            </node>
+            <node concept="3oM_SD" id="4C5PONWAJFC" role="1PaTwD">
+              <property role="3oM_SC" value="which" />
+            </node>
+            <node concept="3oM_SD" id="4C5PONWAJFD" role="1PaTwD">
+              <property role="3oM_SC" value="extends" />
+            </node>
+            <node concept="3oM_SD" id="4C5PONWAJFE" role="1PaTwD">
+              <property role="3oM_SC" value="one" />
+            </node>
+            <node concept="3oM_SD" id="4C5PONWAJFF" role="1PaTwD">
+              <property role="3oM_SC" value="superclass" />
+            </node>
+            <node concept="3oM_SD" id="4C5PONWAJFG" role="1PaTwD">
+              <property role="3oM_SC" value="and" />
+            </node>
+            <node concept="3oM_SD" id="4C5PONWAJFH" role="1PaTwD">
+              <property role="3oM_SC" value="3" />
+            </node>
+            <node concept="3oM_SD" id="4C5PONWAJFI" role="1PaTwD">
+              <property role="3oM_SC" value="interfaces" />
+            </node>
           </node>
         </node>
         <node concept="1uQa1g" id="7FLq2$J$BrE" role="3cqZAp">
@@ -293,8 +616,28 @@
       <node concept="3cqZAl" id="7FLq2$J$BrI" role="3clF45" />
       <node concept="3clFbS" id="7FLq2$J$BrJ" role="3clF47">
         <node concept="3SKdUt" id="7FLq2$J$GBL" role="3cqZAp">
-          <node concept="3SKdUq" id="7FLq2$J$GBN" role="3SKWNk">
-            <property role="3SKdUp" value="Simple class which extends 3 super classes" />
+          <node concept="1PaTwC" id="4C5PONWAJFJ" role="3ndbpf">
+            <node concept="3oM_SD" id="4C5PONWAJFK" role="1PaTwD">
+              <property role="3oM_SC" value="Simple" />
+            </node>
+            <node concept="3oM_SD" id="4C5PONWAJFL" role="1PaTwD">
+              <property role="3oM_SC" value="class" />
+            </node>
+            <node concept="3oM_SD" id="4C5PONWAJFM" role="1PaTwD">
+              <property role="3oM_SC" value="which" />
+            </node>
+            <node concept="3oM_SD" id="4C5PONWAJFN" role="1PaTwD">
+              <property role="3oM_SC" value="extends" />
+            </node>
+            <node concept="3oM_SD" id="4C5PONWAJFO" role="1PaTwD">
+              <property role="3oM_SC" value="3" />
+            </node>
+            <node concept="3oM_SD" id="4C5PONWAJFP" role="1PaTwD">
+              <property role="3oM_SC" value="super" />
+            </node>
+            <node concept="3oM_SD" id="4C5PONWAJFQ" role="1PaTwD">
+              <property role="3oM_SC" value="classes" />
+            </node>
           </node>
         </node>
         <node concept="1uQa1g" id="7FLq2$J$BrK" role="3cqZAp">
@@ -315,8 +658,40 @@
       <node concept="3cqZAl" id="7FLq2$J$BrO" role="3clF45" />
       <node concept="3clFbS" id="7FLq2$J$BrP" role="3clF47">
         <node concept="3SKdUt" id="7FLq2$J$GEa" role="3cqZAp">
-          <node concept="3SKdUq" id="7FLq2$J$GEc" role="3SKWNk">
-            <property role="3SKdUp" value="Simple class which extends 3 super classes and 3 other interfaces" />
+          <node concept="1PaTwC" id="4C5PONWAJFR" role="3ndbpf">
+            <node concept="3oM_SD" id="4C5PONWAJFS" role="1PaTwD">
+              <property role="3oM_SC" value="Simple" />
+            </node>
+            <node concept="3oM_SD" id="4C5PONWAJFT" role="1PaTwD">
+              <property role="3oM_SC" value="class" />
+            </node>
+            <node concept="3oM_SD" id="4C5PONWAJFU" role="1PaTwD">
+              <property role="3oM_SC" value="which" />
+            </node>
+            <node concept="3oM_SD" id="4C5PONWAJFV" role="1PaTwD">
+              <property role="3oM_SC" value="extends" />
+            </node>
+            <node concept="3oM_SD" id="4C5PONWAJFW" role="1PaTwD">
+              <property role="3oM_SC" value="3" />
+            </node>
+            <node concept="3oM_SD" id="4C5PONWAJFX" role="1PaTwD">
+              <property role="3oM_SC" value="super" />
+            </node>
+            <node concept="3oM_SD" id="4C5PONWAJFY" role="1PaTwD">
+              <property role="3oM_SC" value="classes" />
+            </node>
+            <node concept="3oM_SD" id="4C5PONWAJFZ" role="1PaTwD">
+              <property role="3oM_SC" value="and" />
+            </node>
+            <node concept="3oM_SD" id="4C5PONWAJG0" role="1PaTwD">
+              <property role="3oM_SC" value="3" />
+            </node>
+            <node concept="3oM_SD" id="4C5PONWAJG1" role="1PaTwD">
+              <property role="3oM_SC" value="other" />
+            </node>
+            <node concept="3oM_SD" id="4C5PONWAJG2" role="1PaTwD">
+              <property role="3oM_SC" value="interfaces" />
+            </node>
           </node>
         </node>
         <node concept="1uQa1g" id="7FLq2$J$BrQ" role="3cqZAp">
@@ -337,8 +712,31 @@
       <node concept="3cqZAl" id="7FLq2$J$BrU" role="3clF45" />
       <node concept="3clFbS" id="7FLq2$J$BrV" role="3clF47">
         <node concept="3SKdUt" id="7FLq2$J$GEO" role="3cqZAp">
-          <node concept="3SKdUq" id="7FLq2$J$GEQ" role="3SKWNk">
-            <property role="3SKdUp" value="Simple class which contains a super class relationship" />
+          <node concept="1PaTwC" id="4C5PONWAJG3" role="3ndbpf">
+            <node concept="3oM_SD" id="4C5PONWAJG4" role="1PaTwD">
+              <property role="3oM_SC" value="Simple" />
+            </node>
+            <node concept="3oM_SD" id="4C5PONWAJG5" role="1PaTwD">
+              <property role="3oM_SC" value="class" />
+            </node>
+            <node concept="3oM_SD" id="4C5PONWAJG6" role="1PaTwD">
+              <property role="3oM_SC" value="which" />
+            </node>
+            <node concept="3oM_SD" id="4C5PONWAJG7" role="1PaTwD">
+              <property role="3oM_SC" value="contains" />
+            </node>
+            <node concept="3oM_SD" id="4C5PONWAJG8" role="1PaTwD">
+              <property role="3oM_SC" value="a" />
+            </node>
+            <node concept="3oM_SD" id="4C5PONWAJG9" role="1PaTwD">
+              <property role="3oM_SC" value="super" />
+            </node>
+            <node concept="3oM_SD" id="4C5PONWAJGa" role="1PaTwD">
+              <property role="3oM_SC" value="class" />
+            </node>
+            <node concept="3oM_SD" id="4C5PONWAJGb" role="1PaTwD">
+              <property role="3oM_SC" value="relationship" />
+            </node>
           </node>
         </node>
         <node concept="1uQa1g" id="7FLq2$J$BrW" role="3cqZAp">
@@ -362,8 +760,31 @@
       <node concept="3cqZAl" id="7FLq2$J$DJM" role="3clF45" />
       <node concept="3clFbS" id="7FLq2$J$DJN" role="3clF47">
         <node concept="3SKdUt" id="7FLq2$J$GG2" role="3cqZAp">
-          <node concept="3SKdUq" id="7FLq2$J$GG4" role="3SKWNk">
-            <property role="3SKdUp" value="Simple class with multiple reference to other classes" />
+          <node concept="1PaTwC" id="4C5PONWAJGc" role="3ndbpf">
+            <node concept="3oM_SD" id="4C5PONWAJGd" role="1PaTwD">
+              <property role="3oM_SC" value="Simple" />
+            </node>
+            <node concept="3oM_SD" id="4C5PONWAJGe" role="1PaTwD">
+              <property role="3oM_SC" value="class" />
+            </node>
+            <node concept="3oM_SD" id="4C5PONWAJGf" role="1PaTwD">
+              <property role="3oM_SC" value="with" />
+            </node>
+            <node concept="3oM_SD" id="4C5PONWAJGg" role="1PaTwD">
+              <property role="3oM_SC" value="multiple" />
+            </node>
+            <node concept="3oM_SD" id="4C5PONWAJGh" role="1PaTwD">
+              <property role="3oM_SC" value="reference" />
+            </node>
+            <node concept="3oM_SD" id="4C5PONWAJGi" role="1PaTwD">
+              <property role="3oM_SC" value="to" />
+            </node>
+            <node concept="3oM_SD" id="4C5PONWAJGj" role="1PaTwD">
+              <property role="3oM_SC" value="other" />
+            </node>
+            <node concept="3oM_SD" id="4C5PONWAJGk" role="1PaTwD">
+              <property role="3oM_SC" value="classes" />
+            </node>
           </node>
         </node>
         <node concept="1uQa1g" id="7FLq2$J$DJO" role="3cqZAp">
@@ -384,8 +805,31 @@
       <node concept="3cqZAl" id="7FLq2$J$DJS" role="3clF45" />
       <node concept="3clFbS" id="7FLq2$J$DJT" role="3clF47">
         <node concept="3SKdUt" id="7FLq2$J$GGS" role="3cqZAp">
-          <node concept="3SKdUq" id="7FLq2$J$GGU" role="3SKWNk">
-            <property role="3SKdUp" value="Simple class with a reference to another class" />
+          <node concept="1PaTwC" id="4C5PONWAJGl" role="3ndbpf">
+            <node concept="3oM_SD" id="4C5PONWAJGm" role="1PaTwD">
+              <property role="3oM_SC" value="Simple" />
+            </node>
+            <node concept="3oM_SD" id="4C5PONWAJGn" role="1PaTwD">
+              <property role="3oM_SC" value="class" />
+            </node>
+            <node concept="3oM_SD" id="4C5PONWAJGo" role="1PaTwD">
+              <property role="3oM_SC" value="with" />
+            </node>
+            <node concept="3oM_SD" id="4C5PONWAJGp" role="1PaTwD">
+              <property role="3oM_SC" value="a" />
+            </node>
+            <node concept="3oM_SD" id="4C5PONWAJGq" role="1PaTwD">
+              <property role="3oM_SC" value="reference" />
+            </node>
+            <node concept="3oM_SD" id="4C5PONWAJGr" role="1PaTwD">
+              <property role="3oM_SC" value="to" />
+            </node>
+            <node concept="3oM_SD" id="4C5PONWAJGs" role="1PaTwD">
+              <property role="3oM_SC" value="another" />
+            </node>
+            <node concept="3oM_SD" id="4C5PONWAJGt" role="1PaTwD">
+              <property role="3oM_SC" value="class" />
+            </node>
           </node>
         </node>
         <node concept="1uQa1g" id="7FLq2$J$DJU" role="3cqZAp">
@@ -406,8 +850,46 @@
       <node concept="3cqZAl" id="7FLq2$J$DJY" role="3clF45" />
       <node concept="3clFbS" id="7FLq2$J$DJZ" role="3clF47">
         <node concept="3SKdUt" id="7FLq2$J$GHI" role="3cqZAp">
-          <node concept="3SKdUq" id="7FLq2$J$GHK" role="3SKWNk">
-            <property role="3SKdUp" value="Simple class which has a super class and also refers to another class" />
+          <node concept="1PaTwC" id="4C5PONWAJGu" role="3ndbpf">
+            <node concept="3oM_SD" id="4C5PONWAJGv" role="1PaTwD">
+              <property role="3oM_SC" value="Simple" />
+            </node>
+            <node concept="3oM_SD" id="4C5PONWAJGw" role="1PaTwD">
+              <property role="3oM_SC" value="class" />
+            </node>
+            <node concept="3oM_SD" id="4C5PONWAJGx" role="1PaTwD">
+              <property role="3oM_SC" value="which" />
+            </node>
+            <node concept="3oM_SD" id="4C5PONWAJGy" role="1PaTwD">
+              <property role="3oM_SC" value="has" />
+            </node>
+            <node concept="3oM_SD" id="4C5PONWAJGz" role="1PaTwD">
+              <property role="3oM_SC" value="a" />
+            </node>
+            <node concept="3oM_SD" id="4C5PONWAJG$" role="1PaTwD">
+              <property role="3oM_SC" value="super" />
+            </node>
+            <node concept="3oM_SD" id="4C5PONWAJG_" role="1PaTwD">
+              <property role="3oM_SC" value="class" />
+            </node>
+            <node concept="3oM_SD" id="4C5PONWAJGA" role="1PaTwD">
+              <property role="3oM_SC" value="and" />
+            </node>
+            <node concept="3oM_SD" id="4C5PONWAJGB" role="1PaTwD">
+              <property role="3oM_SC" value="also" />
+            </node>
+            <node concept="3oM_SD" id="4C5PONWAJGC" role="1PaTwD">
+              <property role="3oM_SC" value="refers" />
+            </node>
+            <node concept="3oM_SD" id="4C5PONWAJGD" role="1PaTwD">
+              <property role="3oM_SC" value="to" />
+            </node>
+            <node concept="3oM_SD" id="4C5PONWAJGE" role="1PaTwD">
+              <property role="3oM_SC" value="another" />
+            </node>
+            <node concept="3oM_SD" id="4C5PONWAJGF" role="1PaTwD">
+              <property role="3oM_SC" value="class" />
+            </node>
           </node>
         </node>
         <node concept="1uQa1g" id="7FLq2$J$DK0" role="3cqZAp">
@@ -431,8 +913,25 @@
       <node concept="3cqZAl" id="7FLq2$J$AMc" role="3clF45" />
       <node concept="3clFbS" id="7FLq2$J$AMd" role="3clF47">
         <node concept="3SKdUt" id="7FLq2$J$GIS" role="3cqZAp">
-          <node concept="3SKdUq" id="7FLq2$J$GIU" role="3SKWNk">
-            <property role="3SKdUp" value="Simple class with just a name" />
+          <node concept="1PaTwC" id="4C5PONWAJGG" role="3ndbpf">
+            <node concept="3oM_SD" id="4C5PONWAJGH" role="1PaTwD">
+              <property role="3oM_SC" value="Simple" />
+            </node>
+            <node concept="3oM_SD" id="4C5PONWAJGI" role="1PaTwD">
+              <property role="3oM_SC" value="class" />
+            </node>
+            <node concept="3oM_SD" id="4C5PONWAJGJ" role="1PaTwD">
+              <property role="3oM_SC" value="with" />
+            </node>
+            <node concept="3oM_SD" id="4C5PONWAJGK" role="1PaTwD">
+              <property role="3oM_SC" value="just" />
+            </node>
+            <node concept="3oM_SD" id="4C5PONWAJGL" role="1PaTwD">
+              <property role="3oM_SC" value="a" />
+            </node>
+            <node concept="3oM_SD" id="4C5PONWAJGM" role="1PaTwD">
+              <property role="3oM_SC" value="name" />
+            </node>
           </node>
         </node>
         <node concept="1uQa1g" id="7FLq2$J$AMe" role="3cqZAp">
@@ -453,8 +952,64 @@
       <node concept="3cqZAl" id="7FLq2$J$AMi" role="3clF45" />
       <node concept="3clFbS" id="7FLq2$J$AMj" role="3clF47">
         <node concept="3SKdUt" id="7FLq2$J$GJE" role="3cqZAp">
-          <node concept="3SKdUq" id="7FLq2$J$GJG" role="3SKWNk">
-            <property role="3SKdUp" value="Simple class with 8 properties, each of them from ecore permissible types that dont belong to the MPS type" />
+          <node concept="1PaTwC" id="4C5PONWAJGN" role="3ndbpf">
+            <node concept="3oM_SD" id="4C5PONWAJGO" role="1PaTwD">
+              <property role="3oM_SC" value="Simple" />
+            </node>
+            <node concept="3oM_SD" id="4C5PONWAJGP" role="1PaTwD">
+              <property role="3oM_SC" value="class" />
+            </node>
+            <node concept="3oM_SD" id="4C5PONWAJGQ" role="1PaTwD">
+              <property role="3oM_SC" value="with" />
+            </node>
+            <node concept="3oM_SD" id="4C5PONWAJGR" role="1PaTwD">
+              <property role="3oM_SC" value="8" />
+            </node>
+            <node concept="3oM_SD" id="4C5PONWAJGS" role="1PaTwD">
+              <property role="3oM_SC" value="properties," />
+            </node>
+            <node concept="3oM_SD" id="4C5PONWAJGT" role="1PaTwD">
+              <property role="3oM_SC" value="each" />
+            </node>
+            <node concept="3oM_SD" id="4C5PONWAJGU" role="1PaTwD">
+              <property role="3oM_SC" value="of" />
+            </node>
+            <node concept="3oM_SD" id="4C5PONWAJGV" role="1PaTwD">
+              <property role="3oM_SC" value="them" />
+            </node>
+            <node concept="3oM_SD" id="4C5PONWAJGW" role="1PaTwD">
+              <property role="3oM_SC" value="from" />
+            </node>
+            <node concept="3oM_SD" id="4C5PONWAJGX" role="1PaTwD">
+              <property role="3oM_SC" value="ecore" />
+            </node>
+            <node concept="3oM_SD" id="4C5PONWAJGY" role="1PaTwD">
+              <property role="3oM_SC" value="permissible" />
+            </node>
+            <node concept="3oM_SD" id="4C5PONWAJGZ" role="1PaTwD">
+              <property role="3oM_SC" value="types" />
+            </node>
+            <node concept="3oM_SD" id="4C5PONWAJH0" role="1PaTwD">
+              <property role="3oM_SC" value="that" />
+            </node>
+            <node concept="3oM_SD" id="4C5PONWAJH1" role="1PaTwD">
+              <property role="3oM_SC" value="dont" />
+            </node>
+            <node concept="3oM_SD" id="4C5PONWAJH2" role="1PaTwD">
+              <property role="3oM_SC" value="belong" />
+            </node>
+            <node concept="3oM_SD" id="4C5PONWAJH3" role="1PaTwD">
+              <property role="3oM_SC" value="to" />
+            </node>
+            <node concept="3oM_SD" id="4C5PONWAJH4" role="1PaTwD">
+              <property role="3oM_SC" value="the" />
+            </node>
+            <node concept="3oM_SD" id="4C5PONWAJH5" role="1PaTwD">
+              <property role="3oM_SC" value="MPS" />
+            </node>
+            <node concept="3oM_SD" id="4C5PONWAJH6" role="1PaTwD">
+              <property role="3oM_SC" value="type" />
+            </node>
           </node>
         </node>
         <node concept="1uQa1g" id="7FLq2$J$AMk" role="3cqZAp">
@@ -475,8 +1030,22 @@
       <node concept="3cqZAl" id="7FLq2$J$AMo" role="3clF45" />
       <node concept="3clFbS" id="7FLq2$J$AMp" role="3clF47">
         <node concept="3SKdUt" id="7FLq2$J$GKc" role="3cqZAp">
-          <node concept="3SKdUq" id="7FLq2$J$GKe" role="3SKWNk">
-            <property role="3SKdUp" value="Simple class with one property" />
+          <node concept="1PaTwC" id="4C5PONWAJH7" role="3ndbpf">
+            <node concept="3oM_SD" id="4C5PONWAJH8" role="1PaTwD">
+              <property role="3oM_SC" value="Simple" />
+            </node>
+            <node concept="3oM_SD" id="4C5PONWAJH9" role="1PaTwD">
+              <property role="3oM_SC" value="class" />
+            </node>
+            <node concept="3oM_SD" id="4C5PONWAJHa" role="1PaTwD">
+              <property role="3oM_SC" value="with" />
+            </node>
+            <node concept="3oM_SD" id="4C5PONWAJHb" role="1PaTwD">
+              <property role="3oM_SC" value="one" />
+            </node>
+            <node concept="3oM_SD" id="4C5PONWAJHc" role="1PaTwD">
+              <property role="3oM_SC" value="property" />
+            </node>
           </node>
         </node>
         <node concept="1uQa1g" id="7FLq2$J$AMq" role="3cqZAp">
@@ -497,8 +1066,34 @@
       <node concept="3cqZAl" id="7FLq2$J$AMu" role="3clF45" />
       <node concept="3clFbS" id="7FLq2$J$AMv" role="3clF47">
         <node concept="3SKdUt" id="7FLq2$J$GKY" role="3cqZAp">
-          <node concept="3SKdUq" id="7FLq2$J$GL0" role="3SKWNk">
-            <property role="3SKdUp" value="Class with 3 properties each of one primitive type" />
+          <node concept="1PaTwC" id="4C5PONWAJHd" role="3ndbpf">
+            <node concept="3oM_SD" id="4C5PONWAJHe" role="1PaTwD">
+              <property role="3oM_SC" value="Class" />
+            </node>
+            <node concept="3oM_SD" id="4C5PONWAJHf" role="1PaTwD">
+              <property role="3oM_SC" value="with" />
+            </node>
+            <node concept="3oM_SD" id="4C5PONWAJHg" role="1PaTwD">
+              <property role="3oM_SC" value="3" />
+            </node>
+            <node concept="3oM_SD" id="4C5PONWAJHh" role="1PaTwD">
+              <property role="3oM_SC" value="properties" />
+            </node>
+            <node concept="3oM_SD" id="4C5PONWAJHi" role="1PaTwD">
+              <property role="3oM_SC" value="each" />
+            </node>
+            <node concept="3oM_SD" id="4C5PONWAJHj" role="1PaTwD">
+              <property role="3oM_SC" value="of" />
+            </node>
+            <node concept="3oM_SD" id="4C5PONWAJHk" role="1PaTwD">
+              <property role="3oM_SC" value="one" />
+            </node>
+            <node concept="3oM_SD" id="4C5PONWAJHl" role="1PaTwD">
+              <property role="3oM_SC" value="primitive" />
+            </node>
+            <node concept="3oM_SD" id="4C5PONWAJHm" role="1PaTwD">
+              <property role="3oM_SC" value="type" />
+            </node>
           </node>
         </node>
         <node concept="1uQa1g" id="7FLq2$J$AMw" role="3cqZAp">

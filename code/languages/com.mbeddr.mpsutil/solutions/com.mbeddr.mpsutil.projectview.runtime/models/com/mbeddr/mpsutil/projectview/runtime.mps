@@ -6,6 +6,7 @@
     <use id="63650c59-16c8-498a-99c8-005c7ee9515d" name="jetbrains.mps.lang.access" version="-1" />
     <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="-1" />
     <use id="654422bf-e75f-44dc-936d-188890a746ce" name="de.slisson.mps.reflection" version="-1" />
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="9" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -224,11 +225,8 @@
         <child id="1163668934364" name="ifFalse" index="3K4GZi" />
       </concept>
       <concept id="1082113931046" name="jetbrains.mps.baseLanguage.structure.ContinueStatement" flags="nn" index="3N13vt" />
-      <concept id="6329021646629104957" name="jetbrains.mps.baseLanguage.structure.TextCommentPart" flags="nn" index="3SKdUq">
-        <property id="6329021646629104958" name="text" index="3SKdUp" />
-      </concept>
       <concept id="6329021646629104954" name="jetbrains.mps.baseLanguage.structure.SingleLineComment" flags="nn" index="3SKdUt">
-        <child id="6329021646629175155" name="commentPart" index="3SKWNk" />
+        <child id="1350122676458893092" name="text" index="3ndbpf" />
       </concept>
       <concept id="1146644602865" name="jetbrains.mps.baseLanguage.structure.PublicVisibility" flags="nn" index="3Tm1VV" />
       <concept id="1146644623116" name="jetbrains.mps.baseLanguage.structure.PrivateVisibility" flags="nn" index="3Tm6S6" />
@@ -251,11 +249,13 @@
         <child id="1199569916463" name="body" index="1bW5cS" />
       </concept>
     </language>
-    <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
-      <concept id="427659576753752243" name="jetbrains.mps.lang.smodel.structure.ModulePointer" flags="ng" index="20RdaH">
-        <property id="427659576753753627" name="moduleId" index="20Rdg5" />
-        <property id="427659576753753625" name="moduleName" index="20Rdg7" />
+    <language id="446c26eb-2b7b-4bf0-9b35-f83fa582753e" name="jetbrains.mps.lang.modelapi">
+      <concept id="361130699826193249" name="jetbrains.mps.lang.modelapi.structure.ModulePointer" flags="ng" index="1dCxOk">
+        <property id="1863527487546097500" name="moduleId" index="1XweGW" />
+        <property id="1863527487545993577" name="moduleName" index="1XxBO9" />
       </concept>
+    </language>
+    <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
       <concept id="1678062499342629858" name="jetbrains.mps.lang.smodel.structure.ModuleRefExpression" flags="ng" index="37shsh">
         <child id="1678062499342629861" name="moduleId" index="37shsm" />
       </concept>
@@ -263,6 +263,14 @@
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
+      </concept>
+    </language>
+    <language id="c7fb639f-be78-4307-89b0-b5959c3fa8c8" name="jetbrains.mps.lang.text">
+      <concept id="155656958578482948" name="jetbrains.mps.lang.text.structure.Word" flags="ng" index="3oM_SD">
+        <property id="155656958578482949" name="value" index="3oM_SC" />
+      </concept>
+      <concept id="2535923850359271782" name="jetbrains.mps.lang.text.structure.Line" flags="ng" index="1PaTwC">
+        <child id="2535923850359271783" name="elements" index="1PaTwD" />
       </concept>
     </language>
     <language id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections">
@@ -6044,28 +6052,203 @@
           </node>
           <node concept="3clFbS" id="VPgi8egj9g" role="2LFqv$">
             <node concept="3SKdUt" id="4jHuzb0Dok$" role="3cqZAp">
-              <node concept="3SKdUq" id="4jHuzb0DokA" role="3SKWNk">
-                <property role="3SKdUp" value="In PluginLoaderRegistry.unloadPlugins/loadPlugins the plugin are unloaded/loaded asynchronously." />
+              <node concept="1PaTwC" id="4C5PONWAJq4" role="3ndbpf">
+                <node concept="3oM_SD" id="4C5PONWAJq5" role="1PaTwD">
+                  <property role="3oM_SC" value="In" />
+                </node>
+                <node concept="3oM_SD" id="4C5PONWAJq6" role="1PaTwD">
+                  <property role="3oM_SC" value="PluginLoaderRegistry.unloadPlugins/loadPlugins" />
+                </node>
+                <node concept="3oM_SD" id="4C5PONWAJq7" role="1PaTwD">
+                  <property role="3oM_SC" value="the" />
+                </node>
+                <node concept="3oM_SD" id="4C5PONWAJq8" role="1PaTwD">
+                  <property role="3oM_SC" value="plugin" />
+                </node>
+                <node concept="3oM_SD" id="4C5PONWAJq9" role="1PaTwD">
+                  <property role="3oM_SC" value="are" />
+                </node>
+                <node concept="3oM_SD" id="4C5PONWAJqa" role="1PaTwD">
+                  <property role="3oM_SC" value="unloaded/loaded" />
+                </node>
+                <node concept="3oM_SD" id="4C5PONWAJqb" role="1PaTwD">
+                  <property role="3oM_SC" value="asynchronously." />
+                </node>
               </node>
             </node>
             <node concept="3SKdUt" id="4jHuzb0DozH" role="3cqZAp">
-              <node concept="3SKdUq" id="4jHuzb0DozI" role="3SKWNk">
-                <property role="3SKdUp" value="That means, the dispose method if this class is called after the modules are reloaded " />
+              <node concept="1PaTwC" id="4C5PONWAJqc" role="3ndbpf">
+                <node concept="3oM_SD" id="4C5PONWAJqd" role="1PaTwD">
+                  <property role="3oM_SC" value="That" />
+                </node>
+                <node concept="3oM_SD" id="4C5PONWAJqe" role="1PaTwD">
+                  <property role="3oM_SC" value="means," />
+                </node>
+                <node concept="3oM_SD" id="4C5PONWAJqf" role="1PaTwD">
+                  <property role="3oM_SC" value="the" />
+                </node>
+                <node concept="3oM_SD" id="4C5PONWAJqg" role="1PaTwD">
+                  <property role="3oM_SC" value="dispose" />
+                </node>
+                <node concept="3oM_SD" id="4C5PONWAJqh" role="1PaTwD">
+                  <property role="3oM_SC" value="method" />
+                </node>
+                <node concept="3oM_SD" id="4C5PONWAJqi" role="1PaTwD">
+                  <property role="3oM_SC" value="if" />
+                </node>
+                <node concept="3oM_SD" id="4C5PONWAJqj" role="1PaTwD">
+                  <property role="3oM_SC" value="this" />
+                </node>
+                <node concept="3oM_SD" id="4C5PONWAJqk" role="1PaTwD">
+                  <property role="3oM_SC" value="class" />
+                </node>
+                <node concept="3oM_SD" id="4C5PONWAJql" role="1PaTwD">
+                  <property role="3oM_SC" value="is" />
+                </node>
+                <node concept="3oM_SD" id="4C5PONWAJqm" role="1PaTwD">
+                  <property role="3oM_SC" value="called" />
+                </node>
+                <node concept="3oM_SD" id="4C5PONWAJqn" role="1PaTwD">
+                  <property role="3oM_SC" value="after" />
+                </node>
+                <node concept="3oM_SD" id="4C5PONWAJqo" role="1PaTwD">
+                  <property role="3oM_SC" value="the" />
+                </node>
+                <node concept="3oM_SD" id="4C5PONWAJqp" role="1PaTwD">
+                  <property role="3oM_SC" value="modules" />
+                </node>
+                <node concept="3oM_SD" id="4C5PONWAJqq" role="1PaTwD">
+                  <property role="3oM_SC" value="are" />
+                </node>
+                <node concept="3oM_SD" id="4C5PONWAJqr" role="1PaTwD">
+                  <property role="3oM_SC" value="reloaded" />
+                </node>
               </node>
             </node>
             <node concept="3SKdUt" id="4jHuzb0DoLy" role="3cqZAp">
-              <node concept="3SKdUq" id="4jHuzb0DoLz" role="3SKWNk">
-                <property role="3SKdUp" value="(afterClassLoaded is called)." />
+              <node concept="1PaTwC" id="4C5PONWAJqs" role="3ndbpf">
+                <node concept="3oM_SD" id="4C5PONWAJqt" role="1PaTwD">
+                  <property role="3oM_SC" value="(afterClassLoaded" />
+                </node>
+                <node concept="3oM_SD" id="4C5PONWAJqu" role="1PaTwD">
+                  <property role="3oM_SC" value="is" />
+                </node>
+                <node concept="3oM_SD" id="4C5PONWAJqv" role="1PaTwD">
+                  <property role="3oM_SC" value="called)." />
+                </node>
               </node>
             </node>
             <node concept="3SKdUt" id="4jHuzb0DplO" role="3cqZAp">
-              <node concept="3SKdUq" id="4jHuzb0DplQ" role="3SKWNk">
-                <property role="3SKdUp" value="While the new descriptors already use the new classes from this module, the listener is still an old" />
+              <node concept="1PaTwC" id="4C5PONWAJqw" role="3ndbpf">
+                <node concept="3oM_SD" id="4C5PONWAJqx" role="1PaTwD">
+                  <property role="3oM_SC" value="While" />
+                </node>
+                <node concept="3oM_SD" id="4C5PONWAJqy" role="1PaTwD">
+                  <property role="3oM_SC" value="the" />
+                </node>
+                <node concept="3oM_SD" id="4C5PONWAJqz" role="1PaTwD">
+                  <property role="3oM_SC" value="new" />
+                </node>
+                <node concept="3oM_SD" id="4C5PONWAJq$" role="1PaTwD">
+                  <property role="3oM_SC" value="descriptors" />
+                </node>
+                <node concept="3oM_SD" id="4C5PONWAJq_" role="1PaTwD">
+                  <property role="3oM_SC" value="already" />
+                </node>
+                <node concept="3oM_SD" id="4C5PONWAJqA" role="1PaTwD">
+                  <property role="3oM_SC" value="use" />
+                </node>
+                <node concept="3oM_SD" id="4C5PONWAJqB" role="1PaTwD">
+                  <property role="3oM_SC" value="the" />
+                </node>
+                <node concept="3oM_SD" id="4C5PONWAJqC" role="1PaTwD">
+                  <property role="3oM_SC" value="new" />
+                </node>
+                <node concept="3oM_SD" id="4C5PONWAJqD" role="1PaTwD">
+                  <property role="3oM_SC" value="classes" />
+                </node>
+                <node concept="3oM_SD" id="4C5PONWAJqE" role="1PaTwD">
+                  <property role="3oM_SC" value="from" />
+                </node>
+                <node concept="3oM_SD" id="4C5PONWAJqF" role="1PaTwD">
+                  <property role="3oM_SC" value="this" />
+                </node>
+                <node concept="3oM_SD" id="4C5PONWAJqG" role="1PaTwD">
+                  <property role="3oM_SC" value="module," />
+                </node>
+                <node concept="3oM_SD" id="4C5PONWAJqH" role="1PaTwD">
+                  <property role="3oM_SC" value="the" />
+                </node>
+                <node concept="3oM_SD" id="4C5PONWAJqI" role="1PaTwD">
+                  <property role="3oM_SC" value="listener" />
+                </node>
+                <node concept="3oM_SD" id="4C5PONWAJqJ" role="1PaTwD">
+                  <property role="3oM_SC" value="is" />
+                </node>
+                <node concept="3oM_SD" id="4C5PONWAJqK" role="1PaTwD">
+                  <property role="3oM_SC" value="still" />
+                </node>
+                <node concept="3oM_SD" id="4C5PONWAJqL" role="1PaTwD">
+                  <property role="3oM_SC" value="an" />
+                </node>
+                <node concept="3oM_SD" id="4C5PONWAJqM" role="1PaTwD">
+                  <property role="3oM_SC" value="old" />
+                </node>
               </node>
             </node>
             <node concept="3SKdUt" id="4jHuzb0DpUG" role="3cqZAp">
-              <node concept="3SKdUq" id="4jHuzb0DpUI" role="3SKWNk">
-                <property role="3SKdUp" value="class. This causes ClassCastExceptions. To fix this, we detect the reload of this module on our own." />
+              <node concept="1PaTwC" id="4C5PONWAJqN" role="3ndbpf">
+                <node concept="3oM_SD" id="4C5PONWAJqO" role="1PaTwD">
+                  <property role="3oM_SC" value="class." />
+                </node>
+                <node concept="3oM_SD" id="4C5PONWAJqP" role="1PaTwD">
+                  <property role="3oM_SC" value="This" />
+                </node>
+                <node concept="3oM_SD" id="4C5PONWAJqQ" role="1PaTwD">
+                  <property role="3oM_SC" value="causes" />
+                </node>
+                <node concept="3oM_SD" id="4C5PONWAJqR" role="1PaTwD">
+                  <property role="3oM_SC" value="ClassCastExceptions." />
+                </node>
+                <node concept="3oM_SD" id="4C5PONWAJqS" role="1PaTwD">
+                  <property role="3oM_SC" value="To" />
+                </node>
+                <node concept="3oM_SD" id="4C5PONWAJqT" role="1PaTwD">
+                  <property role="3oM_SC" value="fix" />
+                </node>
+                <node concept="3oM_SD" id="4C5PONWAJqU" role="1PaTwD">
+                  <property role="3oM_SC" value="this," />
+                </node>
+                <node concept="3oM_SD" id="4C5PONWAJqV" role="1PaTwD">
+                  <property role="3oM_SC" value="we" />
+                </node>
+                <node concept="3oM_SD" id="4C5PONWAJqW" role="1PaTwD">
+                  <property role="3oM_SC" value="detect" />
+                </node>
+                <node concept="3oM_SD" id="4C5PONWAJqX" role="1PaTwD">
+                  <property role="3oM_SC" value="the" />
+                </node>
+                <node concept="3oM_SD" id="4C5PONWAJqY" role="1PaTwD">
+                  <property role="3oM_SC" value="reload" />
+                </node>
+                <node concept="3oM_SD" id="4C5PONWAJqZ" role="1PaTwD">
+                  <property role="3oM_SC" value="of" />
+                </node>
+                <node concept="3oM_SD" id="4C5PONWAJr0" role="1PaTwD">
+                  <property role="3oM_SC" value="this" />
+                </node>
+                <node concept="3oM_SD" id="4C5PONWAJr1" role="1PaTwD">
+                  <property role="3oM_SC" value="module" />
+                </node>
+                <node concept="3oM_SD" id="4C5PONWAJr2" role="1PaTwD">
+                  <property role="3oM_SC" value="on" />
+                </node>
+                <node concept="3oM_SD" id="4C5PONWAJr3" role="1PaTwD">
+                  <property role="3oM_SC" value="our" />
+                </node>
+                <node concept="3oM_SD" id="4C5PONWAJr4" role="1PaTwD">
+                  <property role="3oM_SC" value="own." />
+                </node>
               </node>
             </node>
             <node concept="3clFbJ" id="4jHuzb0CHB_" role="3cqZAp">
@@ -6087,9 +6270,9 @@
                   </node>
                 </node>
                 <node concept="37shsh" id="4jHuzb0CKHK" role="3uHU7w">
-                  <node concept="20RdaH" id="4jHuzb0CKJf" role="37shsm">
-                    <property role="20Rdg5" value="732373f1-0d48-4122-bb43-c1606db4baca" />
-                    <property role="20Rdg7" value="com.mbeddr.mpsutil.projectview.runtime" />
+                  <node concept="1dCxOk" id="4C5PONWCgyY" role="37shsm">
+                    <property role="1XxBO9" value="com.mbeddr.mpsutil.projectview.runtime" />
+                    <property role="1XweGW" value="732373f1-0d48-4122-bb43-c1606db4baca" />
                   </node>
                 </node>
               </node>

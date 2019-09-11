@@ -3,7 +3,7 @@
   <persistence version="9" />
   <languages>
     <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="2" />
-    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="8" />
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="9" />
     <use id="63650c59-16c8-498a-99c8-005c7ee9515d" name="jetbrains.mps.lang.access" version="0" />
     <use id="774bf8a0-62e5-41e1-af63-f4812e60e48b" name="jetbrains.mps.baseLanguage.checkedDots" version="0" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
@@ -177,9 +177,7 @@
       <concept id="1225271177708" name="jetbrains.mps.baseLanguage.structure.StringType" flags="in" index="17QB3L" />
       <concept id="1225271283259" name="jetbrains.mps.baseLanguage.structure.NPEEqualsExpression" flags="nn" index="17R0WA" />
       <concept id="1225271369338" name="jetbrains.mps.baseLanguage.structure.IsEmptyOperation" flags="nn" index="17RlXB" />
-      <concept id="1225271546410" name="jetbrains.mps.baseLanguage.structure.TrimOperation" flags="nn" index="17S1cR">
-        <property id="1225271546413" name="trimKind" index="17S1cK" />
-      </concept>
+      <concept id="1225271546410" name="jetbrains.mps.baseLanguage.structure.TrimOperation" flags="nn" index="17S1cR" />
       <concept id="4972933694980447171" name="jetbrains.mps.baseLanguage.structure.BaseVariableDeclaration" flags="ng" index="19Szcq">
         <child id="5680397130376446158" name="type" index="1tU5fm" />
       </concept>
@@ -284,11 +282,8 @@
         <child id="1163668922816" name="ifTrue" index="3K4E3e" />
         <child id="1163668934364" name="ifFalse" index="3K4GZi" />
       </concept>
-      <concept id="6329021646629104957" name="jetbrains.mps.baseLanguage.structure.TextCommentPart" flags="nn" index="3SKdUq">
-        <property id="6329021646629104958" name="text" index="3SKdUp" />
-      </concept>
       <concept id="6329021646629104954" name="jetbrains.mps.baseLanguage.structure.SingleLineComment" flags="nn" index="3SKdUt">
-        <child id="6329021646629175155" name="commentPart" index="3SKWNk" />
+        <child id="1350122676458893092" name="text" index="3ndbpf" />
       </concept>
       <concept id="1146644602865" name="jetbrains.mps.baseLanguage.structure.PublicVisibility" flags="nn" index="3Tm1VV" />
       <concept id="1146644623116" name="jetbrains.mps.baseLanguage.structure.PrivateVisibility" flags="nn" index="3Tm6S6" />
@@ -343,6 +338,14 @@
       </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
+      </concept>
+    </language>
+    <language id="c7fb639f-be78-4307-89b0-b5959c3fa8c8" name="jetbrains.mps.lang.text">
+      <concept id="155656958578482948" name="jetbrains.mps.lang.text.structure.Word" flags="ng" index="3oM_SD">
+        <property id="155656958578482949" name="value" index="3oM_SC" />
+      </concept>
+      <concept id="2535923850359271782" name="jetbrains.mps.lang.text.structure.Line" flags="ng" index="1PaTwC">
+        <child id="2535923850359271783" name="elements" index="1PaTwD" />
       </concept>
     </language>
     <language id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections">
@@ -2345,23 +2348,124 @@
       </node>
       <node concept="3clFbS" id="6$SBfHy12k4" role="3clF47">
         <node concept="3SKdUt" id="6$SBfHy19NS" role="3cqZAp">
-          <node concept="3SKdUq" id="6$SBfHy19NU" role="3SKWNk">
-            <property role="3SKdUp" value="This method was copied from the deleted class in MPS: jetbrains.mps.nodeEditor.SubstituteActionUtil" />
+          <node concept="1PaTwC" id="4C5PONWAINa" role="3ndbpf">
+            <node concept="3oM_SD" id="4C5PONWAINb" role="1PaTwD">
+              <property role="3oM_SC" value="This" />
+            </node>
+            <node concept="3oM_SD" id="4C5PONWAINc" role="1PaTwD">
+              <property role="3oM_SC" value="method" />
+            </node>
+            <node concept="3oM_SD" id="4C5PONWAINd" role="1PaTwD">
+              <property role="3oM_SC" value="was" />
+            </node>
+            <node concept="3oM_SD" id="4C5PONWAINe" role="1PaTwD">
+              <property role="3oM_SC" value="copied" />
+            </node>
+            <node concept="3oM_SD" id="4C5PONWAINf" role="1PaTwD">
+              <property role="3oM_SC" value="from" />
+            </node>
+            <node concept="3oM_SD" id="4C5PONWAINg" role="1PaTwD">
+              <property role="3oM_SC" value="the" />
+            </node>
+            <node concept="3oM_SD" id="4C5PONWAINh" role="1PaTwD">
+              <property role="3oM_SC" value="deleted" />
+            </node>
+            <node concept="3oM_SD" id="4C5PONWAINi" role="1PaTwD">
+              <property role="3oM_SC" value="class" />
+            </node>
+            <node concept="3oM_SD" id="4C5PONWAINj" role="1PaTwD">
+              <property role="3oM_SC" value="in" />
+            </node>
+            <node concept="3oM_SD" id="4C5PONWAINk" role="1PaTwD">
+              <property role="3oM_SC" value="MPS:" />
+            </node>
+            <node concept="3oM_SD" id="4C5PONWAINl" role="1PaTwD">
+              <property role="3oM_SC" value="jetbrains.mps.nodeEditor.SubstituteActionUtil" />
+            </node>
           </node>
         </node>
         <node concept="3SKdUt" id="6$SBfHy1aFL" role="3cqZAp">
-          <node concept="3SKdUq" id="6$SBfHy1aFN" role="3SKWNk">
-            <property role="3SKdUp" value="In the future this classs should be refactored in order to sub-class NodeItemCellRenderer &amp; reuse" />
+          <node concept="1PaTwC" id="4C5PONWAINm" role="3ndbpf">
+            <node concept="3oM_SD" id="4C5PONWAINn" role="1PaTwD">
+              <property role="3oM_SC" value="In" />
+            </node>
+            <node concept="3oM_SD" id="4C5PONWAINo" role="1PaTwD">
+              <property role="3oM_SC" value="the" />
+            </node>
+            <node concept="3oM_SD" id="4C5PONWAINp" role="1PaTwD">
+              <property role="3oM_SC" value="future" />
+            </node>
+            <node concept="3oM_SD" id="4C5PONWAINq" role="1PaTwD">
+              <property role="3oM_SC" value="this" />
+            </node>
+            <node concept="3oM_SD" id="4C5PONWAINr" role="1PaTwD">
+              <property role="3oM_SC" value="classs" />
+            </node>
+            <node concept="3oM_SD" id="4C5PONWAINs" role="1PaTwD">
+              <property role="3oM_SC" value="should" />
+            </node>
+            <node concept="3oM_SD" id="4C5PONWAINt" role="1PaTwD">
+              <property role="3oM_SC" value="be" />
+            </node>
+            <node concept="3oM_SD" id="4C5PONWAINu" role="1PaTwD">
+              <property role="3oM_SC" value="refactored" />
+            </node>
+            <node concept="3oM_SD" id="4C5PONWAINv" role="1PaTwD">
+              <property role="3oM_SC" value="in" />
+            </node>
+            <node concept="3oM_SD" id="4C5PONWAINw" role="1PaTwD">
+              <property role="3oM_SC" value="order" />
+            </node>
+            <node concept="3oM_SD" id="4C5PONWAINx" role="1PaTwD">
+              <property role="3oM_SC" value="to" />
+            </node>
+            <node concept="3oM_SD" id="4C5PONWAINy" role="1PaTwD">
+              <property role="3oM_SC" value="sub-class" />
+            </node>
+            <node concept="3oM_SD" id="4C5PONWAINz" role="1PaTwD">
+              <property role="3oM_SC" value="NodeItemCellRenderer" />
+            </node>
+            <node concept="3oM_SD" id="4C5PONWAIN$" role="1PaTwD">
+              <property role="3oM_SC" value="&amp;" />
+            </node>
+            <node concept="3oM_SD" id="4C5PONWAIN_" role="1PaTwD">
+              <property role="3oM_SC" value="reuse" />
+            </node>
           </node>
         </node>
         <node concept="3SKdUt" id="6$SBfHy1bzM" role="3cqZAp">
-          <node concept="3SKdUq" id="6$SBfHy1bzO" role="3SKWNk">
-            <property role="3SKdUp" value="as most of the functionality from there" />
+          <node concept="1PaTwC" id="4C5PONWAINA" role="3ndbpf">
+            <node concept="3oM_SD" id="4C5PONWAINB" role="1PaTwD">
+              <property role="3oM_SC" value="as" />
+            </node>
+            <node concept="3oM_SD" id="4C5PONWAINC" role="1PaTwD">
+              <property role="3oM_SC" value="most" />
+            </node>
+            <node concept="3oM_SD" id="4C5PONWAIND" role="1PaTwD">
+              <property role="3oM_SC" value="of" />
+            </node>
+            <node concept="3oM_SD" id="4C5PONWAINE" role="1PaTwD">
+              <property role="3oM_SC" value="the" />
+            </node>
+            <node concept="3oM_SD" id="4C5PONWAINF" role="1PaTwD">
+              <property role="3oM_SC" value="functionality" />
+            </node>
+            <node concept="3oM_SD" id="4C5PONWAING" role="1PaTwD">
+              <property role="3oM_SC" value="from" />
+            </node>
+            <node concept="3oM_SD" id="4C5PONWAINH" role="1PaTwD">
+              <property role="3oM_SC" value="there" />
+            </node>
           </node>
         </node>
         <node concept="3SKdUt" id="6$SBfHy1w0a" role="3cqZAp">
-          <node concept="3SKdUq" id="6$SBfHy1w0c" role="3SKWNk">
-            <property role="3SKdUp" value="see https://youtrack.jetbrains.com/issue/MPS-28047" />
+          <node concept="1PaTwC" id="4C5PONWAINI" role="3ndbpf">
+            <node concept="3oM_SD" id="4C5PONWAINJ" role="1PaTwD">
+              <property role="3oM_SC" value="see" />
+            </node>
+            <node concept="3oM_SD" id="4C5PONWAINK" role="1PaTwD">
+              <property role="3oM_SC" value="https://youtrack.jetbrains.com/issue/MPS-28047" />
+            </node>
           </node>
         </node>
         <node concept="3cpWs8" id="6$SBfHy2MI$" role="3cqZAp">
@@ -2406,8 +2510,19 @@
           </node>
         </node>
         <node concept="3SKdUt" id="6$SBfHy2ML5" role="3cqZAp">
-          <node concept="3SKdUq" id="6$SBfHy2ML4" role="3SKWNk">
-            <property role="3SKdUp" value="whitespaces are not highlighted" />
+          <node concept="1PaTwC" id="4C5PONWAINL" role="3ndbpf">
+            <node concept="3oM_SD" id="4C5PONWAINM" role="1PaTwD">
+              <property role="3oM_SC" value="whitespaces" />
+            </node>
+            <node concept="3oM_SD" id="4C5PONWAINN" role="1PaTwD">
+              <property role="3oM_SC" value="are" />
+            </node>
+            <node concept="3oM_SD" id="4C5PONWAINO" role="1PaTwD">
+              <property role="3oM_SC" value="not" />
+            </node>
+            <node concept="3oM_SD" id="4C5PONWAINP" role="1PaTwD">
+              <property role="3oM_SC" value="highlighted" />
+            </node>
           </node>
         </node>
         <node concept="3cpWs8" id="6$SBfHy2MIP" role="3cqZAp">
@@ -2867,23 +2982,124 @@
       </node>
       <node concept="3clFbS" id="6$SBfHy1$Zv" role="3clF47">
         <node concept="3SKdUt" id="6$SBfHy3qNK" role="3cqZAp">
-          <node concept="3SKdUq" id="6$SBfHy3qNL" role="3SKWNk">
-            <property role="3SKdUp" value="This method was copied from the deleted class in MPS: jetbrains.mps.nodeEditor.SubstituteActionUtil" />
+          <node concept="1PaTwC" id="4C5PONWAINQ" role="3ndbpf">
+            <node concept="3oM_SD" id="4C5PONWAINR" role="1PaTwD">
+              <property role="3oM_SC" value="This" />
+            </node>
+            <node concept="3oM_SD" id="4C5PONWAINS" role="1PaTwD">
+              <property role="3oM_SC" value="method" />
+            </node>
+            <node concept="3oM_SD" id="4C5PONWAINT" role="1PaTwD">
+              <property role="3oM_SC" value="was" />
+            </node>
+            <node concept="3oM_SD" id="4C5PONWAINU" role="1PaTwD">
+              <property role="3oM_SC" value="copied" />
+            </node>
+            <node concept="3oM_SD" id="4C5PONWAINV" role="1PaTwD">
+              <property role="3oM_SC" value="from" />
+            </node>
+            <node concept="3oM_SD" id="4C5PONWAINW" role="1PaTwD">
+              <property role="3oM_SC" value="the" />
+            </node>
+            <node concept="3oM_SD" id="4C5PONWAINX" role="1PaTwD">
+              <property role="3oM_SC" value="deleted" />
+            </node>
+            <node concept="3oM_SD" id="4C5PONWAINY" role="1PaTwD">
+              <property role="3oM_SC" value="class" />
+            </node>
+            <node concept="3oM_SD" id="4C5PONWAINZ" role="1PaTwD">
+              <property role="3oM_SC" value="in" />
+            </node>
+            <node concept="3oM_SD" id="4C5PONWAIO0" role="1PaTwD">
+              <property role="3oM_SC" value="MPS:" />
+            </node>
+            <node concept="3oM_SD" id="4C5PONWAIO1" role="1PaTwD">
+              <property role="3oM_SC" value="jetbrains.mps.nodeEditor.SubstituteActionUtil" />
+            </node>
           </node>
         </node>
         <node concept="3SKdUt" id="6$SBfHy3qNM" role="3cqZAp">
-          <node concept="3SKdUq" id="6$SBfHy3qNN" role="3SKWNk">
-            <property role="3SKdUp" value="In the future this classs should be refactored in order to sub-class NodeItemCellRenderer &amp; reuse" />
+          <node concept="1PaTwC" id="4C5PONWAIO2" role="3ndbpf">
+            <node concept="3oM_SD" id="4C5PONWAIO3" role="1PaTwD">
+              <property role="3oM_SC" value="In" />
+            </node>
+            <node concept="3oM_SD" id="4C5PONWAIO4" role="1PaTwD">
+              <property role="3oM_SC" value="the" />
+            </node>
+            <node concept="3oM_SD" id="4C5PONWAIO5" role="1PaTwD">
+              <property role="3oM_SC" value="future" />
+            </node>
+            <node concept="3oM_SD" id="4C5PONWAIO6" role="1PaTwD">
+              <property role="3oM_SC" value="this" />
+            </node>
+            <node concept="3oM_SD" id="4C5PONWAIO7" role="1PaTwD">
+              <property role="3oM_SC" value="classs" />
+            </node>
+            <node concept="3oM_SD" id="4C5PONWAIO8" role="1PaTwD">
+              <property role="3oM_SC" value="should" />
+            </node>
+            <node concept="3oM_SD" id="4C5PONWAIO9" role="1PaTwD">
+              <property role="3oM_SC" value="be" />
+            </node>
+            <node concept="3oM_SD" id="4C5PONWAIOa" role="1PaTwD">
+              <property role="3oM_SC" value="refactored" />
+            </node>
+            <node concept="3oM_SD" id="4C5PONWAIOb" role="1PaTwD">
+              <property role="3oM_SC" value="in" />
+            </node>
+            <node concept="3oM_SD" id="4C5PONWAIOc" role="1PaTwD">
+              <property role="3oM_SC" value="order" />
+            </node>
+            <node concept="3oM_SD" id="4C5PONWAIOd" role="1PaTwD">
+              <property role="3oM_SC" value="to" />
+            </node>
+            <node concept="3oM_SD" id="4C5PONWAIOe" role="1PaTwD">
+              <property role="3oM_SC" value="sub-class" />
+            </node>
+            <node concept="3oM_SD" id="4C5PONWAIOf" role="1PaTwD">
+              <property role="3oM_SC" value="NodeItemCellRenderer" />
+            </node>
+            <node concept="3oM_SD" id="4C5PONWAIOg" role="1PaTwD">
+              <property role="3oM_SC" value="&amp;" />
+            </node>
+            <node concept="3oM_SD" id="4C5PONWAIOh" role="1PaTwD">
+              <property role="3oM_SC" value="reuse" />
+            </node>
           </node>
         </node>
         <node concept="3SKdUt" id="6$SBfHy3qNO" role="3cqZAp">
-          <node concept="3SKdUq" id="6$SBfHy3qNP" role="3SKWNk">
-            <property role="3SKdUp" value="as most of the functionality from there" />
+          <node concept="1PaTwC" id="4C5PONWAIOi" role="3ndbpf">
+            <node concept="3oM_SD" id="4C5PONWAIOj" role="1PaTwD">
+              <property role="3oM_SC" value="as" />
+            </node>
+            <node concept="3oM_SD" id="4C5PONWAIOk" role="1PaTwD">
+              <property role="3oM_SC" value="most" />
+            </node>
+            <node concept="3oM_SD" id="4C5PONWAIOl" role="1PaTwD">
+              <property role="3oM_SC" value="of" />
+            </node>
+            <node concept="3oM_SD" id="4C5PONWAIOm" role="1PaTwD">
+              <property role="3oM_SC" value="the" />
+            </node>
+            <node concept="3oM_SD" id="4C5PONWAIOn" role="1PaTwD">
+              <property role="3oM_SC" value="functionality" />
+            </node>
+            <node concept="3oM_SD" id="4C5PONWAIOo" role="1PaTwD">
+              <property role="3oM_SC" value="from" />
+            </node>
+            <node concept="3oM_SD" id="4C5PONWAIOp" role="1PaTwD">
+              <property role="3oM_SC" value="there" />
+            </node>
           </node>
         </node>
         <node concept="3SKdUt" id="6$SBfHy3qNQ" role="3cqZAp">
-          <node concept="3SKdUq" id="6$SBfHy3qNR" role="3SKWNk">
-            <property role="3SKdUp" value="see https://youtrack.jetbrains.com/issue/MPS-28047" />
+          <node concept="1PaTwC" id="4C5PONWAIOq" role="3ndbpf">
+            <node concept="3oM_SD" id="4C5PONWAIOr" role="1PaTwD">
+              <property role="3oM_SC" value="see" />
+            </node>
+            <node concept="3oM_SD" id="4C5PONWAIOs" role="1PaTwD">
+              <property role="3oM_SC" value="https://youtrack.jetbrains.com/issue/MPS-28047" />
+            </node>
           </node>
         </node>
         <node concept="3cpWs8" id="6$SBfHy1$Zx" role="3cqZAp">
@@ -3100,23 +3316,124 @@
       </node>
       <node concept="3clFbS" id="6$SBfHy2jzw" role="3clF47">
         <node concept="3SKdUt" id="6$SBfHy3uAB" role="3cqZAp">
-          <node concept="3SKdUq" id="6$SBfHy3uAC" role="3SKWNk">
-            <property role="3SKdUp" value="This method was copied from the deleted class in MPS: jetbrains.mps.nodeEditor.SubstituteActionUtil" />
+          <node concept="1PaTwC" id="4C5PONWAIOt" role="3ndbpf">
+            <node concept="3oM_SD" id="4C5PONWAIOu" role="1PaTwD">
+              <property role="3oM_SC" value="This" />
+            </node>
+            <node concept="3oM_SD" id="4C5PONWAIOv" role="1PaTwD">
+              <property role="3oM_SC" value="method" />
+            </node>
+            <node concept="3oM_SD" id="4C5PONWAIOw" role="1PaTwD">
+              <property role="3oM_SC" value="was" />
+            </node>
+            <node concept="3oM_SD" id="4C5PONWAIOx" role="1PaTwD">
+              <property role="3oM_SC" value="copied" />
+            </node>
+            <node concept="3oM_SD" id="4C5PONWAIOy" role="1PaTwD">
+              <property role="3oM_SC" value="from" />
+            </node>
+            <node concept="3oM_SD" id="4C5PONWAIOz" role="1PaTwD">
+              <property role="3oM_SC" value="the" />
+            </node>
+            <node concept="3oM_SD" id="4C5PONWAIO$" role="1PaTwD">
+              <property role="3oM_SC" value="deleted" />
+            </node>
+            <node concept="3oM_SD" id="4C5PONWAIO_" role="1PaTwD">
+              <property role="3oM_SC" value="class" />
+            </node>
+            <node concept="3oM_SD" id="4C5PONWAIOA" role="1PaTwD">
+              <property role="3oM_SC" value="in" />
+            </node>
+            <node concept="3oM_SD" id="4C5PONWAIOB" role="1PaTwD">
+              <property role="3oM_SC" value="MPS:" />
+            </node>
+            <node concept="3oM_SD" id="4C5PONWAIOC" role="1PaTwD">
+              <property role="3oM_SC" value="jetbrains.mps.nodeEditor.SubstituteActionUtil" />
+            </node>
           </node>
         </node>
         <node concept="3SKdUt" id="6$SBfHy3uAD" role="3cqZAp">
-          <node concept="3SKdUq" id="6$SBfHy3uAE" role="3SKWNk">
-            <property role="3SKdUp" value="In the future this classs should be refactored in order to sub-class NodeItemCellRenderer &amp; reuse" />
+          <node concept="1PaTwC" id="4C5PONWAIOD" role="3ndbpf">
+            <node concept="3oM_SD" id="4C5PONWAIOE" role="1PaTwD">
+              <property role="3oM_SC" value="In" />
+            </node>
+            <node concept="3oM_SD" id="4C5PONWAIOF" role="1PaTwD">
+              <property role="3oM_SC" value="the" />
+            </node>
+            <node concept="3oM_SD" id="4C5PONWAIOG" role="1PaTwD">
+              <property role="3oM_SC" value="future" />
+            </node>
+            <node concept="3oM_SD" id="4C5PONWAIOH" role="1PaTwD">
+              <property role="3oM_SC" value="this" />
+            </node>
+            <node concept="3oM_SD" id="4C5PONWAIOI" role="1PaTwD">
+              <property role="3oM_SC" value="classs" />
+            </node>
+            <node concept="3oM_SD" id="4C5PONWAIOJ" role="1PaTwD">
+              <property role="3oM_SC" value="should" />
+            </node>
+            <node concept="3oM_SD" id="4C5PONWAIOK" role="1PaTwD">
+              <property role="3oM_SC" value="be" />
+            </node>
+            <node concept="3oM_SD" id="4C5PONWAIOL" role="1PaTwD">
+              <property role="3oM_SC" value="refactored" />
+            </node>
+            <node concept="3oM_SD" id="4C5PONWAIOM" role="1PaTwD">
+              <property role="3oM_SC" value="in" />
+            </node>
+            <node concept="3oM_SD" id="4C5PONWAION" role="1PaTwD">
+              <property role="3oM_SC" value="order" />
+            </node>
+            <node concept="3oM_SD" id="4C5PONWAIOO" role="1PaTwD">
+              <property role="3oM_SC" value="to" />
+            </node>
+            <node concept="3oM_SD" id="4C5PONWAIOP" role="1PaTwD">
+              <property role="3oM_SC" value="sub-class" />
+            </node>
+            <node concept="3oM_SD" id="4C5PONWAIOQ" role="1PaTwD">
+              <property role="3oM_SC" value="NodeItemCellRenderer" />
+            </node>
+            <node concept="3oM_SD" id="4C5PONWAIOR" role="1PaTwD">
+              <property role="3oM_SC" value="&amp;" />
+            </node>
+            <node concept="3oM_SD" id="4C5PONWAIOS" role="1PaTwD">
+              <property role="3oM_SC" value="reuse" />
+            </node>
           </node>
         </node>
         <node concept="3SKdUt" id="6$SBfHy3uAF" role="3cqZAp">
-          <node concept="3SKdUq" id="6$SBfHy3uAG" role="3SKWNk">
-            <property role="3SKdUp" value="as most of the functionality from there" />
+          <node concept="1PaTwC" id="4C5PONWAIOT" role="3ndbpf">
+            <node concept="3oM_SD" id="4C5PONWAIOU" role="1PaTwD">
+              <property role="3oM_SC" value="as" />
+            </node>
+            <node concept="3oM_SD" id="4C5PONWAIOV" role="1PaTwD">
+              <property role="3oM_SC" value="most" />
+            </node>
+            <node concept="3oM_SD" id="4C5PONWAIOW" role="1PaTwD">
+              <property role="3oM_SC" value="of" />
+            </node>
+            <node concept="3oM_SD" id="4C5PONWAIOX" role="1PaTwD">
+              <property role="3oM_SC" value="the" />
+            </node>
+            <node concept="3oM_SD" id="4C5PONWAIOY" role="1PaTwD">
+              <property role="3oM_SC" value="functionality" />
+            </node>
+            <node concept="3oM_SD" id="4C5PONWAIOZ" role="1PaTwD">
+              <property role="3oM_SC" value="from" />
+            </node>
+            <node concept="3oM_SD" id="4C5PONWAIP0" role="1PaTwD">
+              <property role="3oM_SC" value="there" />
+            </node>
           </node>
         </node>
         <node concept="3SKdUt" id="6$SBfHy3uAH" role="3cqZAp">
-          <node concept="3SKdUq" id="6$SBfHy3uAI" role="3SKWNk">
-            <property role="3SKdUp" value="see https://youtrack.jetbrains.com/issue/MPS-28047" />
+          <node concept="1PaTwC" id="4C5PONWAIP1" role="3ndbpf">
+            <node concept="3oM_SD" id="4C5PONWAIP2" role="1PaTwD">
+              <property role="3oM_SC" value="see" />
+            </node>
+            <node concept="3oM_SD" id="4C5PONWAIP3" role="1PaTwD">
+              <property role="3oM_SC" value="https://youtrack.jetbrains.com/issue/MPS-28047" />
+            </node>
           </node>
         </node>
         <node concept="3cpWs8" id="6$SBfHy2jzy" role="3cqZAp">
@@ -10590,8 +10907,25 @@
               </node>
             </node>
             <node concept="3SKdUt" id="2Z2H3pkZj3F" role="3cqZAp">
-              <node concept="3SKdUq" id="2Z2H3pkZj3E" role="3SKWNk">
-                <property role="3SKdUp" value="TODO: change to EditorColorManager default font" />
+              <node concept="1PaTwC" id="4C5PONWAIP4" role="3ndbpf">
+                <node concept="3oM_SD" id="4C5PONWAIP5" role="1PaTwD">
+                  <property role="3oM_SC" value="TODO:" />
+                </node>
+                <node concept="3oM_SD" id="4C5PONWAIP6" role="1PaTwD">
+                  <property role="3oM_SC" value="change" />
+                </node>
+                <node concept="3oM_SD" id="4C5PONWAIP7" role="1PaTwD">
+                  <property role="3oM_SC" value="to" />
+                </node>
+                <node concept="3oM_SD" id="4C5PONWAIP8" role="1PaTwD">
+                  <property role="3oM_SC" value="EditorColorManager" />
+                </node>
+                <node concept="3oM_SD" id="4C5PONWAIP9" role="1PaTwD">
+                  <property role="3oM_SC" value="default" />
+                </node>
+                <node concept="3oM_SD" id="4C5PONWAIPa" role="1PaTwD">
+                  <property role="3oM_SC" value="font" />
+                </node>
               </node>
             </node>
             <node concept="3clFbF" id="2Z2H3pkZizi" role="3cqZAp">
@@ -13434,9 +13768,7 @@
                 <node concept="37vLTw" id="5h7fEQaL0uT" role="2Oq$k0">
                   <ref role="3cqZAo" node="5h7fEQaKSOv" resolve="descriptionText" />
                 </node>
-                <node concept="17S1cR" id="5h7fEQaL0UH" role="2OqNvi">
-                  <property role="17S1cK" value="both" />
-                </node>
+                <node concept="17S1cR" id="5h7fEQaL0UH" role="2OqNvi" />
               </node>
             </node>
           </node>
