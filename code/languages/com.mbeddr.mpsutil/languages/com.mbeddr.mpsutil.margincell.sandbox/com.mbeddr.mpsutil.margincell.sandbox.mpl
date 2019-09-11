@@ -39,6 +39,7 @@
         <module reference="43068673-523b-46eb-ba12-b963f6b6f12f(com.mbeddr.mpsutil.margincell.sandbox)" version="0" />
         <module reference="f590f7f6-a22c-4290-82ca-db4eb308d097(com.mbeddr.mpsutil.margincell.sandbox#1159656764131978172)" version="0" />
         <module reference="ceab5195-25ea-4f22-9b92-103b95ca8c0c(jetbrains.mps.lang.core)" version="0" />
+        <module reference="9e98f4e2-decf-4e97-bf80-9109e8b759aa(jetbrains.mps.lang.feedback.context)" version="0" />
       </dependencyVersions>
       <mapping-priorities />
     </generator>
