@@ -934,12 +934,8 @@
       <node concept="3clFbS" id="2Z2H3pkZYzX" role="3clF47">
         <node concept="3clFbF" id="2Z2H3pkZYzY" role="3cqZAp">
           <node concept="2OqwBi" id="2Z2H3pkZYzZ" role="3clFbG">
-            <node concept="2YIFZM" id="2Z2H3pkZYRS" role="2Oq$k0">
-              <ref role="37wK5l" to="w1kc:~ModelAccess.instance()" resolve="instance" />
-              <ref role="1Pybhc" to="w1kc:~ModelAccess" resolve="ModelAccess" />
-            </node>
             <node concept="liA8E" id="2Z2H3pkZY$1" role="2OqNvi">
-              <ref role="37wK5l" to="w1kc:~ModelCommandExecutor.runReadAction(java.lang.Runnable)" resolve="runReadAction" />
+              <ref role="37wK5l" to="lui2:~ModelAccess.runReadAction(java.lang.Runnable)" resolve="runReadAction" />
               <node concept="2ShNRf" id="2Z2H3pkZY$2" role="37wK5m">
                 <node concept="YeOm9" id="2Z2H3pkZY$3" role="2ShVmc">
                   <node concept="1Y3b0j" id="2Z2H3pkZY$4" role="YeSDq">
@@ -977,6 +973,29 @@
                     </node>
                   </node>
                 </node>
+              </node>
+            </node>
+            <node concept="2OqwBi" id="hzzxOaLQzP" role="2Oq$k0">
+              <node concept="2OqwBi" id="hzzxOaLPqp" role="2Oq$k0">
+                <node concept="2OqwBi" id="hzzxOaLOz4" role="2Oq$k0">
+                  <node concept="2OqwBi" id="hzzxOaLaqg" role="2Oq$k0">
+                    <node concept="37vLTw" id="hzzxOaL8cz" role="2Oq$k0">
+                      <ref role="3cqZAo" node="2Z2H3pkZYz0" resolve="mySubstituteChooser" />
+                    </node>
+                    <node concept="liA8E" id="hzzxOaLOkU" role="2OqNvi">
+                      <ref role="37wK5l" node="hzzxOaLA46" resolve="getEditorComponent" />
+                    </node>
+                  </node>
+                  <node concept="liA8E" id="hzzxOaLP93" role="2OqNvi">
+                    <ref role="37wK5l" to="cj4x:~EditorComponent.getEditorContext()" resolve="getEditorContext" />
+                  </node>
+                </node>
+                <node concept="liA8E" id="hzzxOaLQjR" role="2OqNvi">
+                  <ref role="37wK5l" to="cj4x:~EditorContext.getRepository()" resolve="getRepository" />
+                </node>
+              </node>
+              <node concept="liA8E" id="hzzxOaLRhu" role="2OqNvi">
+                <ref role="37wK5l" to="lui2:~SRepository.getModelAccess()" resolve="getModelAccess" />
               </node>
             </node>
           </node>
@@ -11450,6 +11469,21 @@
       </node>
       <node concept="2AHcQZ" id="1tvBh5u36iz" role="2AJF6D">
         <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
+      </node>
+    </node>
+    <node concept="2tJIrI" id="hzzxOaLseg" role="jymVt" />
+    <node concept="3clFb_" id="hzzxOaLA46" role="jymVt">
+      <property role="TrG5h" value="getEditorComponent" />
+      <node concept="3clFbS" id="hzzxOaLA49" role="3clF47">
+        <node concept="3cpWs6" id="hzzxOaLGnT" role="3cqZAp">
+          <node concept="37vLTw" id="hzzxOaLHvE" role="3cqZAk">
+            <ref role="3cqZAo" node="2Z2H3pkZiGa" resolve="myEditorComponent" />
+          </node>
+        </node>
+      </node>
+      <node concept="3Tm1VV" id="hzzxOaLtGn" role="1B3o_S" />
+      <node concept="3uibUv" id="hzzxOaL_cH" role="3clF45">
+        <ref role="3uigEE" to="cj4x:~EditorComponent" resolve="EditorComponent" />
       </node>
     </node>
     <node concept="3UR2Jj" id="2Z2H3pl0xrQ" role="lGtFl">

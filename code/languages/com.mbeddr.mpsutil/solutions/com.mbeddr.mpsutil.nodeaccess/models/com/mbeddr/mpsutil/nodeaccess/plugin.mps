@@ -34,6 +34,8 @@
     <import index="nwfd" ref="7f0984ac-9f5d-4001-9257-17f7d10f3fd5/java:javax.servlet.http(com.mbeddr.mpsutil.httpsupport.rt/)" />
     <import index="4h87" ref="r:05ff02e5-9836-4ae9-a454-eab43fa58c8f(jetbrains.mps.ide.httpsupport.manager.plugin)" />
     <import index="ciba" ref="r:11b7cdb2-cc58-456e-bb9a-ce45b78edd2f(jetbrains.mps.ide.httpsupport.runtime.base)" />
+    <import index="dush" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.persistence(MPS.OpenAPI/)" />
+    <import index="lui2" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.module(MPS.OpenAPI/)" implicit="true" />
     <import index="c17a" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.language(MPS.OpenAPI/)" implicit="true" />
     <import index="z1c4" ref="742f6602-5a2f-4313-aa6e-ae1cd4ffdc61/java:jetbrains.mps.project(MPS.Platform/)" implicit="true" />
     <import index="opgt" ref="7f0984ac-9f5d-4001-9257-17f7d10f3fd5/java:javax.servlet(com.mbeddr.mpsutil.httpsupport.rt/)" implicit="true" />
@@ -369,9 +371,9 @@
               <node concept="Xl_RD" id="2VC4eVY6bFk" role="3uHU7B">
                 <property role="Xl_RC" value="http://localhost:" />
               </node>
-              <node concept="10M0yZ" id="1_yOWEXevEb" role="3uHU7w">
-                <ref role="3cqZAo" to="4h87:3PMO5H7WJ51" resolve="PORT" />
-                <ref role="1PxDUh" to="4h87:3PMO5H7WIrG" resolve="MPSInternalPortManager" />
+              <node concept="2YIFZM" id="hzzxOaMao2" role="3uHU7w">
+                <ref role="37wK5l" to="4h87:3BwRxVwW$fn" resolve="getCurrentPort" />
+                <ref role="1Pybhc" to="4h87:3PMO5H7WIrG" resolve="MPSInternalPortManager" />
               </node>
             </node>
           </node>
@@ -922,51 +924,49 @@
               </node>
             </node>
             <node concept="3clFbJ" id="602uc2JOB7p" role="3cqZAp">
-              <node concept="3clFbS" id="602uc2JOB7s" role="3clFbx">
-                <node concept="RRSsy" id="42VTAcDfnNu" role="3cqZAp">
-                  <property role="RRSoG" value="gZ5fksE/warn" />
-                  <node concept="3cpWs3" id="602uc2JODyb" role="RRSoy">
-                    <node concept="Xl_RD" id="602uc2JODyt" role="3uHU7w">
-                      <property role="Xl_RC" value="' instead." />
-                    </node>
-                    <node concept="3cpWs3" id="602uc2JOC13" role="3uHU7B">
-                      <node concept="3cpWs3" id="7CAL8BWt7f" role="3uHU7B">
-                        <node concept="3cpWs3" id="7CAL8BWt7g" role="3uHU7B">
-                          <node concept="Xl_RD" id="7CAL8BWt7h" role="3uHU7B">
-                            <property role="Xl_RC" value="cannot open node in project named '" />
-                          </node>
-                          <node concept="37vLTw" id="7CAL8BWt7i" role="3uHU7w">
-                            <ref role="3cqZAo" node="2N1CSrzLgCf" resolve="projectName" />
-                          </node>
-                        </node>
-                        <node concept="Xl_RD" id="7CAL8BWt7j" role="3uHU7w">
-                          <property role="Xl_RC" value="'. Using '" />
-                        </node>
-                      </node>
-                      <node concept="2OqwBi" id="602uc2JOCoa" role="3uHU7w">
-                        <node concept="37vLTw" id="602uc2JOCi2" role="2Oq$k0">
-                          <ref role="3cqZAo" node="7CAL8BWhzA" resolve="project" />
-                        </node>
-                        <node concept="liA8E" id="602uc2JODhS" role="2OqNvi">
-                          <ref role="37wK5l" to="z1c3:~Project.getName()" resolve="getName" />
-                        </node>
-                      </node>
-                    </node>
-                  </node>
-                </node>
-              </node>
-              <node concept="3y3z36" id="602uc2JOBex" role="3clFbw">
-                <node concept="10Nm6u" id="602uc2JOBfq" role="3uHU7w" />
+              <node concept="3clFbC" id="hzzxOaLXvK" role="3clFbw">
                 <node concept="37vLTw" id="602uc2JOB8p" role="3uHU7B">
                   <ref role="3cqZAo" node="7CAL8BWhzA" resolve="project" />
                 </node>
+                <node concept="10Nm6u" id="602uc2JOBfq" role="3uHU7w" />
               </node>
-              <node concept="9aQIb" id="602uc2JODEQ" role="9aQIa">
-                <node concept="3clFbS" id="602uc2JODER" role="9aQI4">
-                  <node concept="RRSsy" id="42VTAcDfnNS" role="3cqZAp">
-                    <property role="RRSoG" value="gZ5fh_4/error" />
-                    <node concept="Xl_RD" id="602uc2JOFlh" role="RRSoy">
-                      <property role="Xl_RC" value="no project available. Cannot open node." />
+              <node concept="3clFbS" id="602uc2JODER" role="3clFbx">
+                <node concept="RRSsy" id="42VTAcDfnNS" role="3cqZAp">
+                  <property role="RRSoG" value="gZ5fh_4/error" />
+                  <node concept="Xl_RD" id="602uc2JOFlh" role="RRSoy">
+                    <property role="Xl_RC" value="no project available. Cannot open node." />
+                  </node>
+                </node>
+                <node concept="3cpWs6" id="hzzxOaLXvf" role="3cqZAp" />
+              </node>
+            </node>
+            <node concept="3clFbH" id="hzzxOaLYrs" role="3cqZAp" />
+            <node concept="RRSsy" id="42VTAcDfnNu" role="3cqZAp">
+              <property role="RRSoG" value="gZ5fksE/warn" />
+              <node concept="3cpWs3" id="602uc2JODyb" role="RRSoy">
+                <node concept="Xl_RD" id="602uc2JODyt" role="3uHU7w">
+                  <property role="Xl_RC" value="' instead." />
+                </node>
+                <node concept="3cpWs3" id="602uc2JOC13" role="3uHU7B">
+                  <node concept="3cpWs3" id="7CAL8BWt7f" role="3uHU7B">
+                    <node concept="3cpWs3" id="7CAL8BWt7g" role="3uHU7B">
+                      <node concept="Xl_RD" id="7CAL8BWt7h" role="3uHU7B">
+                        <property role="Xl_RC" value="cannot open node in project named '" />
+                      </node>
+                      <node concept="37vLTw" id="7CAL8BWt7i" role="3uHU7w">
+                        <ref role="3cqZAo" node="2N1CSrzLgCf" resolve="projectName" />
+                      </node>
+                    </node>
+                    <node concept="Xl_RD" id="7CAL8BWt7j" role="3uHU7w">
+                      <property role="Xl_RC" value="'. Using '" />
+                    </node>
+                  </node>
+                  <node concept="2OqwBi" id="602uc2JOCoa" role="3uHU7w">
+                    <node concept="37vLTw" id="602uc2JOCi2" role="2Oq$k0">
+                      <ref role="3cqZAo" node="7CAL8BWhzA" resolve="project" />
+                    </node>
+                    <node concept="liA8E" id="602uc2JODhS" role="2OqNvi">
+                      <ref role="37wK5l" to="z1c3:~Project.getName()" resolve="getName" />
                     </node>
                   </node>
                 </node>
@@ -988,11 +988,16 @@
             <node concept="3uibUv" id="7CAL8BWh$b" role="1tU5fm">
               <ref role="3uigEE" to="mhbf:~SModelId" resolve="SModelId" />
             </node>
-            <node concept="2YIFZM" id="7CAL8BWh$c" role="33vP2m">
-              <ref role="37wK5l" to="w1kc:~SModelId.fromString(java.lang.String)" resolve="fromString" />
-              <ref role="1Pybhc" to="w1kc:~SModelId" resolve="SModelId" />
-              <node concept="37vLTw" id="7CAL8BWh$d" role="37wK5m">
-                <ref role="3cqZAo" node="2N1CSrzLPdT" resolve="modelIDAsString" />
+            <node concept="2OqwBi" id="hzzxOaM1o1" role="33vP2m">
+              <node concept="2YIFZM" id="hzzxOaM1bT" role="2Oq$k0">
+                <ref role="37wK5l" to="dush:~PersistenceFacade.getInstance()" resolve="getInstance" />
+                <ref role="1Pybhc" to="dush:~PersistenceFacade" resolve="PersistenceFacade" />
+              </node>
+              <node concept="liA8E" id="hzzxOaM4Xa" role="2OqNvi">
+                <ref role="37wK5l" to="dush:~PersistenceFacade.createModelId(java.lang.String)" resolve="createModelId" />
+                <node concept="37vLTw" id="hzzxOaM5Th" role="37wK5m">
+                  <ref role="3cqZAo" node="2N1CSrzLPdT" resolve="modelIDAsString" />
+                </node>
               </node>
             </node>
           </node>
@@ -1004,11 +1009,16 @@
             <node concept="3uibUv" id="7CAL8BWh$g" role="1tU5fm">
               <ref role="3uigEE" to="mhbf:~SNodeId" resolve="SNodeId" />
             </node>
-            <node concept="2YIFZM" id="7CAL8BWh$h" role="33vP2m">
-              <ref role="37wK5l" to="w1kc:~SNodeId.fromString(java.lang.String)" resolve="fromString" />
-              <ref role="1Pybhc" to="w1kc:~SNodeId" resolve="SNodeId" />
-              <node concept="37vLTw" id="7CAL8BWh$i" role="37wK5m">
-                <ref role="3cqZAo" node="2N1CSrzLPIH" resolve="nodeIDAsString" />
+            <node concept="2OqwBi" id="hzzxOaM7wf" role="33vP2m">
+              <node concept="2YIFZM" id="hzzxOaM7lf" role="2Oq$k0">
+                <ref role="37wK5l" to="dush:~PersistenceFacade.getInstance()" resolve="getInstance" />
+                <ref role="1Pybhc" to="dush:~PersistenceFacade" resolve="PersistenceFacade" />
+              </node>
+              <node concept="liA8E" id="hzzxOaM7FM" role="2OqNvi">
+                <ref role="37wK5l" to="dush:~PersistenceFacade.createNodeId(java.lang.String)" resolve="createNodeId" />
+                <node concept="37vLTw" id="hzzxOaM86l" role="37wK5m">
+                  <ref role="3cqZAo" node="2N1CSrzLPIH" resolve="nodeIDAsString" />
+                </node>
               </node>
             </node>
           </node>
@@ -1029,12 +1039,16 @@
         <node concept="3clFbH" id="602uc2JO_wY" role="3cqZAp" />
         <node concept="3clFbF" id="2N1CSrzKNPw" role="3cqZAp">
           <node concept="2OqwBi" id="2N1CSrzKNPx" role="3clFbG">
-            <node concept="2YIFZM" id="2N1CSrzKNPy" role="2Oq$k0">
-              <ref role="1Pybhc" to="w1kc:~ModelAccess" resolve="ModelAccess" />
-              <ref role="37wK5l" to="w1kc:~ModelAccess.instance()" resolve="instance" />
+            <node concept="2OqwBi" id="hzzxOaLZ5J" role="2Oq$k0">
+              <node concept="37vLTw" id="hzzxOaLYJe" role="2Oq$k0">
+                <ref role="3cqZAo" node="7CAL8BWhzA" resolve="project" />
+              </node>
+              <node concept="liA8E" id="hzzxOaLZOB" role="2OqNvi">
+                <ref role="37wK5l" to="z1c3:~Project.getModelAccess()" resolve="getModelAccess" />
+              </node>
             </node>
             <node concept="liA8E" id="2N1CSrzKNPz" role="2OqNvi">
-              <ref role="37wK5l" to="w1kc:~ModelCommandExecutor.runWriteInEDT(java.lang.Runnable)" resolve="runWriteInEDT" />
+              <ref role="37wK5l" to="lui2:~ModelAccess.runWriteInEDT(java.lang.Runnable)" resolve="runWriteInEDT" />
               <node concept="2ShNRf" id="2N1CSrzKNP$" role="37wK5m">
                 <node concept="YeOm9" id="2N1CSrzKNP_" role="2ShVmc">
                   <node concept="1Y3b0j" id="2N1CSrzKNPA" role="YeSDq">

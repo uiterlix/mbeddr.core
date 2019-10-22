@@ -1365,12 +1365,24 @@
       <node concept="3clFbS" id="3uPd3F$gmBG" role="3clF47">
         <node concept="3clFbF" id="1sk$UGQ12vA" role="3cqZAp">
           <node concept="2OqwBi" id="1sk$UGQ12w1" role="3clFbG">
-            <node concept="2YIFZM" id="1sk$UGQ12vE" role="2Oq$k0">
-              <ref role="37wK5l" to="w1kc:~ModelAccess.instance()" resolve="instance" />
-              <ref role="1Pybhc" to="w1kc:~ModelAccess" resolve="ModelAccess" />
+            <node concept="2ShNRf" id="hzzxOaN_5s" role="2Oq$k0">
+              <node concept="1pGfFk" id="hzzxOaNC8H" role="2ShVmc">
+                <ref role="37wK5l" to="w1kc:~ModelAccessHelper.&lt;init&gt;(org.jetbrains.mps.openapi.module.SRepository)" resolve="ModelAccessHelper" />
+                <node concept="2OqwBi" id="hzzxOaNFVN" role="37wK5m">
+                  <node concept="2OqwBi" id="hzzxOaNDO3" role="2Oq$k0">
+                    <node concept="2WthIp" id="hzzxOaNDO6" role="2Oq$k0" />
+                    <node concept="1DTwFV" id="hzzxOaNDO8" role="2OqNvi">
+                      <ref role="2WH_rO" node="6xlxoSXd9AB" resolve="project" />
+                    </node>
+                  </node>
+                  <node concept="liA8E" id="hzzxOaNIVl" role="2OqNvi">
+                    <ref role="37wK5l" to="z1c4:~Project.getRepository()" resolve="getRepository" />
+                  </node>
+                </node>
+              </node>
             </node>
             <node concept="liA8E" id="1sk$UGQ12w9" role="2OqNvi">
-              <ref role="37wK5l" to="w1kc:~ModelCommandExecutor.runReadAction(jetbrains.mps.util.Computable)" resolve="runReadAction" />
+              <ref role="37wK5l" to="w1kc:~ModelAccessHelper.runReadAction(jetbrains.mps.util.Computable)" resolve="runReadAction" />
               <node concept="2ShNRf" id="1sk$UGQ12wc" role="37wK5m">
                 <node concept="YeOm9" id="1sk$UGQ12wp" role="2ShVmc">
                   <node concept="1Y3b0j" id="1sk$UGQ12wq" role="YeSDq">
