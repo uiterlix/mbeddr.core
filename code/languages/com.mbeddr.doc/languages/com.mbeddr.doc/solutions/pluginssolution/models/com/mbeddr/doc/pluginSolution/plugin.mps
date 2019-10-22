@@ -2321,9 +2321,18 @@
       <node concept="3clFbS" id="l3$K9zY0Y9" role="3clF47">
         <node concept="3clFbF" id="jpyKDg2SuN" role="3cqZAp">
           <node concept="2OqwBi" id="jpyKDg2SuO" role="3clFbG">
-            <node concept="2YIFZM" id="jpyKDg2SuP" role="2Oq$k0">
-              <ref role="1Pybhc" to="w1kc:~ModelAccess" resolve="ModelAccess" />
-              <ref role="37wK5l" to="w1kc:~ModelAccess.instance()" resolve="instance" />
+            <node concept="2OqwBi" id="hzzxOaSRYg" role="2Oq$k0">
+              <node concept="2OqwBi" id="hzzxOaSQ6l" role="2Oq$k0">
+                <node concept="37vLTw" id="hzzxOaSOt2" role="2Oq$k0">
+                  <ref role="3cqZAo" node="l3$K9zOJ_Q" resolve="project" />
+                </node>
+                <node concept="liA8E" id="hzzxOaSRpW" role="2OqNvi">
+                  <ref role="37wK5l" to="z1c3:~Project.getRepository()" resolve="getRepository" />
+                </node>
+              </node>
+              <node concept="liA8E" id="hzzxOaST1l" role="2OqNvi">
+                <ref role="37wK5l" to="lui2:~SRepository.getModelAccess()" resolve="getModelAccess" />
+              </node>
             </node>
             <node concept="liA8E" id="jpyKDg2SuQ" role="2OqNvi">
               <ref role="37wK5l" to="lui2:~ModelAccess.runWriteInEDT(java.lang.Runnable)" resolve="runWriteInEDT" />
