@@ -7293,9 +7293,23 @@
       <node concept="3clFbS" id="CWtn7Mkrvw" role="3clF47">
         <node concept="3clFbF" id="CWtn7Mkrvx" role="3cqZAp">
           <node concept="2OqwBi" id="CWtn7Mkrvy" role="3clFbG">
-            <node concept="2YIFZM" id="CWtn7Mkrvz" role="2Oq$k0">
-              <ref role="1Pybhc" to="w1kc:~ModelAccess" resolve="ModelAccess" />
-              <ref role="37wK5l" to="w1kc:~ModelAccess.instance()" resolve="instance" />
+            <node concept="2OqwBi" id="hzzxOaPH2h" role="2Oq$k0">
+              <node concept="2OqwBi" id="hzzxOaPG1f" role="2Oq$k0">
+                <node concept="2OqwBi" id="hzzxOaPEx7" role="2Oq$k0">
+                  <node concept="37vLTw" id="hzzxOaPDEr" role="2Oq$k0">
+                    <ref role="3cqZAo" node="6Jye7ey1hQY" resolve="comp" />
+                  </node>
+                  <node concept="liA8E" id="hzzxOaPFEB" role="2OqNvi">
+                    <ref role="37wK5l" to="exr9:~EditorComponent.getEditorContext()" resolve="getEditorContext" />
+                  </node>
+                </node>
+                <node concept="liA8E" id="hzzxOaPGEr" role="2OqNvi">
+                  <ref role="37wK5l" to="exr9:~EditorContext.getRepository()" resolve="getRepository" />
+                </node>
+              </node>
+              <node concept="liA8E" id="hzzxOaPHBV" role="2OqNvi">
+                <ref role="37wK5l" to="lui2:~SRepository.getModelAccess()" resolve="getModelAccess" />
+              </node>
             </node>
             <node concept="liA8E" id="CWtn7Mkrv$" role="2OqNvi">
               <ref role="37wK5l" to="lui2:~ModelAccess.runReadAction(java.lang.Runnable)" resolve="runReadAction" />
