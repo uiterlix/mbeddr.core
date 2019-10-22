@@ -69,6 +69,7 @@
     <import index="zgpd" ref="r:5723595d-8d9d-4118-b46d-d56508505371(com.mbeddr.mpsutil.genutil.plugin)" />
     <import index="lvdd" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.generator.cache(MPS.Core/)" />
     <import index="g1qu" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.util.ui(MPS.IDEA/)" />
+    <import index="z1c4" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.project(MPS.Core/)" implicit="true" />
     <import index="1ctc" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util.stream(JDK/)" implicit="true" />
   </imports>
   <registry>
@@ -3237,6 +3238,31 @@
                               <ref role="37wK5l" to="hr7j:~LinkedBindingBuilder.toInstance(java.lang.Object)" resolve="toInstance" />
                               <node concept="37vLTw" id="3naHrQFOhUO" role="37wK5m">
                                 <ref role="3cqZAo" node="6WfZQfTHrk7" resolve="project" />
+                              </node>
+                            </node>
+                          </node>
+                        </node>
+                        <node concept="3clFbF" id="hzzxOaQ_f8" role="3cqZAp">
+                          <node concept="2OqwBi" id="hzzxOaQBsu" role="3clFbG">
+                            <node concept="1rXfSq" id="hzzxOaQ_f6" role="2Oq$k0">
+                              <ref role="37wK5l" to="ez3t:~AbstractModule.bind(java.lang.Class)" resolve="bind" />
+                              <node concept="3VsKOn" id="hzzxOaQAMY" role="37wK5m">
+                                <ref role="3VsUkX" to="lui2:~SRepository" resolve="SRepository" />
+                              </node>
+                            </node>
+                            <node concept="liA8E" id="hzzxOaQC8c" role="2OqNvi">
+                              <ref role="37wK5l" to="hr7j:~LinkedBindingBuilder.toInstance(java.lang.Object)" resolve="toInstance" />
+                              <node concept="2OqwBi" id="hzzxOaQF7$" role="37wK5m">
+                                <node concept="2YIFZM" id="hzzxOaQDRX" role="2Oq$k0">
+                                  <ref role="37wK5l" to="alof:~ProjectHelper.fromIdeaProject(com.intellij.openapi.project.Project)" resolve="fromIdeaProject" />
+                                  <ref role="1Pybhc" to="alof:~ProjectHelper" resolve="ProjectHelper" />
+                                  <node concept="37vLTw" id="hzzxOaQEmk" role="37wK5m">
+                                    <ref role="3cqZAo" node="6WfZQfTHrk7" resolve="project" />
+                                  </node>
+                                </node>
+                                <node concept="liA8E" id="hzzxOaQGdJ" role="2OqNvi">
+                                  <ref role="37wK5l" to="z1c4:~Project.getRepository()" resolve="getRepository" />
+                                </node>
                               </node>
                             </node>
                           </node>
@@ -57302,10 +57328,48 @@
   <node concept="312cEu" id="2cOIosl5D9M">
     <property role="3GE5qa" value="mapper.breakpoint.mapper.impl" />
     <property role="TrG5h" value="MTracesProvider" />
+    <node concept="312cEg" id="hzzxOaQp_U" role="jymVt">
+      <property role="TrG5h" value="repository" />
+      <property role="3TUv4t" value="true" />
+      <node concept="3Tm6S6" id="hzzxOaQp_V" role="1B3o_S" />
+      <node concept="3uibUv" id="hzzxOaQp_X" role="1tU5fm">
+        <ref role="3uigEE" to="lui2:~SRepository" resolve="SRepository" />
+      </node>
+    </node>
+    <node concept="2tJIrI" id="hzzxOaQoVv" role="jymVt" />
     <node concept="3Tm1VV" id="2cOIosl5D9N" role="1B3o_S" />
     <node concept="3uibUv" id="2cOIosl5Da7" role="EKbjA">
       <ref role="3uigEE" node="2cOIosl5D9O" resolve="IMTracesProvider" />
     </node>
+    <node concept="3clFbW" id="hzzxOaQnQe" role="jymVt">
+      <node concept="37vLTG" id="hzzxOaQowN" role="3clF46">
+        <property role="TrG5h" value="repository" />
+        <node concept="3uibUv" id="hzzxOaQoKR" role="1tU5fm">
+          <ref role="3uigEE" to="lui2:~SRepository" resolve="SRepository" />
+        </node>
+      </node>
+      <node concept="3cqZAl" id="hzzxOaQnQg" role="3clF45" />
+      <node concept="3Tm1VV" id="hzzxOaQnQh" role="1B3o_S" />
+      <node concept="3clFbS" id="hzzxOaQnQi" role="3clF47">
+        <node concept="3clFbF" id="hzzxOaQqCq" role="3cqZAp">
+          <node concept="37vLTI" id="hzzxOaQrme" role="3clFbG">
+            <node concept="37vLTw" id="hzzxOaQrAH" role="37vLTx">
+              <ref role="3cqZAo" node="hzzxOaQowN" resolve="repository" />
+            </node>
+            <node concept="2OqwBi" id="hzzxOaQqMC" role="37vLTJ">
+              <node concept="Xjq3P" id="hzzxOaQqCp" role="2Oq$k0" />
+              <node concept="2OwXpG" id="hzzxOaQr0K" role="2OqNvi">
+                <ref role="2Oxat5" node="hzzxOaQp_U" resolve="repository" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="2AHcQZ" id="hzzxOaRFFN" role="2AJF6D">
+        <ref role="2AI5Lk" to="ez3t:~Inject" resolve="Inject" />
+      </node>
+    </node>
+    <node concept="2tJIrI" id="hzzxOaQrNj" role="jymVt" />
     <node concept="3clFb_" id="$zo7noTD43" role="jymVt">
       <property role="TrG5h" value="getFilteredTraces" />
       <node concept="37vLTG" id="$zo7noTD4U" role="3clF46">
@@ -57519,59 +57583,29 @@
             </node>
           </node>
         </node>
-        <node concept="3clFbJ" id="$zo7noTqSk" role="3cqZAp">
-          <node concept="3clFbS" id="$zo7noTqSl" role="3clFbx">
-            <node concept="3clFbF" id="$zo7noTD7E" role="3cqZAp">
-              <node concept="37vLTI" id="$zo7noTD86" role="3clFbG">
-                <node concept="3P9mCS" id="$zo7noTD8f" role="37vLTx">
-                  <ref role="37wK5l" node="$zo7noTD43" resolve="getFilteredTraces" />
-                  <node concept="37vLTw" id="$zo7noTD8m" role="37wK5m">
-                    <ref role="3cqZAo" node="2cOIosl6kOd" resolve="rootNode" />
-                  </node>
-                  <node concept="37vLTw" id="$zo7noTD8$" role="37wK5m">
-                    <ref role="3cqZAo" node="2cOIosl6kOf" resolve="tracedNode" />
-                  </node>
-                </node>
-                <node concept="37vLTw" id="5HxjapvQZFt" role="37vLTJ">
-                  <ref role="3cqZAo" node="2cOIosl6kOI" resolve="filteredTraces" />
-                </node>
-              </node>
-            </node>
-          </node>
-          <node concept="2OqwBi" id="$zo7noTqSr" role="3clFbw">
-            <node concept="2YIFZM" id="$zo7noTqSs" role="2Oq$k0">
-              <ref role="37wK5l" to="w1kc:~ModelAccess.instance()" resolve="instance" />
-              <ref role="1Pybhc" to="w1kc:~ModelAccess" resolve="ModelAccess" />
-            </node>
-            <node concept="liA8E" id="$zo7noTqSt" role="2OqNvi">
-              <ref role="37wK5l" to="w1kc:~ModelAccess.isInsideCommand()" resolve="isInsideCommand" />
-            </node>
-          </node>
-          <node concept="9aQIb" id="$zo7noTqSx" role="9aQIa">
-            <node concept="3clFbS" id="$zo7noTqSy" role="9aQI4">
-              <node concept="1QHqEK" id="$zo7noTqSu" role="3cqZAp">
-                <node concept="1QHqEC" id="$zo7noTqSv" role="1QHqEI">
-                  <node concept="3clFbS" id="$zo7noTqSw" role="1bW5cS">
-                    <node concept="3clFbF" id="$zo7noTD8M" role="3cqZAp">
-                      <node concept="37vLTI" id="$zo7noTD8N" role="3clFbG">
-                        <node concept="3P9mCS" id="$zo7noTD8O" role="37vLTx">
-                          <ref role="37wK5l" node="$zo7noTD43" resolve="getFilteredTraces" />
-                          <node concept="37vLTw" id="$zo7noTD8P" role="37wK5m">
-                            <ref role="3cqZAo" node="2cOIosl6kOd" resolve="rootNode" />
-                          </node>
-                          <node concept="37vLTw" id="$zo7noTD8Q" role="37wK5m">
-                            <ref role="3cqZAo" node="2cOIosl6kOf" resolve="tracedNode" />
-                          </node>
-                        </node>
-                        <node concept="37vLTw" id="5HxjapvQZGm" role="37vLTJ">
-                          <ref role="3cqZAo" node="2cOIosl6kOI" resolve="filteredTraces" />
-                        </node>
-                      </node>
+        <node concept="1QHqEK" id="$zo7noTqSu" role="3cqZAp">
+          <node concept="1QHqEC" id="$zo7noTqSv" role="1QHqEI">
+            <node concept="3clFbS" id="$zo7noTqSw" role="1bW5cS">
+              <node concept="3clFbF" id="$zo7noTD8M" role="3cqZAp">
+                <node concept="37vLTI" id="$zo7noTD8N" role="3clFbG">
+                  <node concept="3P9mCS" id="$zo7noTD8O" role="37vLTx">
+                    <ref role="37wK5l" node="$zo7noTD43" resolve="getFilteredTraces" />
+                    <node concept="37vLTw" id="$zo7noTD8P" role="37wK5m">
+                      <ref role="3cqZAo" node="2cOIosl6kOd" resolve="rootNode" />
+                    </node>
+                    <node concept="37vLTw" id="$zo7noTD8Q" role="37wK5m">
+                      <ref role="3cqZAo" node="2cOIosl6kOf" resolve="tracedNode" />
                     </node>
                   </node>
+                  <node concept="37vLTw" id="5HxjapvQZGm" role="37vLTJ">
+                    <ref role="3cqZAo" node="2cOIosl6kOI" resolve="filteredTraces" />
+                  </node>
                 </node>
               </node>
             </node>
+          </node>
+          <node concept="37vLTw" id="hzzxOaQsFR" role="ukAjM">
+            <ref role="3cqZAo" node="hzzxOaQp_U" resolve="repository" />
           </node>
         </node>
         <node concept="3cpWs6" id="2cOIosl6kOY" role="3cqZAp">

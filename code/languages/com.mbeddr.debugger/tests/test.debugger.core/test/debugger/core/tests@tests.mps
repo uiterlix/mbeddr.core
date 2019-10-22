@@ -46,6 +46,7 @@
     <import index="mhbf" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.model(MPS.OpenAPI/)" />
     <import index="fwk" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.textgen.trace(MPS.Core/)" />
     <import index="i8lq" ref="9414e29c-0c8d-4bc7-b251-f312597fb993/java:org.mockito.internal.verification(org.mockito/)" />
+    <import index="lui2" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.module(MPS.OpenAPI/)" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
   </imports>
   <registry>
@@ -15746,6 +15747,26 @@
                                 <ref role="37wK5l" to="rgba:~EasyMock.createMock(java.lang.Class)" resolve="createMock" />
                                 <node concept="3VsKOn" id="28Ru$KV$iyP" role="37wK5m">
                                   <ref role="3VsUkX" to="4nm9:~Project" resolve="Project" />
+                                </node>
+                              </node>
+                            </node>
+                          </node>
+                        </node>
+                        <node concept="3clFbF" id="hzzxOaQJQ0" role="3cqZAp">
+                          <node concept="2OqwBi" id="hzzxOaQJQ1" role="3clFbG">
+                            <node concept="3P9mCS" id="hzzxOaQJQ2" role="2Oq$k0">
+                              <ref role="37wK5l" to="ez3t:~AbstractModule.bind(java.lang.Class)" resolve="bind" />
+                              <node concept="3VsKOn" id="hzzxOaQJQ3" role="37wK5m">
+                                <ref role="3VsUkX" to="lui2:~SRepository" resolve="SRepository" />
+                              </node>
+                            </node>
+                            <node concept="liA8E" id="hzzxOaQJQ4" role="2OqNvi">
+                              <ref role="37wK5l" to="hr7j:~LinkedBindingBuilder.toInstance(java.lang.Object)" resolve="toInstance" />
+                              <node concept="2YIFZM" id="hzzxOaQJQ5" role="37wK5m">
+                                <ref role="1Pybhc" to="rgba:~EasyMock" resolve="EasyMock" />
+                                <ref role="37wK5l" to="rgba:~EasyMock.createMock(java.lang.Class)" resolve="createMock" />
+                                <node concept="3VsKOn" id="hzzxOaQJQ6" role="37wK5m">
+                                  <ref role="3VsUkX" to="lui2:~SRepository" resolve="SRepository" />
                                 </node>
                               </node>
                             </node>
