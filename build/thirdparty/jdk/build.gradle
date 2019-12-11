@@ -1,27 +1,44 @@
 import de.undercouch.gradle.tasks.download.Download
 
 group 'com.jetbrains.jdk'
-version '8u202b1483.21'
+
+def jdk_version = '11_0_4'
+def jdk_build = 'b304.78'
 
 for (platform in ['osx', 'windows', 'linux']) {
     String capitalizedPlatform = platform.capitalize()
-    def jdkClassifier = "${platform}_x64"
+    def platformClassifier = "${platform}-x64"
 
-    def downloadTask = tasks.create(name: 'getJdk' + capitalizedPlatform, type: Download) {
-        def fileName = "jbsdk${version}_${jdkClassifier}.tar.gz"
-        src "https://dl.bintray.com/jetbrains/intellij-jdk/$fileName"
-        dest "$buildDir/$fileName"
-        overwrite false
-    }
+    for (distroType in ['jbr', 'jbrsdk']) {
 
-    publishing {
-        publications.create('jdk' + capitalizedPlatform, MavenPublication) {
-            artifact (downloadTask.dest) {
-                classifier jdkClassifier
-                builtBy downloadTask
-                extension 'tgz'
-            }
-            artifactId 'jdk'
+        def capitalizedDistroType = distroType.capitalize()
+
+        def downloadTasks = tasks.create(name: 'get' + capitalizedDistroType + capitalizedPlatform, type: Download) {
+            def fileName = "${distroType}-${jdk_version}-${platformClassifier}-${jdk_build}.tar.gz"
+            src "https://dl.bintray.com/jetbrains/intellij-jbr/$fileName"
+            dest "$buildDir/$fileName"
+            overwrite false
         }
+
+        publishing {
+            publications.create('jdk' + capitalizedDistroType + capitalizedPlatform, MavenPublication) {
+                artifact (downloadTasks.dest) {
+                    classifier platformClassifier
+                    builtBy downloadTasks
+                    extension 'tgz'
+                }
+                artifactId distroType
+                version "${jdk_version}-${jdk_build}"
+            }
+        }
+    }
+}
+
+project.afterEvaluate {
+    task publishJdk() {
+        dependsOn tasks.findAll { it.name.startsWith('publishJdk') && it.name.endsWith('ToMavenRepository') }
+    }
+    task publishJdkToLocal() {
+        dependsOn tasks.findAll { it.name.startsWith('publishJdk') && it.name.endsWith('ToMavenLocal') }
     }
 }
