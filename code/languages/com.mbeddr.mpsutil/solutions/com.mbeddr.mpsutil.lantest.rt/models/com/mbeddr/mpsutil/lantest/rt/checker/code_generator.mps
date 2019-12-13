@@ -34,6 +34,7 @@
     <import index="q7tw" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:org.apache.log4j(MPS.Core/)" />
     <import index="g51k" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.nodeEditor.cells(MPS.Editor/)" />
     <import index="cq48" ref="r:dae0f37d-129f-4c16-b109-9b1cfb88aa4f(com.mbeddr.mpsutil.lantest.rt.checker.editor)" />
+    <import index="lui2" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.module(MPS.OpenAPI/)" implicit="true" />
     <import index="gfdq" ref="5ef691b5-60ce-4ece-a04e-25e642dfa128/r:59b6a434-36b8-4735-ae34-3acf97303510(com.mbeddr.mpsutil.lantest/com.mbeddr.mpsutil.lantest.structure)" implicit="true" />
     <import index="uu96" ref="5ef691b5-60ce-4ece-a04e-25e642dfa128/r:170ef591-83b8-43a2-8998-a090f5a13f09(com.mbeddr.mpsutil.lantest/com.mbeddr.mpsutil.lantest.behavior)" implicit="true" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
@@ -355,13 +356,17 @@
             <node concept="1QHqEC" id="6DZK4Biu$5e" role="1QHqEI">
               <node concept="3clFbS" id="6DZK4Biu$5g" role="1bW5cS">
                 <node concept="3clFbF" id="5dSPU6qaBD4" role="3cqZAp">
-                  <node concept="2OqwBi" id="5dSPU6qaBD5" role="3clFbG">
-                    <node concept="2YIFZM" id="5dSPU6qaBD6" role="2Oq$k0">
-                      <ref role="37wK5l" to="w1kc:~SModelRepository.getInstance()" resolve="getInstance" />
-                      <ref role="1Pybhc" to="w1kc:~SModelRepository" resolve="SModelRepository" />
+                  <node concept="2OqwBi" id="dyYABAZMq" role="3clFbG">
+                    <node concept="2OqwBi" id="dyYABAZMr" role="2Oq$k0">
+                      <node concept="37vLTw" id="dyYABAZMs" role="2Oq$k0">
+                        <ref role="3cqZAo" node="47xghtTLhAO" resolve="proj" />
+                      </node>
+                      <node concept="liA8E" id="dyYABAZMt" role="2OqNvi">
+                        <ref role="37wK5l" to="z1c3:~Project.getRepository()" resolve="getRepository" />
+                      </node>
                     </node>
-                    <node concept="liA8E" id="5dSPU6qaBD7" role="2OqNvi">
-                      <ref role="37wK5l" to="w1kc:~SModelRepository.saveAll()" resolve="saveAll" />
+                    <node concept="liA8E" id="dyYABAZMu" role="2OqNvi">
+                      <ref role="37wK5l" to="lui2:~SRepository.saveAll()" resolve="saveAll" />
                     </node>
                   </node>
                 </node>

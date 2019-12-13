@@ -33,6 +33,7 @@
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
     <import index="hlw7" ref="742f6602-5a2f-4313-aa6e-ae1cd4ffdc61/java:jetbrains.mps.ide.save(MPS.Platform/)" />
     <import index="b0pz" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.project.facets(MPS.Core/)" />
+    <import index="31cb" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.extapi.module(MPS.Core/)" implicit="true" />
     <import index="q46j" ref="r:de290943-4e17-4d44-ae22-c863a13543cf(com.mbeddr.analyses.base.structure)" implicit="true" />
   </imports>
   <registry>
@@ -1752,16 +1753,12 @@
                 <ref role="3uigEE" to="mhbf:~SModel" resolve="SModel" />
               </node>
             </node>
-            <node concept="2OqwBi" id="7$e6lgA3AWk" role="33vP2m">
-              <node concept="2YIFZM" id="7$e6lgA3AWl" role="2Oq$k0">
-                <ref role="37wK5l" to="w1kc:~SModelRepository.getInstance()" resolve="getInstance" />
-                <ref role="1Pybhc" to="w1kc:~SModelRepository" resolve="SModelRepository" />
+            <node concept="2OqwBi" id="7PqEXSgj8Zz" role="33vP2m">
+              <node concept="37vLTw" id="7PqEXSgj8zq" role="2Oq$k0">
+                <ref role="3cqZAo" node="7N0A15Xm8Lr" resolve="s" />
               </node>
-              <node concept="liA8E" id="7$e6lgA3AWm" role="2OqNvi">
-                <ref role="37wK5l" to="w1kc:~SModelRepository.getModelDescriptors(org.jetbrains.mps.openapi.module.SModule)" resolve="getModelDescriptors" />
-                <node concept="37vLTw" id="7N0A15Xm8LH" role="37wK5m">
-                  <ref role="3cqZAo" node="7N0A15Xm8Lr" resolve="s" />
-                </node>
+              <node concept="liA8E" id="7PqEXSgj9zA" role="2OqNvi">
+                <ref role="37wK5l" to="31cb:~SModuleBase.getModels()" resolve="getModels" />
               </node>
             </node>
           </node>

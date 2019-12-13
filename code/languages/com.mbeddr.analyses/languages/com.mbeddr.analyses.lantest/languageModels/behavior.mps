@@ -199,8 +199,12 @@
         <child id="3906496115198199033" name="conceptArgument" index="3oSUPX" />
       </concept>
       <concept id="1143226024141" name="jetbrains.mps.lang.smodel.structure.SModelType" flags="in" index="H_c77" />
+      <concept id="1143234257716" name="jetbrains.mps.lang.smodel.structure.Node_GetModelOperation" flags="nn" index="I4A8Y" />
       <concept id="1145383075378" name="jetbrains.mps.lang.smodel.structure.SNodeListType" flags="in" index="2I9FWS">
         <reference id="1145383142433" name="elementConcept" index="2I9WkF" />
+      </concept>
+      <concept id="1145404486709" name="jetbrains.mps.lang.smodel.structure.SemanticDowncastExpression" flags="nn" index="2JrnkZ">
+        <child id="1145404616321" name="leftExpression" index="2JrQYb" />
       </concept>
       <concept id="1171315804604" name="jetbrains.mps.lang.smodel.structure.Model_RootsOperation" flags="nn" index="2RRcyG">
         <reference id="1171315804605" name="concept" index="2RRcyH" />
@@ -363,46 +367,65 @@
       <ref role="13i0hy" to="uu96:3Ts5Ln3NdMD" resolve="getModelWhereCheckingIsPerformed" />
       <node concept="3Tm1VV" id="x7DaR3OJQA" role="1B3o_S" />
       <node concept="3clFbS" id="x7DaR3OJQD" role="3clF47">
-        <node concept="3cpWs8" id="3Ts5Ln3Nfvd" role="3cqZAp">
-          <node concept="3cpWsn" id="3Ts5Ln3Nfve" role="3cpWs9">
-            <property role="TrG5h" value="repo" />
-            <node concept="3uibUv" id="3Ts5Ln3Nfvf" role="1tU5fm">
-              <ref role="3uigEE" to="w1kc:~SModelRepository" resolve="SModelRepository" />
+        <node concept="3SKdUt" id="7PqEXSgj25L" role="3cqZAp">
+          <node concept="1PaTwC" id="7PqEXSgj25M" role="3ndbpf">
+            <node concept="3oM_SD" id="7PqEXSgj25O" role="1PaTwD">
+              <property role="3oM_SC" value="FIXME" />
             </node>
-            <node concept="2YIFZM" id="3Ts5Ln3Nfvg" role="33vP2m">
-              <ref role="37wK5l" to="w1kc:~SModelRepository.getInstance()" resolve="getInstance" />
-              <ref role="1Pybhc" to="w1kc:~SModelRepository" resolve="SModelRepository" />
+            <node concept="3oM_SD" id="7PqEXSgj2jU" role="1PaTwD">
+              <property role="3oM_SC" value="refactor" />
+            </node>
+            <node concept="3oM_SD" id="7PqEXSgj2mj" role="1PaTwD">
+              <property role="3oM_SC" value="this" />
+            </node>
+            <node concept="3oM_SD" id="7PqEXSgj2oQ" role="1PaTwD">
+              <property role="3oM_SC" value="after" />
+            </node>
+            <node concept="3oM_SD" id="7PqEXSgj2oZ" role="1PaTwD">
+              <property role="3oM_SC" value="migrating" />
+            </node>
+            <node concept="3oM_SD" id="7PqEXSgj2_M" role="1PaTwD">
+              <property role="3oM_SC" value="MbeddrCoreConfig.tempModel" />
+            </node>
+            <node concept="3oM_SD" id="7PqEXSgj3kF" role="1PaTwD">
+              <property role="3oM_SC" value="to" />
+            </node>
+            <node concept="3oM_SD" id="7PqEXSgj3kU" role="1PaTwD">
+              <property role="3oM_SC" value="ModelPointerExpression" />
             </node>
           </node>
         </node>
-        <node concept="3clFbF" id="3Ts5Ln3Nfvh" role="3cqZAp">
-          <node concept="2OqwBi" id="3Ts5Ln3Nfvi" role="3clFbG">
-            <node concept="2OqwBi" id="3Ts5Ln3Nfvj" role="2Oq$k0">
-              <node concept="2OqwBi" id="3Ts5Ln3Nfvk" role="2Oq$k0">
-                <node concept="37vLTw" id="3Ts5Ln3Nfvl" role="2Oq$k0">
-                  <ref role="3cqZAo" node="3Ts5Ln3Nfve" resolve="repo" />
-                </node>
-                <node concept="liA8E" id="3Ts5Ln3Nfvm" role="2OqNvi">
-                  <ref role="37wK5l" to="w1kc:~SModelRepository.getModelDescriptorsByModelName(java.lang.String)" resolve="getModelDescriptorsByModelName" />
-                  <node concept="2OqwBi" id="3Ts5Ln3Nfvn" role="37wK5m">
-                    <node concept="2OqwBi" id="3Ts5Ln3Nfvo" role="2Oq$k0">
-                      <node concept="13iPFW" id="3Ts5Ln3Nfvp" role="2Oq$k0" />
-                      <node concept="3TrEf2" id="3Ts5Ln3Ng5$" role="2OqNvi">
-                        <ref role="3Tt5mk" to="fowb:3Ts5Ln3NdYJ" resolve="tempModel" />
-                      </node>
-                    </node>
-                    <node concept="2qgKlT" id="3Ts5Ln3Nfvr" role="2OqNvi">
-                      <ref role="37wK5l" to="tpeu:7K4mn_BeEzv" resolve="getFQName" />
+        <node concept="3clFbF" id="7PqEXSgj1Jr" role="3cqZAp">
+          <node concept="2OqwBi" id="7PqEXSgj0wq" role="3clFbG">
+            <node concept="2ShNRf" id="7PqEXSgj4Rz" role="2Oq$k0">
+              <node concept="1pGfFk" id="7PqEXSgj4R$" role="2ShVmc">
+                <ref role="37wK5l" to="w1kc:~ModuleRepositoryFacade.&lt;init&gt;(org.jetbrains.mps.openapi.module.SRepository)" resolve="ModuleRepositoryFacade" />
+                <node concept="2OqwBi" id="7PqEXSgj4R_" role="37wK5m">
+                  <node concept="liA8E" id="7PqEXSgj4RA" role="2OqNvi">
+                    <ref role="37wK5l" to="mhbf:~SModel.getRepository()" resolve="getRepository" />
+                  </node>
+                  <node concept="2JrnkZ" id="7PqEXSgj4RB" role="2Oq$k0">
+                    <node concept="2OqwBi" id="7PqEXSgj4RC" role="2JrQYb">
+                      <node concept="13iPFW" id="7PqEXSgj4RD" role="2Oq$k0" />
+                      <node concept="I4A8Y" id="7PqEXSgj4RE" role="2OqNvi" />
                     </node>
                   </node>
                 </node>
               </node>
-              <node concept="liA8E" id="3Ts5Ln3Nfvs" role="2OqNvi">
-                <ref role="37wK5l" to="33ny:~List.iterator()" resolve="iterator" />
-              </node>
             </node>
-            <node concept="liA8E" id="3Ts5Ln3Nfvt" role="2OqNvi">
-              <ref role="37wK5l" to="33ny:~Iterator.next()" resolve="next" />
+            <node concept="liA8E" id="7PqEXSgj0Ty" role="2OqNvi">
+              <ref role="37wK5l" to="w1kc:~ModuleRepositoryFacade.getModelByName(java.lang.String)" resolve="getModelByName" />
+              <node concept="2OqwBi" id="3Ts5Ln3Nfvn" role="37wK5m">
+                <node concept="2OqwBi" id="3Ts5Ln3Nfvo" role="2Oq$k0">
+                  <node concept="13iPFW" id="3Ts5Ln3Nfvp" role="2Oq$k0" />
+                  <node concept="3TrEf2" id="3Ts5Ln3Ng5$" role="2OqNvi">
+                    <ref role="3Tt5mk" to="fowb:3Ts5Ln3NdYJ" resolve="tempModel" />
+                  </node>
+                </node>
+                <node concept="2qgKlT" id="3Ts5Ln3Nfvr" role="2OqNvi">
+                  <ref role="37wK5l" to="tpeu:7K4mn_BeEzv" resolve="getFQName" />
+                </node>
+              </node>
             </node>
           </node>
         </node>

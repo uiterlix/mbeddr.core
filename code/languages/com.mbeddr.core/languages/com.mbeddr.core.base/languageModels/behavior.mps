@@ -19060,6 +19060,29 @@
             </node>
           </node>
         </node>
+        <node concept="3cpWs8" id="7PqEXSgfSZs" role="3cqZAp">
+          <node concept="3cpWsn" id="7PqEXSgfSZt" role="3cpWs9">
+            <property role="TrG5h" value="repoFacade" />
+            <node concept="3uibUv" id="7PqEXSgfSWu" role="1tU5fm">
+              <ref role="3uigEE" to="w1kc:~ModuleRepositoryFacade" resolve="ModuleRepositoryFacade" />
+            </node>
+            <node concept="2ShNRf" id="7PqEXSgfSZu" role="33vP2m">
+              <node concept="1pGfFk" id="7PqEXSgfSZv" role="2ShVmc">
+                <ref role="37wK5l" to="w1kc:~ModuleRepositoryFacade.&lt;init&gt;(org.jetbrains.mps.openapi.module.SRepository)" resolve="ModuleRepositoryFacade" />
+                <node concept="2OqwBi" id="7PqEXSgfSZw" role="37wK5m">
+                  <node concept="liA8E" id="7PqEXSgfSZx" role="2OqNvi">
+                    <ref role="37wK5l" to="mhbf:~SModel.getRepository()" resolve="getRepository" />
+                  </node>
+                  <node concept="2JrnkZ" id="7PqEXSgfSZy" role="2Oq$k0">
+                    <node concept="37vLTw" id="7PqEXSgfSZz" role="2JrQYb">
+                      <ref role="3cqZAo" node="743Sn165CWB" resolve="currentModel" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
         <node concept="2Gpval" id="4WU0y9q5uoa" role="3cqZAp">
           <node concept="2GrKxI" id="4WU0y9q5uoc" role="2Gsz3X">
             <property role="TrG5h" value="mr" />
@@ -19071,17 +19094,59 @@
             </node>
           </node>
           <node concept="3clFbS" id="4WU0y9q5uog" role="2LFqv$">
+            <node concept="3SKdUt" id="7PqEXSgg0Xb" role="3cqZAp">
+              <node concept="1PaTwC" id="7PqEXSgg0Xc" role="3ndbpf">
+                <node concept="3oM_SD" id="7PqEXSgg0Xe" role="1PaTwD">
+                  <property role="3oM_SC" value="FIXME:" />
+                </node>
+                <node concept="3oM_SD" id="7PqEXSgg2vi" role="1PaTwD">
+                  <property role="3oM_SC" value="refactor" />
+                </node>
+                <node concept="3oM_SD" id="7PqEXSgg2y1" role="1PaTwD">
+                  <property role="3oM_SC" value="this" />
+                </node>
+                <node concept="3oM_SD" id="7PqEXSgg2$p" role="1PaTwD">
+                  <property role="3oM_SC" value="after" />
+                </node>
+                <node concept="3oM_SD" id="7PqEXSgg2Dr" role="1PaTwD">
+                  <property role="3oM_SC" value="migrating" />
+                </node>
+                <node concept="3oM_SD" id="7PqEXSgg2FX" role="1PaTwD">
+                  <property role="3oM_SC" value="ListOfModelsScope.models" />
+                </node>
+                <node concept="3oM_SD" id="7PqEXSgg2U$" role="1PaTwD">
+                  <property role="3oM_SC" value="to" />
+                </node>
+                <node concept="3oM_SD" id="7PqEXSgg37r" role="1PaTwD">
+                  <property role="3oM_SC" value="ModelPointerExpression" />
+                </node>
+                <node concept="3oM_SD" id="7PqEXSgggHU" role="1PaTwD">
+                  <property role="3oM_SC" value="(which" />
+                </node>
+                <node concept="3oM_SD" id="7PqEXSgggP0" role="1PaTwD">
+                  <property role="3oM_SC" value="allows" />
+                </node>
+                <node concept="3oM_SD" id="7PqEXSgggRR" role="1PaTwD">
+                  <property role="3oM_SC" value="to" />
+                </node>
+                <node concept="3oM_SD" id="7PqEXSgggS3" role="1PaTwD">
+                  <property role="3oM_SC" value="retrieve" />
+                </node>
+                <node concept="3oM_SD" id="7PqEXSgggZs" role="1PaTwD">
+                  <property role="3oM_SC" value="SModelReference)" />
+                </node>
+              </node>
+            </node>
             <node concept="3cpWs8" id="4WU0y9q5vCW" role="3cqZAp">
               <node concept="3cpWsn" id="4WU0y9q5vCX" role="3cpWs9">
                 <property role="TrG5h" value="m" />
                 <node concept="H_c77" id="4WU0y9q5vCO" role="1tU5fm" />
-                <node concept="2OqwBi" id="7ueT7DHWKb7" role="33vP2m">
-                  <node concept="2YIFZM" id="7ueT7DHWKb8" role="2Oq$k0">
-                    <ref role="1Pybhc" to="w1kc:~SModelRepository" resolve="SModelRepository" />
-                    <ref role="37wK5l" to="w1kc:~SModelRepository.getInstance()" resolve="getInstance" />
+                <node concept="2OqwBi" id="7PqEXSgfWXI" role="33vP2m">
+                  <node concept="37vLTw" id="7PqEXSgfWuS" role="2Oq$k0">
+                    <ref role="3cqZAo" node="7PqEXSgfSZt" resolve="repoFacade" />
                   </node>
-                  <node concept="liA8E" id="7ueT7DHWKb9" role="2OqNvi">
-                    <ref role="37wK5l" to="w1kc:~SModelRepository.getModelDescriptor(java.lang.String)" resolve="getModelDescriptor" />
+                  <node concept="liA8E" id="7PqEXSgfXfo" role="2OqNvi">
+                    <ref role="37wK5l" to="w1kc:~ModuleRepositoryFacade.getModelByName(java.lang.String)" resolve="getModelByName" />
                     <node concept="2OqwBi" id="7ueT7DHWKba" role="37wK5m">
                       <node concept="2GrUjf" id="743Sn1666F3" role="2Oq$k0">
                         <ref role="2Gs0qQ" node="4WU0y9q5uoc" resolve="mr" />
