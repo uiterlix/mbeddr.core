@@ -3349,9 +3349,9 @@
             <node concept="Xl_RD" id="2jSY3BO91f0" role="37wK5m">
               <property role="Xl_RC" value="Clear any currently visible trace" />
             </node>
-            <node concept="10M0yZ" id="2jSY3BO93xR" role="37wK5m">
+            <node concept="10M0yZ" id="zYLsjkrojy" role="37wK5m">
+              <ref role="3cqZAo" to="z2i8:~AllIcons$Actions.CloseHovered" resolve="CloseHovered" />
               <ref role="1PxDUh" to="z2i8:~AllIcons$Actions" resolve="AllIcons.Actions" />
-              <ref role="3cqZAo" to="z2i8:~AllIcons$Actions.Clean" resolve="Clean" />
             </node>
           </node>
         </node>
