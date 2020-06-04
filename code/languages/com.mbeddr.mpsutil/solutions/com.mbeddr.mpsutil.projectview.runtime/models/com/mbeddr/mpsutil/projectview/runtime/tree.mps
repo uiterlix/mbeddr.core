@@ -81,8 +81,8 @@
     <import index="yyf4" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.util(MPS.OpenAPI/)" />
   </imports>
   <registry>
-    <language id="654422bf-e75f-44dc-936d-188890a746ce" name="de.slisson.mps.reflection">
-      <concept id="8473566765277240526" name="de.slisson.mps.reflection.structure.ReflectionMethodCall" flags="ng" index="1PvZjq" />
+    <language id="654422bf-e75f-44dc-936d-188890a746ce" name="">
+      <concept id="8473566765277240526" name="" flags="ng" index="1PvZjq" />
     </language>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
       <concept id="1224071154655" name="jetbrains.mps.baseLanguage.structure.AsExpression" flags="nn" index="0kSF2">
@@ -1587,11 +1587,11 @@
             </node>
           </node>
           <node concept="2OqwBi" id="2xfLpXm7egC" role="ukAjM">
-            <node concept="2YIFZM" id="2xfLpXm7dOe" role="2Oq$k0">
-              <ref role="37wK5l" to="alof:~ProjectHelper.toMPSProject(com.intellij.openapi.project.Project):jetbrains.mps.project.Project" resolve="toMPSProject" />
+            <node concept="2YIFZM" id="cTFhx87pbI" role="2Oq$k0">
+              <ref role="37wK5l" to="alof:~ProjectHelper.fromIdeaProject(com.intellij.openapi.project.Project)" resolve="fromIdeaProject" />
               <ref role="1Pybhc" to="alof:~ProjectHelper" resolve="ProjectHelper" />
-              <node concept="1rXfSq" id="2xfLpXm7e5A" role="37wK5m">
-                <ref role="37wK5l" to="rvbb:~BaseLogicalViewProjectPane.getProject():com.intellij.openapi.project.Project" resolve="getProject" />
+              <node concept="1rXfSq" id="cTFhx87pbJ" role="37wK5m">
+                <ref role="37wK5l" to="rvbb:~BaseLogicalViewProjectPane.getProject()" resolve="getProject" />
               </node>
             </node>
             <node concept="liA8E" id="2xfLpXm7eBs" role="2OqNvi">
@@ -3392,10 +3392,10 @@
               <node concept="2ShNRf" id="75_oBQVzt72" role="3cqZAk">
                 <node concept="1pGfFk" id="75_oBQVzt73" role="2ShVmc">
                   <ref role="37wK5l" to="z1c3:~ProjectOperationContext.&lt;init&gt;(jetbrains.mps.project.Project)" resolve="ProjectOperationContext" />
-                  <node concept="2YIFZM" id="75_oBQVzt76" role="37wK5m">
-                    <ref role="37wK5l" to="alof:~ProjectHelper.toMPSProject(com.intellij.openapi.project.Project):jetbrains.mps.project.Project" resolve="toMPSProject" />
+                  <node concept="2YIFZM" id="cTFhx87qid" role="37wK5m">
+                    <ref role="37wK5l" to="alof:~ProjectHelper.fromIdeaProject(com.intellij.openapi.project.Project)" resolve="fromIdeaProject" />
                     <ref role="1Pybhc" to="alof:~ProjectHelper" resolve="ProjectHelper" />
-                    <node concept="37vLTw" id="75_oBQVzt6S" role="37wK5m">
+                    <node concept="37vLTw" id="cTFhx87qie" role="37wK5m">
                       <ref role="3cqZAo" to="k21q:~AbstractProjectViewPane.myProject" resolve="myProject" />
                     </node>
                   </node>
@@ -3579,8 +3579,8 @@
       <property role="eg7rD" value="false" />
       <property role="TrG5h" value="myEditorListener" />
       <property role="3TUv4t" value="true" />
-      <node concept="3uibUv" id="4gq8yQBZ6Nc" role="1tU5fm">
-        <ref role="3uigEE" to="iwsx:~FileEditorManagerAdapter" resolve="FileEditorManagerAdapter" />
+      <node concept="3uibUv" id="cTFhx87$b8" role="1tU5fm">
+        <ref role="3uigEE" to="iwsx:~FileEditorManagerListener" resolve="FileEditorManagerListener" />
       </node>
       <node concept="2ShNRf" id="4gq8yQBZ6Nd" role="33vP2m">
         <node concept="YeOm9" id="4gq8yQBZ6Ne" role="2ShVmc">
@@ -3588,8 +3588,8 @@
             <property role="2bfB8j" value="true" />
             <property role="1sVAO0" value="false" />
             <property role="1EXbeo" value="false" />
-            <ref role="37wK5l" to="iwsx:~FileEditorManagerAdapter.&lt;init&gt;()" resolve="FileEditorManagerAdapter" />
-            <ref role="1Y3XeK" to="iwsx:~FileEditorManagerAdapter" resolve="FileEditorManagerAdapter" />
+            <ref role="1Y3XeK" to="iwsx:~FileEditorManagerListener" resolve="FileEditorManagerListener" />
+            <ref role="37wK5l" to="wyt6:~Object.&lt;init&gt;()" resolve="Object" />
             <node concept="3Tm1VV" id="4gq8yQBZ6Ng" role="1B3o_S" />
             <node concept="3clFb_" id="4gq8yQBZ6Nh" role="jymVt">
               <property role="TrG5h" value="selectionChanged" />
@@ -4010,7 +4010,7 @@
                   <ref role="3cqZAo" node="4gq8yQBZ6Oz" resolve="myConnection" />
                 </node>
                 <node concept="liA8E" id="4gq8yQBZ6Pi" role="2OqNvi">
-                  <ref role="37wK5l" to="4b2m:~MessageBusConnection.disconnect():void" resolve="disconnect" />
+                  <ref role="37wK5l" to="4b2m:~SimpleMessageBusConnection.disconnect()" resolve="disconnect" />
                 </node>
               </node>
             </node>
@@ -4281,7 +4281,7 @@
                   <ref role="3cqZAo" node="4gq8yQBZ6Oz" resolve="myConnection" />
                 </node>
                 <node concept="liA8E" id="4gq8yQBZ6PO" role="2OqNvi">
-                  <ref role="37wK5l" to="4b2m:~MessageBusConnection.subscribe(com.intellij.util.messages.Topic,java.lang.Object):void" resolve="subscribe" />
+                  <ref role="37wK5l" to="4b2m:~SimpleMessageBusConnection.subscribe(com.intellij.util.messages.Topic,java.lang.Object)" resolve="subscribe" />
                   <node concept="10M0yZ" id="4gq8yQBZ6PP" role="37wK5m">
                     <ref role="1PxDUh" to="iwsx:~FileEditorManagerListener" resolve="FileEditorManagerListener" />
                     <ref role="3cqZAo" to="iwsx:~FileEditorManagerListener.FILE_EDITOR_MANAGER" resolve="FILE_EDITOR_MANAGER" />
@@ -4810,11 +4810,11 @@
         <node concept="3cpWs6" id="4gq8yQBZ6R0" role="3cqZAp">
           <node concept="1eOMI4" id="4gq8yQC0Luw" role="3cqZAk">
             <node concept="10QFUN" id="4gq8yQC0Lux" role="1eOMHV">
-              <node concept="2YIFZM" id="4gq8yQC0Luu" role="10QFUP">
-                <ref role="37wK5l" to="alof:~ProjectHelper.toMPSProject(com.intellij.openapi.project.Project):jetbrains.mps.project.Project" resolve="toMPSProject" />
+              <node concept="2YIFZM" id="cTFhx87CC_" role="10QFUP">
+                <ref role="37wK5l" to="alof:~ProjectHelper.fromIdeaProject(com.intellij.openapi.project.Project)" resolve="fromIdeaProject" />
                 <ref role="1Pybhc" to="alof:~ProjectHelper" resolve="ProjectHelper" />
-                <node concept="1rXfSq" id="4gq8yQC0Luv" role="37wK5m">
-                  <ref role="37wK5l" to="rvbb:~BaseLogicalViewProjectPane.getProject():com.intellij.openapi.project.Project" resolve="getProject" />
+                <node concept="1rXfSq" id="cTFhx87CCA" role="37wK5m">
+                  <ref role="37wK5l" to="rvbb:~BaseLogicalViewProjectPane.getProject()" resolve="getProject" />
                 </node>
               </node>
               <node concept="3uibUv" id="4gq8yQC0Lut" role="10QFUM">
@@ -4951,10 +4951,10 @@
             <node concept="2ShNRf" id="4gq8yQC1J8Q" role="33vP2m">
               <node concept="1pGfFk" id="4gq8yQC1J8R" role="2ShVmc">
                 <ref role="37wK5l" node="7diJr$Rjcx0" resolve="CustomProjectTree" />
-                <node concept="2YIFZM" id="4gq8yQC1J8S" role="37wK5m">
+                <node concept="2YIFZM" id="cTFhx87Mcb" role="37wK5m">
+                  <ref role="37wK5l" to="alof:~ProjectHelper.fromIdeaProject(com.intellij.openapi.project.Project)" resolve="fromIdeaProject" />
                   <ref role="1Pybhc" to="alof:~ProjectHelper" resolve="ProjectHelper" />
-                  <ref role="37wK5l" to="alof:~ProjectHelper.toMPSProject(com.intellij.openapi.project.Project):jetbrains.mps.project.Project" resolve="toMPSProject" />
-                  <node concept="37vLTw" id="4gq8yQC1J8T" role="37wK5m">
+                  <node concept="37vLTw" id="cTFhx87Mcc" role="37wK5m">
                     <ref role="3cqZAo" to="k21q:~AbstractProjectViewPane.myProject" resolve="myProject" />
                   </node>
                 </node>
